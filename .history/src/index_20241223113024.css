@@ -1,0 +1,79 @@
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root Styles */
+:root {
+  /* Fonts */
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  /* Colors */
+  --color-text: rgba(0, 0, 0, 0.87);
+  --color-background: #ffffff;
+
+  /* Dark Theme Colors */
+  --color-text-dark: rgba(255, 255, 255, 0.87);
+  --color-background-dark: #121212;
+
+  /* Other Styles */
+  --line-height: 1.5;
+  --font-weight: 400;
+
+  /* Misc */
+  --max-width: 1900px;
+
+  /* Smooth Scrolling */
+  scroll-behavior: smooth;
+
+  /* Font Rendering */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Theme Support */
+body {
+  color: var(--color-text);
+  background-color: var(--color-background);
+  font-family: var(--font-primary);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight);
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+[data-theme='dark'] {
+  color: var(--color-text-dark);
+  background-color: var(--color-background-dark);
+}
+
+/* Responsiveness */
+body {
+  max-width: var(--max-width);
+  padding: 0;
+  margin: 0 ;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  margin: 0;
+  font-family: var(--font-primary);
+}
+
+/* Root Container */
+#root {
+  width: 1900px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-primary);
+  box-sizing: border-box;
+}

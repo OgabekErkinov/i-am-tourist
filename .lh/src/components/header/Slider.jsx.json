@@ -1,0 +1,90 @@
+{
+    "sourceFile": "src/components/header/Slider.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 18,
+            "patches": [
+                {
+                    "date": 1734931992814,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1734932004986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n       scrollbar={{ draggable: true }}\r\n       loop={true}\r\n       style={{\r\n         position: 'relative',\r\n-        width: '120%', \r\n+        width: '100%', \r\n         height: '90vh',\r\n         objectFit : 'cover'\r\n       }}\r\n     >\r\n"
+                },
+                {
+                    "date": 1734932012652,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n       scrollbar={{ draggable: true }}\r\n       loop={true}\r\n       style={{\r\n         position: 'relative',\r\n-        width: '100%', \r\n+        width: '110%', \r\n         height: '90vh',\r\n         objectFit : 'cover'\r\n       }}\r\n     >\r\n"
+                },
+                {
+                    "date": 1734932021977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n       scrollbar={{ draggable: true }}\r\n       loop={true}\r\n       style={{\r\n         position: 'relative',\r\n-        width: '110%', \r\n+        width: '110vw', \r\n         height: '90vh',\r\n         objectFit : 'cover'\r\n       }}\r\n     >\r\n"
+                },
+                {
+                    "date": 1734932034726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n       scrollbar={{ draggable: true }}\r\n       loop={true}\r\n       style={{\r\n         position: 'relative',\r\n-        width: '110vw', \r\n+        width: '90vw', \r\n         height: '90vh',\r\n         objectFit : 'cover'\r\n       }}\r\n     >\r\n"
+                },
+                {
+                    "date": 1734932058571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n       scrollbar={{ draggable: true }}\r\n       loop={true}\r\n       style={{\r\n         position: 'relative',\r\n-        width: '90vw', \r\n+        width: '110%', \r\n         height: '90vh',\r\n         objectFit : 'cover'\r\n       }}\r\n     >\r\n"
+                },
+                {
+                    "date": 1734932354189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,10 +40,9 @@\n                 sx={{\r\n                   backgroundImage: `url(${item.url})`,\r\n                   backgroundSize: 'cover',\r\n                   backgroundPosition: 'center',\r\n-                  objectFit : 'cover'\r\n-                }}\r\n+                  objectFit : 'cover'}}\r\n               >\r\n                 <Stack height={'90vh'}\r\n                        width={'100%'}\r\n                        paddingTop={'40vh'}\r\n"
+                },
+                {
+                    "date": 1734932395209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n       scrollbar={{ draggable: true }}\r\n       loop={true}\r\n       style={{\r\n         position: 'relative',\r\n-        width: '110%', \r\n+        width: '100%', \r\n         height: '90vh',\r\n         objectFit : 'cover'\r\n       }}\r\n     >\r\n@@ -40,9 +40,9 @@\n                 sx={{\r\n                   backgroundImage: `url(${item.url})`,\r\n                   backgroundSize: 'cover',\r\n                   backgroundPosition: 'center',\r\n-                  objectFit : 'cover'}}\r\n+                  objectFit : 'cover' }}\r\n               >\r\n                 <Stack height={'90vh'}\r\n                        width={'100%'}\r\n                        paddingTop={'40vh'}\r\n"
+                },
+                {
+                    "date": 1734935537391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n       pagination={{ clickable: false }}\r\n       scrollbar={{ draggable: true }}\r\n       loop={true}\r\n       style={{\r\n-        position: 'relative',\r\n+  \r\n         width: '100%', \r\n         height: '90vh',\r\n         objectFit : 'cover'\r\n       }}\r\n"
+                },
+                {
+                    "date": 1734935622526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,10 @@\n       pagination={{ clickable: false }}\r\n       scrollbar={{ draggable: true }}\r\n       loop={true}\r\n       style={{\r\n-  \r\n         width: '100%', \r\n+        border\r\n         height: '90vh',\r\n         objectFit : 'cover'\r\n       }}\r\n     >\r\n"
+                },
+                {
+                    "date": 1734935628981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n       scrollbar={{ draggable: true }}\r\n       loop={true}\r\n       style={{\r\n         width: '100%', \r\n-        border\r\n+        border \"1px solid red\"\r\n         height: '90vh',\r\n         objectFit : 'cover'\r\n       }}\r\n     >\r\n"
+                },
+                {
+                    "date": 1734935634743,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n       scrollbar={{ draggable: true }}\r\n       loop={true}\r\n       style={{\r\n         width: '100%', \r\n-        border \"1px solid red\"\r\n+        border: \"1px solid red\",\r\n         height: '90vh',\r\n         objectFit : 'cover'\r\n       }}\r\n     >\r\n"
+                },
+                {
+                    "date": 1734935786593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,8 @@\n       scrollbar={{ draggable: true }}\r\n       loop={true}\r\n       style={{\r\n         width: '100%', \r\n-        border: \"1px solid red\",\r\n         height: '90vh',\r\n         objectFit : 'cover'\r\n       }}\r\n     >\r\n"
+                },
+                {
+                    "date": 1734935813387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n                   objectFit : 'cover' }}\r\n               >\r\n                 <Stack height={'90vh'}\r\n                        width={'100%'}\r\n-                       paddingTop={'40vh'}\r\n+                       paddingTop={'50vh'}\r\n                        justifyContent={'start'}\r\n                        alignItems={'center'}\r\n                        position={'absolute'}\r\n                        zIndex={1}\r\n"
+                },
+                {
+                    "date": 1734935819244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n                   objectFit : 'cover' }}\r\n               >\r\n                 <Stack height={'90vh'}\r\n                        width={'100%'}\r\n-                       paddingTop={'50vh'}\r\n+                       paddingTop={'40vh'}\r\n                        justifyContent={'start'}\r\n                        alignItems={'center'}\r\n                        position={'absolute'}\r\n                        zIndex={1}\r\n"
+                },
+                {
+                    "date": 1734936802835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n                        position={'absolute'}\r\n                        zIndex={1}\r\n                        bgcolor={'rgba(0, 0, 0, 0.5)'}>\r\n                              <Typography\r\n-                                  fontSize=\"5rem\"\r\n+                                  fontSize=\r\n                                   fontFamily=\"Poppins\"\r\n                                   fontWeight={700}\r\n                                   sx={{\r\n                                      opacity: 1,\r\n"
+                },
+                {
+                    "date": 1734936810743,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n                        position={'absolute'}\r\n                        zIndex={1}\r\n                        bgcolor={'rgba(0, 0, 0, 0.5)'}>\r\n                              <Typography\r\n-                                  fontSize=\r\n+                                  fontSize=\"5rem\"\r\n                                   fontFamily=\"Poppins\"\r\n                                   fontWeight={700}\r\n                                   sx={{\r\n                                      opacity: 1,\r\n"
+                },
+                {
+                    "date": 1734936816133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n                                   sx={{\r\n                                      opacity: 1,\r\n                                      color: 'white',\r\n                                      textShadow: '2px 2px 8px rgba(0, 0, 0, 0.7)',\r\n-                                     \r\n+                                     ''\r\n                                       }}>\r\n                                      {item.heading}\r\n                               </Typography>\r\n                               <Typography\r\n"
+                },
+                {
+                    "date": 1734936833975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n                                   sx={{\r\n                                      opacity: 1,\r\n                                      color: 'white',\r\n                                      textShadow: '2px 2px 8px rgba(0, 0, 0, 0.7)',\r\n-                                     '@media ('\r\n+                                     '@media (m'\r\n                                       }}>\r\n                                      {item.heading}\r\n                               </Typography>\r\n                               <Typography\r\n"
+                }
+            ],
+            "date": 1734931992814,
+            "name": "Commit-0",
+            "content": "import React from 'react'\r\nimport { SliderItems } from '../../Database/db'\r\nimport 'swiper/css'; \r\nimport 'swiper/css/effect-fade';\r\nimport 'swiper/css/pagination';\r\nimport 'swiper/css/autoplay';\r\nimport { Swiper, SwiperSlide } from 'swiper/react';\r\nimport { Navigation, Pagination, Scrollbar, EffectFade, Autoplay } from 'swiper/modules';\r\nimport { Box, Stack, Typography } from '@mui/material'\r\n\r\nconst Slider = () => {\r\n  return (\r\n    <Swiper\r\n      modules={[Navigation, Pagination, Scrollbar, EffectFade, Autoplay]}\r\n      effect=\"fade\" \r\n      spaceBetween={0}\r\n      slidesPerView={1}\r\n      autoplay={{ delay: 2500, disableOnInteraction: false }} \r\n      navigation\r\n      pagination={{ clickable: false }}\r\n      scrollbar={{ draggable: true }}\r\n      loop={true}\r\n      style={{\r\n        position: 'relative',\r\n        width: '120%', \r\n        height: '90vh',\r\n        objectFit : 'cover'\r\n      }}\r\n    >\r\n      {\r\n        SliderItems.map((item, idx) => {\r\n          return (\r\n            <SwiperSlide key={idx}>\r\n              <Stack\r\n                height={'100%'}\r\n                width={'100%'}\r\n                display={'flex'}\r\n                alignItems={'center'}\r\n                justifyContent={'center'}\r\n                sx={{\r\n                  backgroundImage: `url(${item.url})`,\r\n                  backgroundSize: 'cover',\r\n                  backgroundPosition: 'center',\r\n                  objectFit : 'cover'\r\n                }}\r\n              >\r\n                <Stack height={'90vh'}\r\n                       width={'100%'}\r\n                       paddingTop={'40vh'}\r\n                       justifyContent={'start'}\r\n                       alignItems={'center'}\r\n                       position={'absolute'}\r\n                       zIndex={1}\r\n                       bgcolor={'rgba(0, 0, 0, 0.5)'}>\r\n                             <Typography\r\n                                  fontSize=\"5rem\"\r\n                                  fontFamily=\"Poppins\"\r\n                                  fontWeight={700}\r\n                                  sx={{\r\n                                     opacity: 1,\r\n                                     color: 'white',\r\n                                     textShadow: '2px 2px 8px rgba(0, 0, 0, 0.7)',\r\n                                      }}>\r\n                                     {item.heading}\r\n                              </Typography>\r\n                              <Typography\r\n                                     fontFamily=\"Poppins\"\r\n                                     fontSize=\"1.2rem\"\r\n                                     sx={{\r\n                                        color: 'white',\r\n                                        textAlign: 'center',\r\n                                         maxWidth: '80%', \r\n                                         textShadow: '2px 2px 8px rgba(0, 0, 0, 0.9)',\r\n                                         }}>\r\n                                        {item.paragraph}\r\n                               </Typography>\r\n\r\n                </Stack>\r\n               \r\n              </Stack>\r\n            </SwiperSlide>\r\n          );\r\n        })\r\n      }\r\n    </Swiper>\r\n  );\r\n}\r\n\r\nexport default Slider;\r\n"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/components/header/Header.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1734930184488,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1734930195865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,10 @@\n \r\n const Header = () => {\r\n   return (\r\n     <Stack\r\n-      height=\"auto\" \r\n-      maxW \r\n-      maxWidth=\"1440px\" \r\n+      height=\"auto\"  \r\n+      maxWidth=\"1660px\" \r\n       marginBottom=\"2rem\"\r\n       boxSizing=\"border-box\"\r\n       sx={{\r\n         margin: '0 auto', \r\n"
+                },
+                {
+                    "date": 1734930421791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n const Header = () => {\r\n   return (\r\n     <Stack\r\n       height=\"auto\"  \r\n-      width \r\n+      width={} \r\n       marginBottom=\"2rem\"\r\n       boxSizing=\"border-box\"\r\n       sx={{\r\n         margin: '0 auto', \r\n"
+                },
+                {
+                    "date": 1734934852034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   return (\r\n     <Stack\r\n       height=\"auto\"  \r\n       width={'100%'} \r\n-      margin\r\n+      marginX\r\n       boxSizing=\"border-box\"\r\n       border = \"1px solid red\">\r\n       <Stack width=\"100%\" \r\n              height=\"auto\"\r\n"
+                }
+            ],
+            "date": 1734930184488,
+            "name": "Commit-0",
+            "content": "import { Box, Stack } from '@mui/material';\r\nimport Navbar from '../navbar/Navbar';\r\nimport Slider from './Slider';\r\nimport Add from '../adds/Add';\r\nimport React from 'react';\r\n\r\nconst Header = () => {\r\n  return (\r\n    <Stack\r\n      height=\"auto\" \r\n      maxW \r\n      maxWidth=\"1440px\" \r\n      marginBottom=\"2rem\"\r\n      boxSizing=\"border-box\"\r\n      sx={{\r\n        margin: '0 auto', \r\n      }}\r\n    >\r\n      <Stack\r\n        width=\"100%\" \r\n        height=\"auto\" \r\n      >\r\n        <Box\r\n          width=\"100%\"\r\n          height=\"10vh\" \r\n          bgcolor=\"transparent\"\r\n        />\r\n        <Navbar />\r\n        <Slider />\r\n      </Stack>\r\n      <Add />\r\n    </Stack>\r\n  );\r\n}\r\n\r\nexport default Header;\r\n"
+        }
+    ]
+}

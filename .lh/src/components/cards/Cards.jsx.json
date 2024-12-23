@@ -1,0 +1,98 @@
+{
+    "sourceFile": "src/components/cards/Cards.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 20,
+            "patches": [
+                {
+                    "date": 1734937376019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1734937399525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n                 gap={'1rem'}\r\n                 justifyItems={'center'}\r\n                  height={'142px'}\r\n                  width={'95%'}\r\n+                 \r\n                   >\r\n                     {\r\n                 addBanners.map((item, idx) => {\r\n                     return (\r\n"
+                },
+                {
+                    "date": 1734937453776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import { Box, Stack } from '@mui/material'\r\n+import { Box, Stack, useMediaQuery } from '@mui/material'\r\n import React from 'react'\r\n import { addBanners } from '../../Database/db'\r\n \r\n const Add = () => {\r\n"
+                },
+                {
+                    "date": 1734937458917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,15 +12,15 @@\n          marginY={'2rem'}\r\n          marginBottom={'1rem'}\r\n          boxSizing={'border-box'}>\r\n           <Box  display={'grid'}\r\n-                gridTemplateColumns={'repeat(3, 1fr)'}\r\n+                gridTemplateColumns={useMediaQuery()?'repeat(3, 1fr)'}\r\n                 gridTemplateRows={'(repeat(1fr))'}\r\n                 gap={'1rem'}\r\n                 justifyItems={'center'}\r\n                  height={'142px'}\r\n                  width={'95%'}\r\n-                 \r\n+\r\n                   >\r\n                     {\r\n                 addBanners.map((item, idx) => {\r\n                     return (\r\n"
+                },
+                {
+                    "date": 1734937467173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n          marginY={'2rem'}\r\n          marginBottom={'1rem'}\r\n          boxSizing={'border-box'}>\r\n           <Box  display={'grid'}\r\n-                gridTemplateColumns={useMediaQuery()?'repeat(3, 1fr)'}\r\n+                gridTemplateColumns={useMediaQuery('max')?'repeat(3, 1fr)'}\r\n                 gridTemplateRows={'(repeat(1fr))'}\r\n                 gap={'1rem'}\r\n                 justifyItems={'center'}\r\n                  height={'142px'}\r\n"
+                },
+                {
+                    "date": 1734937481218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n          marginY={'2rem'}\r\n          marginBottom={'1rem'}\r\n          boxSizing={'border-box'}>\r\n           <Box  display={'grid'}\r\n-                gridTemplateColumns={useMediaQuery('max')?'repeat(3, 1fr)'}\r\n+                gridTemplateColumns={useMediaQuery('max-width : 765px')?'repeat(3, 1fr)'}\r\n                 gridTemplateRows={'(repeat(1fr))'}\r\n                 gap={'1rem'}\r\n                 justifyItems={'center'}\r\n                  height={'142px'}\r\n"
+                },
+                {
+                    "date": 1734937491244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n          marginY={'2rem'}\r\n          marginBottom={'1rem'}\r\n          boxSizing={'border-box'}>\r\n           <Box  display={'grid'}\r\n-                gridTemplateColumns={useMediaQuery('max-width : 765px')?'repeat(3, 1fr)'}\r\n+                gridTemplateColumns={useMediaQuery('max-width : 765px') ? 'repeat(1, 1fr)'}\r\n                 gridTemplateRows={'(repeat(1fr))'}\r\n                 gap={'1rem'}\r\n                 justifyItems={'center'}\r\n                  height={'142px'}\r\n"
+                },
+                {
+                    "date": 1734937497153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n          marginY={'2rem'}\r\n          marginBottom={'1rem'}\r\n          boxSizing={'border-box'}>\r\n           <Box  display={'grid'}\r\n-                gridTemplateColumns={useMediaQuery('max-width : 765px') ? 'repeat(1, 1fr)'}\r\n+                gridTemplateColumns={useMediaQuery('max-width : 765px') ? 'repeat(1, 1fr)' : }\r\n                 gridTemplateRows={'(repeat(1fr))'}\r\n                 gap={'1rem'}\r\n                 justifyItems={'center'}\r\n                  height={'142px'}\r\n"
+                },
+                {
+                    "date": 1734937504015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n          marginY={'2rem'}\r\n          marginBottom={'1rem'}\r\n          boxSizing={'border-box'}>\r\n           <Box  display={'grid'}\r\n-                gridTemplateColumns={useMediaQuery('max-width : 765px') ? 'repeat(1, 1fr)' : }\r\n+                gridTemplateColumns={useMediaQuery('max-width : 765px') ? 'repeat(1, 1fr)' : 'repeat()'}\r\n                 gridTemplateRows={'(repeat(1fr))'}\r\n                 gap={'1rem'}\r\n                 justifyItems={'center'}\r\n                  height={'142px'}\r\n"
+                },
+                {
+                    "date": 1734937522248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n          marginY={'2rem'}\r\n          marginBottom={'1rem'}\r\n          boxSizing={'border-box'}>\r\n           <Box  display={'grid'}\r\n-                gridTemplateColumns={useMediaQuery('max-width : 765px') ? 'repeat(1, 1fr)' : 'repeat()'}\r\n-                gridTemplateRows={'(repeat(1fr))'}\r\n+                gridTemplateColumns={useMediaQuery('max-width : 765px') ? 'repeat(1, 1fr)' : 'repeat(3, 1fr)'}\r\n+                gridTemplateRows={useMediaQuery('max-width : 765px') ? 'repeat(1, 1fr)' : 'repeat(3, 1fr)'}\r\n                 gap={'1rem'}\r\n                 justifyItems={'center'}\r\n                  height={'142px'}\r\n                  width={'95%'}\r\n"
+                },
+                {
+                    "date": 1734937528995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n          marginBottom={'1rem'}\r\n          boxSizing={'border-box'}>\r\n           <Box  display={'grid'}\r\n                 gridTemplateColumns={useMediaQuery('max-width : 765px') ? 'repeat(1, 1fr)' : 'repeat(3, 1fr)'}\r\n-                gridTemplateRows={useMediaQuery('max-width : 765px') ? 'repeat(1, 1fr)' : 'repeat(3, 1fr)'}\r\n+                gridTemplateRows={useMediaQuery('max-width : 765px') ? 'repeat(3, 1fr)' : 'repeat(3, 1fr)'}\r\n                 gap={'1rem'}\r\n                 justifyItems={'center'}\r\n                  height={'142px'}\r\n                  width={'95%'}\r\n"
+                },
+                {
+                    "date": 1734937534529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n          marginBottom={'1rem'}\r\n          boxSizing={'border-box'}>\r\n           <Box  display={'grid'}\r\n                 gridTemplateColumns={useMediaQuery('max-width : 765px') ? 'repeat(1, 1fr)' : 'repeat(3, 1fr)'}\r\n-                gridTemplateRows={useMediaQuery('max-width : 765px') ? 'repeat(3, 1fr)' : 'repeat(3, 1fr)'}\r\n+                gridTemplateRows={useMediaQuery('max-width : 765px') ? 'repeat(3, 1fr)' : 'repeat1fr)'}\r\n                 gap={'1rem'}\r\n                 justifyItems={'center'}\r\n                  height={'142px'}\r\n                  width={'95%'}\r\n"
+                },
+                {
+                    "date": 1734937612836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n          marginY={'2rem'}\r\n          marginBottom={'1rem'}\r\n          boxSizing={'border-box'}>\r\n           <Box  display={'grid'}\r\n-                gridTemplateColumns={useMediaQuery('max-width : 765px') ? 'repeat(1, 1fr)' : 'repeat(3, 1fr)'}\r\n-                gridTemplateRows={useMediaQuery('max-width : 765px') ? 'repeat(3, 1fr)' : 'repeat1fr)'}\r\n+                gridTemplateColumns=useMediaQuery('max-width : 765px') ? 'repeat(1, 1fr)' : 'repeat(3, 1fr)'}\r\n+                gridTemplateRows={useMediaQuery('max-width : 765px') ? 'repeat(3, 1fr)' : 'repeat(1fr)'}\r\n                 gap={'1rem'}\r\n                 justifyItems={'center'}\r\n                  height={'142px'}\r\n                  width={'95%'}\r\n"
+                },
+                {
+                    "date": 1734937626919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n          marginY={'2rem'}\r\n          marginBottom={'1rem'}\r\n          boxSizing={'border-box'}>\r\n           <Box  display={'grid'}\r\n-                gridTemplateColumns=useMediaQuery('max-width : 765px') ? 'repeat(1, 1fr)' : 'repeat(3, 1fr)'}\r\n+                gridTemplateColumns:useMediaQuery('max-width : 765px') ? 'repeat(1, 1fr)' : 'repeat(3, 1fr)'\r\n                 gridTemplateRows={useMediaQuery('max-width : 765px') ? 'repeat(3, 1fr)' : 'repeat(1fr)'}\r\n                 gap={'1rem'}\r\n                 justifyItems={'center'}\r\n                  height={'142px'}\r\n"
+                },
+                {
+                    "date": 1734937636256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n          marginY={'2rem'}\r\n          marginBottom={'1rem'}\r\n          boxSizing={'border-box'}>\r\n           <Box  display={'grid'}\r\n-                gridTemplateColumns:useMediaQuery('max-width : 765px') ? 'repeat(1, 1fr)' : 'repeat(3, 1fr)'\r\n+                gridTemplateColumns={{useMediaQuery('max-width : 765px') ? 'repeat(1, 1fr)' : 'repeat(3, 1fr)'}\r\n                 gridTemplateRows={useMediaQuery('max-width : 765px') ? 'repeat(3, 1fr)' : 'repeat(1fr)'}\r\n                 gap={'1rem'}\r\n                 justifyItems={'center'}\r\n                  height={'142px'}\r\n"
+                },
+                {
+                    "date": 1734937642924,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n          marginY={'2rem'}\r\n          marginBottom={'1rem'}\r\n          boxSizing={'border-box'}>\r\n           <Box  display={'grid'}\r\n-                gridTemplateColumns={{useMediaQuery('max-width : 765px') ? 'repeat(1, 1fr)' : 'repeat(3, 1fr)'}\r\n+                gridTemplateColumns={useMediaQuery('max-width : 765px') ? 'repeat(1, 1fr)' : 'repeat(3, 1fr)'}\r\n                 gridTemplateRows={useMediaQuery('max-width : 765px') ? 'repeat(3, 1fr)' : 'repeat(1fr)'}\r\n                 gap={'1rem'}\r\n                 justifyItems={'center'}\r\n                  height={'142px'}\r\n"
+                },
+                {
+                    "date": 1734937650593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n          marginBottom={'1rem'}\r\n          boxSizing={'border-box'}>\r\n           <Box  display={'grid'}\r\n                 gridTemplateColumns={useMediaQuery('max-width : 765px') ? 'repeat(1, 1fr)' : 'repeat(3, 1fr)'}\r\n-                gridTemplateRows={useMediaQuery('max-width : 765px') ? 'repeat(3, 1fr)' : 'repeat(1fr)'}\r\n+                gridTemplateRows={useMediaQuery('max-width : 765px') ? 'repeat(3, 1fr)' : '1fr)'}\r\n                 gap={'1rem'}\r\n                 justifyItems={'center'}\r\n                  height={'142px'}\r\n                  width={'95%'}\r\n"
+                },
+                {
+                    "date": 1734937710879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n          marginY={'2rem'}\r\n          marginBottom={'1rem'}\r\n          boxSizing={'border-box'}>\r\n           <Box  display={'grid'}\r\n-                gridTemplateColumns={useMediaQuery('max-width : 765px') ? 'repeat(1, 1fr)' : 'repeat(3, 1fr)'}\r\n-                gridTemplateRows={useMediaQuery('max-width : 765px') ? 'repeat(3, 1fr)' : '1fr)'}\r\n+                gridTemplateColumns={useMediaQuery('(max-width : 765px') ? 'repeat(1, 1fr)' : 'repeat(3, 1fr)'}\r\n+                gridTemplateRows={useMediaQuery('max-width : 765px') ? 'repeat(3, 1fr)' : '1fr'}\r\n                 gap={'1rem'}\r\n                 justifyItems={'center'}\r\n                  height={'142px'}\r\n                  width={'95%'}\r\n"
+                },
+                {
+                    "date": 1734937723027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n          marginY={'2rem'}\r\n          marginBottom={'1rem'}\r\n          boxSizing={'border-box'}>\r\n           <Box  display={'grid'}\r\n-                gridTemplateColumns={useMediaQuery('(max-width : 765px') ? 'repeat(1, 1fr)' : 'repeat(3, 1fr)'}\r\n-                gridTemplateRows={useMediaQuery('max-width : 765px') ? 'repeat(3, 1fr)' : '1fr'}\r\n+                gridTemplateColumns={useMediaQuery('(max-width : 765px)') ? 'repeat(1, 1fr)' : 'repeat(3, 1fr)'}\r\n+                gridTemplateRows={useMediaQuery('(max-width : 765px') ? 'repeat(3, 1fr)' : '1fr'}\r\n                 gap={'1rem'}\r\n                 justifyItems={'center'}\r\n                  height={'142px'}\r\n                  width={'95%'}\r\n"
+                },
+                {
+                    "date": 1734937780348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { Box, Stack, useMediaQuery } from '@mui/material'\r\n import React from 'react'\r\n import { addBanners } from '../../Database/db'\r\n \r\n-const Add = () => {\r\n+const Cards = () => {\r\n   return (\r\n     <Box width={'100%'}\r\n          height={'225px'}\r\n          display={'flex'}\r\n@@ -13,9 +13,9 @@\n          marginBottom={'1rem'}\r\n          boxSizing={'border-box'}>\r\n           <Box  display={'grid'}\r\n                 gridTemplateColumns={useMediaQuery('(max-width : 765px)') ? 'repeat(1, 1fr)' : 'repeat(3, 1fr)'}\r\n-                gridTemplateRows={useMediaQuery('(max-width : 765px') ? 'repeat(3, 1fr)' : '1fr'}\r\n+                gridTemplateRows={useMediaQuery('(max-width : 765px)') ? 'repeat(3, 1fr)' : '1fr'}\r\n                 gap={'1rem'}\r\n                 justifyItems={'center'}\r\n                  height={'142px'}\r\n                  width={'95%'}\r\n"
+                },
+                {
+                    "date": 1734937785709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,5 +55,5 @@\n     \r\n   )\r\n }\r\n \r\n-export default Add\r\n+export default Cards\r\n"
+                }
+            ],
+            "date": 1734937376019,
+            "name": "Commit-0",
+            "content": "import { Box, Stack } from '@mui/material'\r\nimport React from 'react'\r\nimport { addBanners } from '../../Database/db'\r\n\r\nconst Add = () => {\r\n  return (\r\n    <Box width={'100%'}\r\n         height={'225px'}\r\n         display={'flex'}\r\n         justifyContent={'center'}\r\n         alignItems={'center'}\r\n         marginY={'2rem'}\r\n         marginBottom={'1rem'}\r\n         boxSizing={'border-box'}>\r\n          <Box  display={'grid'}\r\n                gridTemplateColumns={'repeat(3, 1fr)'}\r\n                gridTemplateRows={'(repeat(1fr))'}\r\n                gap={'1rem'}\r\n                justifyItems={'center'}\r\n                 height={'142px'}\r\n                 width={'95%'}\r\n                  >\r\n                    {\r\n                addBanners.map((item, idx) => {\r\n                    return (\r\n                        <Stack key={idx}\r\n                               boxShadow = {'1px 1px 5px 1px rgb(95, 99, 105)'}\r\n                               padding={'25px'}\r\n                               bgcolor={'gray.900'}\r\n                               borderRadius={'12px'}\r\n                               alignItems={'start'}\r\n                               justifyContent={'center'}\r\n                               color={'black'}\r\n                               >\r\n                                  <h3 style={{\r\n                                    fontSize : '20px',\r\n                                    fontFamily : 'Poppins',\r\n                                    fontWeight : 'medium',\r\n                                    lineHeight : '28px',\r\n                                    \r\n                                  }}>{item.heading}</h3>\r\n                                  <p style={{\r\n                                    color : '#A1A1AA',\r\n\r\n                                  }}>{item.paragraph}</p>\r\n\r\n                       </Stack>\r\n                    )\r\n                })\r\n            }\r\n\r\n          </Box>\r\n    </Box>\r\n    \r\n  )\r\n}\r\n\r\nexport default Add\r\n"
+        }
+    ]
+}

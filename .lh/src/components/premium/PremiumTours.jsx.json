@@ -1,0 +1,86 @@
+{
+    "sourceFile": "src/components/premium/PremiumTours.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 17,
+            "patches": [
+                {
+                    "date": 1734937889558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1734937901040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,14 +12,14 @@\n const PremiumTours = () => {\r\n \r\n   return (\r\n     <Stack height={'730px'}\r\n-      width={'100%'}\r\n-      padding={'80px 35px'}\r\n-      alignItems={'center'}\r\n-      justifyContent={'center'}\r\n-      bgcolor={'#F97316'}\r\n-      boxSizing={'border-box'}\r\n+           width={'100%'}\r\n+           padding={'80px 35px'}\r\n+           alignItems={'center'}\r\n+           justifyContent={'center'}\r\n+           bgcolor={'#F97316'}\r\n+           boxSizing={'border-box'}\r\n     >\r\n       <Stack\r\n         height={'100%'}\r\n         width={'100%'}\r\n"
+                },
+                {
+                    "date": 1734937907394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,11 +17,10 @@\n            padding={'80px 35px'}\r\n            alignItems={'center'}\r\n            justifyContent={'center'}\r\n            bgcolor={'#F97316'}\r\n-           boxSizing={'border-box'}\r\n-    >\r\n-      <Stack\r\n+           boxSizing={'border-box'} >\r\n+          <Stack\r\n         height={'100%'}\r\n         width={'100%'}\r\n         justifyContent={'space-between'}\r\n         alignItems={'center'}\r\n"
+                },
+                {
+                    "date": 1734937913952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,11 +18,10 @@\n            alignItems={'center'}\r\n            justifyContent={'center'}\r\n            bgcolor={'#F97316'}\r\n            boxSizing={'border-box'} >\r\n-          <Stack\r\n-        height={'100%'}\r\n-        width={'100%'}\r\n+          <Stack height={'100%'}\r\n+                 width={'100%'}\r\n         justifyContent={'space-between'}\r\n         alignItems={'center'}\r\n         paddingX={'20px'}\r\n         gap={'1rem'}\r\n"
+                },
+                {
+                    "date": 1734937919784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,10 @@\n            bgcolor={'#F97316'}\r\n            boxSizing={'border-box'} >\r\n           <Stack height={'100%'}\r\n                  width={'100%'}\r\n-        justifyContent={'space-between'}\r\n-        alignItems={'center'}\r\n+                 justifyContent={'space-between'}\r\n+                 alignItems={'center'}\r\n         paddingX={'20px'}\r\n         gap={'1rem'}\r\n       >\r\n         {/* Title */}\r\n"
+                },
+                {
+                    "date": 1734937924983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,10 +22,10 @@\n           <Stack height={'100%'}\r\n                  width={'100%'}\r\n                  justifyContent={'space-between'}\r\n                  alignItems={'center'}\r\n-        paddingX={'20px'}\r\n-        gap={'1rem'}\r\n+                 paddingX={'20px'}\r\n+                 gap={'1rem'}\r\n       >\r\n         {/* Title */}\r\n         <Typography\r\n           fontFamily={'Poppins'}\r\n"
+                },
+                {
+                    "date": 1734937936030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,11 +23,10 @@\n                  width={'100%'}\r\n                  justifyContent={'space-between'}\r\n                  alignItems={'center'}\r\n                  paddingX={'20px'}\r\n-                 gap={'1rem'}\r\n-      >\r\n-        {/* Title */}\r\n+                 gap={'1rem'}>\r\n+                 {/* Title */}\r\n         <Typography\r\n           fontFamily={'Poppins'}\r\n           width={'95%'}\r\n           fontSize={'48px'}\r\n"
+                },
+                {
+                    "date": 1734937941750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,10 +24,10 @@\n                  justifyContent={'space-between'}\r\n                  alignItems={'center'}\r\n                  paddingX={'20px'}\r\n                  gap={'1rem'}>\r\n-                 {/* Title */}\r\n-        <Typography\r\n+              {/* Title */}\r\n+                <Typography\r\n           fontFamily={'Poppins'}\r\n           width={'95%'}\r\n           fontSize={'48px'}\r\n           lineHeight={'48px'}\r\n"
+                },
+                {
+                    "date": 1734937949483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,11 +25,10 @@\n                  alignItems={'center'}\r\n                  paddingX={'20px'}\r\n                  gap={'1rem'}>\r\n               {/* Title */}\r\n-                <Typography\r\n-          fontFamily={'Poppins'}\r\n-          width={'95%'}\r\n+                <Typography fontFamily={'Poppins'}\r\n+                            width={'95%'}\r\n           fontSize={'48px'}\r\n           lineHeight={'48px'}\r\n           fontWeight={'bold'}\r\n           textAlign={'center'}\r\n"
+                },
+                {
+                    "date": 1734937957324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,10 +27,10 @@\n                  gap={'1rem'}>\r\n               {/* Title */}\r\n                 <Typography fontFamily={'Poppins'}\r\n                             width={'95%'}\r\n-          fontSize={'48px'}\r\n-          lineHeight={'48px'}\r\n+                            fontSize={'48px'}\r\n+                            lineHeight={'48px'}\r\n           fontWeight={'bold'}\r\n           textAlign={'center'}\r\n           height={'auto'}\r\n           sx={{\r\n"
+                },
+                {
+                    "date": 1734937963856,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,10 +29,10 @@\n                 <Typography fontFamily={'Poppins'}\r\n                             width={'95%'}\r\n                             fontSize={'48px'}\r\n                             lineHeight={'48px'}\r\n-          fontWeight={'bold'}\r\n-          textAlign={'center'}\r\n+                            fontWeight={'bold'}\r\n+                            textAlign={'center'}\r\n           height={'auto'}\r\n           sx={{\r\n             '@media (max-width: 900px)': {\r\n               fontSize: '36px',\r\n"
+                },
+                {
+                    "date": 1734937972812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,10 +31,10 @@\n                             fontSize={'48px'}\r\n                             lineHeight={'48px'}\r\n                             fontWeight={'bold'}\r\n                             textAlign={'center'}\r\n-          height={'auto'}\r\n-          sx={{\r\n+                            height={'auto'}\r\n+                            sx={{\r\n             '@media (max-width: 900px)': {\r\n               fontSize: '36px',\r\n               lineHeight: '40px',\r\n             },\r\n"
+                },
+                {
+                    "date": 1734937982071,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,11 +33,11 @@\n                             fontWeight={'bold'}\r\n                             textAlign={'center'}\r\n                             height={'auto'}\r\n                             sx={{\r\n-            '@media (max-width: 900px)': {\r\n-              fontSize: '36px',\r\n-              lineHeight: '40px',\r\n+                              '@media (max-width: 900px)': {\r\n+                               fontSize: '36px',\r\n+                               lineHeight: '40px',\r\n             },\r\n             '@media (max-width: 600px)': {\r\n               fontSize: '24px',\r\n               lineHeight: '28px',\r\n"
+                },
+                {
+                    "date": 1734938141633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n                             sx={{\r\n                               '@media (max-width: 900px)': {\r\n                                fontSize: '36px',\r\n                                lineHeight: '40px',\r\n-            },\r\n+                                },\r\n             '@media (max-width: 600px)': {\r\n               fontSize: '24px',\r\n               lineHeight: '28px',\r\n             },\r\n@@ -57,8 +57,9 @@\n           <Swiper\r\n             modules={[Navigation, Pagination, Scrollbar, Autoplay]}\r\n             spaceBetween={50}\r\n             slidesPerView={3}\r\n+            bre\r\n             autoplay={{ delay: 2500, disableOnInteraction: false }}\r\n             navigation\r\n             pagination={{ clickable: false }}\r\n             scrollbar={{ draggable: true }}\r\n"
+                },
+                {
+                    "date": 1734938147707,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,8 @@\n           <Swiper\r\n             modules={[Navigation, Pagination, Scrollbar, Autoplay]}\r\n             spaceBetween={50}\r\n             slidesPerView={3}\r\n-            bre\r\n             autoplay={{ delay: 2500, disableOnInteraction: false }}\r\n             navigation\r\n             pagination={{ clickable: false }}\r\n             scrollbar={{ draggable: true }}\r\n"
+                },
+                {
+                    "date": 1734938177351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,9 +73,9 @@\n                 slidesPerView: 1,\r\n                 spaceBetween: 10,\r\n               },\r\n               900: {\r\n-                slidesPerView: 2,\r\n+                slidesPerView: 3,\r\n                 spaceBetween: 20,\r\n               },\r\n               1200: {\r\n                 slidesPerView: 3,\r\n"
+                },
+                {
+                    "date": 1734938305057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,9 +68,9 @@\n               width: '100%', \r\n               height: '100%',\r\n             }}\r\n             breakpoints={{\r\n-              600: {\r\n+              : {\r\n                 slidesPerView: 1,\r\n                 spaceBetween: 10,\r\n               },\r\n               900: {\r\n"
+                },
+                {
+                    "date": 1734938313000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,9 +72,9 @@\n               524: {\r\n                 slidesPerView: 1,\r\n                 spaceBetween: 10,\r\n               },\r\n-              768: {\r\n+              76: {\r\n                 slidesPerView: 3,\r\n                 spaceBetween: 20,\r\n               },\r\n               1200: {\r\n"
+                }
+            ],
+            "date": 1734937889558,
+            "name": "Commit-0",
+            "content": "import React from 'react';\r\nimport { Stack, Typography, Box } from '@mui/material';\r\nimport 'swiper/css'; \r\nimport 'swiper/css/effect-fade';\r\nimport 'swiper/css/pagination';\r\nimport 'swiper/css/autoplay';\r\nimport { Swiper, SwiperSlide } from 'swiper/react';\r\nimport { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper/modules';\r\nimport { premiumToursServices } from '../../Database/db';\r\nimport PremiumItem from './PremiumItem';\r\n\r\nconst PremiumTours = () => {\r\n\r\n  return (\r\n    <Stack height={'730px'}\r\n      width={'100%'}\r\n      padding={'80px 35px'}\r\n      alignItems={'center'}\r\n      justifyContent={'center'}\r\n      bgcolor={'#F97316'}\r\n      boxSizing={'border-box'}\r\n    >\r\n      <Stack\r\n        height={'100%'}\r\n        width={'100%'}\r\n        justifyContent={'space-between'}\r\n        alignItems={'center'}\r\n        paddingX={'20px'}\r\n        gap={'1rem'}\r\n      >\r\n        {/* Title */}\r\n        <Typography\r\n          fontFamily={'Poppins'}\r\n          width={'95%'}\r\n          fontSize={'48px'}\r\n          lineHeight={'48px'}\r\n          fontWeight={'bold'}\r\n          textAlign={'center'}\r\n          height={'auto'}\r\n          sx={{\r\n            '@media (max-width: 900px)': {\r\n              fontSize: '36px',\r\n              lineHeight: '40px',\r\n            },\r\n            '@media (max-width: 600px)': {\r\n              fontSize: '24px',\r\n              lineHeight: '28px',\r\n            },\r\n          }}\r\n        >\r\n          Bizning Premium Turlarimizni Kashf Etish\r\n        </Typography>\r\n\r\n        {/* Slider */}\r\n        <Box display={'flex'} \r\n             alignItems={'center'} \r\n             justifyContent={'center'} \r\n             height={'384px'} \r\n             width={'100%'}\r\n             padding={'0.5rem'}>\r\n          <Swiper\r\n            modules={[Navigation, Pagination, Scrollbar, Autoplay]}\r\n            spaceBetween={50}\r\n            slidesPerView={3}\r\n            autoplay={{ delay: 2500, disableOnInteraction: false }}\r\n            navigation\r\n            pagination={{ clickable: false }}\r\n            scrollbar={{ draggable: true }}\r\n            loop={true}\r\n            style={{\r\n              position: 'relative',\r\n              width: '100%', \r\n              height: '100%',\r\n            }}\r\n            breakpoints={{\r\n              600: {\r\n                slidesPerView: 1,\r\n                spaceBetween: 10,\r\n              },\r\n              900: {\r\n                slidesPerView: 2,\r\n                spaceBetween: 20,\r\n              },\r\n              1200: {\r\n                slidesPerView: 3,\r\n                spaceBetween: 50,\r\n              },\r\n            }}\r\n          >\r\n            {\r\n              premiumToursServices?.map((tour, idx) => {\r\n                return (\r\n                  <SwiperSlide key={idx}>\r\n                    <PremiumItem tour={tour} />\r\n                  </SwiperSlide>\r\n                );\r\n              })\r\n            }\r\n          </Swiper>\r\n        </Box>\r\n      </Stack>\r\n    </Stack>\r\n  );\r\n};\r\n\r\nexport default PremiumTours;\r\n"
+        }
+    ]
+}
