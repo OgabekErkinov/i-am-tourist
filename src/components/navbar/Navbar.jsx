@@ -1,50 +1,75 @@
-import { Avatar,Button,Icon,Link, List, ListItem, Stack } from "@mui/material"
-import Lists from "./Lists"
-import { navLinks, social_medias } from "../../Database/db"
-import { Image, WbSunny } from "@mui/icons-material"
-
+import { Box, Stack, useMediaQuery } from "@mui/material";
+import { navLinks } from "../../Database/db";
+import NavbarItem from "./NavbarItem";
+import LightDarkButton from "./LightDarkButton";
+import LanguageButton from "./LanguageButton";
+import SocialNetworks from "./SocialNetworks";
+import Logo from "./Logo";
+import SectionsLinks from "./SectionsLinks";
 
 const Navbar = () => {
+  // Media query for large screen
+  const lgScreen = useMediaQuery('(min-width : 767px)');
+
   return (
-      <Stack direction={'row'}
-             justifyContent={'space-between'}
-             alignItems={'center'}
-             width={'100%'}
-             height={'65px'}
-             paddingX={'8%'}
-             boxSizing={'border-box'}
-             bgcolor={'rgb(17 24 39 )'}
-             >
-             {/* Logo */}
-               <Link href = '/'>
-                  <Avatar src="https://www.ifly.com.uz/assets/logo-BPA5zOgc.png"/>
-               </Link>
+    <Box 
+      width="100%"
+      height="10vh"
+      paddingX="5%" 
+      boxSizing="border-box"
+      bgcolor="rgba(17,24,39, 0.1)"
+      position="fixed"
+      top={0}
+      zIndex={2}
+      sx={{
+        backdropFilter: 'blur(5px)',
+      }}
+    >
+      <Box width="100%" height="100%" paddingX="8px">
+        <Stack
+          width="100%"
+          height="100%"
+          direction="row"
+          justifyContent="space-between"
+          alignItems="center"
+        >
+          {/* .............Logo................................................. */}
+          <Logo />
 
-               {/* Main navigation */}
-               <Stack direction={'row'}
-                       justifyContent={'space-between'}
-                       alignItems={'center'}
-                       width={'70%'}>
-              
-               {/* Sections' menu */}
-               <Lists array={navLinks}/>
+          {/* .............Sections' Links....................................... */}
+          <SectionsLinks />
 
-               <Stack direction={'row'}
-                      justifyContent={'space-between'}>
-                         {/* social medias' icons */}
-               <Lists array={social_medias}/>
+          {/* ..............Buttons.............................................. */}
+          <Stack
+            direction="row"
+            justifyContent="space-between"
+            alignItems="center"
+            gap="1rem"
+            height="40px"
+            width={lgScreen ? '450px' : 'auto'} 
+            sx={{
+              flexWrap: 'wrap', 
+              justifyContent: lgScreen ? 'space-between' : 'center', 
+            }}
+          >
+            <SocialNetworks />
 
-{/* Changing language and burger */}
-<Button sx={{fontSize : '12px', fontFamily : 'Poppins', display : 'flex', alignItems : 'center', gap : '5px', height : '2.5rem'}}><img src="/united-states.png" style={{height : '100%', width : 'auto'}}/> English</Button>
+            <Stack
+              direction="row"
+              justifyContent="center"
+              gap="10px"
+            >
+              {/*...........Changing Language............................................. */}
+              <LanguageButton />
 
-        <WbSunny color="orange"/> 
+              {/* ............Light or Dark Button.................................. */}
+              <LightDarkButton />
+            </Stack>
+          </Stack>
+        </Stack>
+      </Box>
+    </Box>
+  );
+};
 
-               </Stack>
-
-               </Stack>
-              
-       </Stack>
-  )
-}
-
-export default Navbar
+export default Navbar;

@@ -1,0 +1,1 @@
+export const rootBackground = document.body.style.backgroundColor

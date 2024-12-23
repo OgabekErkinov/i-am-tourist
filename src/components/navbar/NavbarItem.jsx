@@ -5,12 +5,11 @@ const NavbarItem = ({url, pathD, name}) => {
       <Link href = {url}
              sx={{
               color : 'white',
-              fontWeight : 'medium',
-              fontSize : '22px',
+              cursor : 'pointer',
               textDecoration : 'none',
               margin : 0,
               padding : 0,
-              boxSizing : 'border-box'
+              boxSizing : 'border-box',
              }}>
               {pathD ? <svg stroke="currentColor" 
                             fill="currentColor" 

@@ -1,3 +1,7 @@
+import { FaHotel, FaPlane } from "react-icons/fa"
+import { GrLocation } from "react-icons/gr"
+import { IoMdContacts } from "react-icons/io"
+
 export const social_medias = [
     {
         id : 1,
@@ -53,3 +57,157 @@ export const navLinks = [
         link : '#contact'
     }
 ]
+
+export const SliderItems = [
+    {
+        url : '/malakali.jpg',
+        heading : 'Malakali shahar',
+        paragraph : "Dunyoning ko'ngilochar poytaxtiga sho'ng'ing."
+    },
+    {
+        url : '/turkiya.jpg',
+        heading : 'Sehrli Turkiya',
+        paragraph : "Turkiyaning boy tarixi va ajoyib manzaralarini o'rganing."
+    },
+    {
+        url : '/orol.jpg',
+        heading : 'Orol chekinishi',
+        paragraph : 'Ajoyib orol landshaftlari orasida tinchlikni his eting.'
+    },
+    {
+        url : '/yaponiya.jpg',
+        heading : 'Yaponiya',
+        paragraph : "Zamonaviy hayot va qadimiy an'analar mamlakati"
+    },
+    {
+        url : '/dubai.jpg',
+        heading : "Dubayni kashf eting",
+        paragraph : "Birlashgan Arab Amirliklarida hashamat, innovatsiyalar va sarguzashtlarni kashf eting."
+
+    },
+    {
+        url : '/xitoyni.jpg',
+        heading : 'Xitoyni kashf qiling',
+        paragraph : "Xitoy: qadimgi tarix, Buyuk devor, innovatsiyalar, jonli madaniyat."
+    },
+    {
+        url : '/tailand.jpg',
+        heading : 'Tropik Tailand',
+        paragraph : "Chiroyli plyajlarda dam oling va mazali taomlarni tatib ko'ring."
+    }
+]
+
+export const addBanners = [
+    {
+        heading : 'Ajoyib plyaj',
+        paragraph : 'Zamonaviy plyajlarni kashf eting va quyosh ostida dam oling.'
+    },
+    {
+        heading : "Tog' sarguzashtlari",
+        paragraph : "Qiziqarli tog' sayohatiga chiqing va tabiatni o'rganing."
+    },
+    {
+        heading : 'Shahar sayohatlari',
+        paragraph : "Qiziqarli tog' sayohatiga chiqing va tabiatni o'rganing."
+    }
+]
+
+export const languages = [
+    {
+        lang : "o'zbek",
+        flag : '/uzbekistan.png'
+    },
+    {
+        lang : 'english',
+        flag : '/united-states.png'
+    },
+    {
+        lang : 'русский',
+        flag : '/russia.png'
+    }
+]
+
+export const premiumToursServices = [
+    {
+        title : 'Tokio Sarguzashtlari',
+        paragraph : "Yaponiya yuragida an'ana va texnologiyaning uyg'unligini his eting.",
+        image : '/tokioprem.jpg'
+    },
+    {
+        title : 'Dubay Muxlislari',
+        paragraph : "Dubaynig kelajakdagi siluetini va hashamatini ko'ring.",
+        image : '/dubaipremium.jpg'
+    },
+    {
+        title : 'Xitoyni Kashf Etish',
+        paragraph : "Sevgi shahrini kashf eting, madaniyati, san'ati va taomi bilan mashhur.",
+        image : '/xitoyprem.jpg'
+    },
+    {
+        title : 'Yaponiya',
+        paragraph : "Yaponiya – bu sizning barcha sayohat orzularingizni ro'yobga chiqaradigan mamlakat.",
+        image : '/xitoypremium.jpg'
+    }
+]
+
+export const tourPlaces = [
+    {
+        image : '/yaponiya.jpg',
+        title : 'Tokio, Yaponiya',
+        paragraph : "Tokio Yaponiya poytaxti bo'lib, an'anaviy binolarni zamonaviy osmono'parlar bilan birlashtirish."
+    },
+    {
+        image : '/orol.jpg',
+        title : 'Orol joyi',
+        paragraph : "Shahar shovqinidan uzoqda, tabiatning ajoyib go'zalligida dam oling."
+    },
+    {
+        image : '/dubai.jpg',
+        title : 'Dubay, BAA',
+        paragraph : "Dubayning hargi skylinesi va hashamatini guvohi boling."
+    },
+    {
+        image : '/vetnam.jpg',
+        title : 'Vetnam sarguzashti',
+        paragraph : "Vetnamning go'zalligiga kirib boring, rang- barang guruch teraslari va noyob madaniyat bilan tanishing!"
+    },
+    {
+        image : '/maldiv.jpg',
+        title : 'Maldivlar',
+        paragraph : "Oq qumli plyajlar va toza suvlar bilan tropik jannatda dam oling. Hashamatli kurortlar va ajoyib suv osti dunyosidan zavq oling!"
+    },
+    {
+        image : '/tailand.jpg',
+        title : 'Tropik Tailand',
+        paragraph : "Tailand chiroyli orollari, ko'chada oziq-ovqat va boy madaniyat merosi bilan mashhur."
+    },
+    {
+        image : '/turkiya.jpg',
+        title : "Mo'jizaviy Turkiya",
+        paragraph : "Turkiyaning boy tarixini va go'zal manzaralarini kashf eting."
+    }
+]
+
+// export const aboutServices = [
+//     {
+//         icon : <FaPlane color="blue"/>,
+//         title : 'Xalqaro Sayohat',
+//         paragraph : "Dunyodagi eng go'zal joylarga sayohatlarni tashkil etamiz."
+//     },
+//     {
+//         icon : <FaHotel color="green"/>,
+//         title : 'Qulay Mehmonxonalar',
+//         paragraph : " Eng yaxshi va eng qulay mehmonxonalar bilan qoling."
+//     },
+//     {
+//         icon : <GrLocation color="orange"/>,
+//         title : "Maxsus yo'nalishlar",
+//         paragraph : "Har bir mijoz uchun individual yo'nalishlarni yaratamiz."
+//     },
+//     {
+//         icon : <IoMdContacts color="violet"/>,
+//         title : "Malakali yo'riqchilar",
+//         paragraph : " Har bir mijoz uchun individual yo'nalishlarni yaratamiz."
+//     }
+    
+// ]
