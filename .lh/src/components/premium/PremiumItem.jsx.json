@@ -1,0 +1,406 @@
+{
+    "sourceFile": "src/components/premium/PremiumItem.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 97,
+            "patches": [
+                {
+                    "date": 1735037075351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1735037082473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\r\n \r\n const PremiumItem = ({ tour }) => {\r\n   return (\r\n-    <Box height=\"90%\"\r\n+    <Box height=\"95%\"\r\n          display=\"flex\"\r\n          justifyContent=\"center\"\r\n          alignItems=\"center\"\r\n          borderRadius=\"12px\"\r\n"
+                },
+                {
+                    "date": 1735037096164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,8 @@\n          alignItems=\"center\"\r\n          borderRadius=\"12px\"\r\n          overflow=\"hidden\"\r\n          position=\"relative\"\r\n-         \r\n          sx={{\r\n              transition : '0.3s',\r\n             backgroundImage: `url(${tour?.image})`,\r\n             backgroundSize: 'cover',\r\n"
+                },
+                {
+                    "date": 1735037102654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,10 @@\n          overflow=\"hidden\"\r\n          position=\"relative\"\r\n          sx={{\r\n              transition : '0.3s',\r\n-            backgroundImage: `url(${tour?.image})`,\r\n-            backgroundSize: 'cover',\r\n+             backgroundImage: `url(${tour?.image})`,\r\n+             backgroundSize: 'cover',\r\n            '@media(min-width : 300px)' : {\r\n                    width : '300px',\r\n                    marginX : 'auto'\r\n                                          },\r\n"
+                },
+                {
+                    "date": 1735037109624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,10 @@\n          sx={{\r\n              transition : '0.3s',\r\n              backgroundImage: `url(${tour?.image})`,\r\n              backgroundSize: 'cover',\r\n-           '@media(min-width : 300px)' : {\r\n-                   width : '300px',\r\n+             '@media(min-width : 300px)' : {\r\n+                         width : '300px',\r\n                    marginX : 'auto'\r\n                                          },\r\n            '@media(min-width : 524px)' : {\r\n                    width : '300px'\r\n"
+                },
+                {
+                    "date": 1735037117144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,9 @@\n              backgroundImage: `url(${tour?.image})`,\r\n              backgroundSize: 'cover',\r\n              '@media(min-width : 300px)' : {\r\n                          width : '300px',\r\n-                   marginX : 'auto'\r\n-                                         },\r\n+                         marginX : 'auto' },\r\n            '@media(min-width : 524px)' : {\r\n                    width : '300px'\r\n                                          },\r\n             \r\n"
+                },
+                {
+                    "date": 1735037124883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,11 +15,11 @@\n              backgroundImage: `url(${tour?.image})`,\r\n              backgroundSize: 'cover',\r\n              '@media(min-width : 300px)' : {\r\n                          width : '300px',\r\n-                         marginX : 'auto' },\r\n-           '@media(min-width : 524px)' : {\r\n-                   width : '300px'\r\n+                         marginX : 'auto'  },\r\n+             '@media(min-width : 524px)' : {\r\n+                         width : '300px'\r\n                                          },\r\n             \r\n             \r\n               }} >\r\n"
+                },
+                {
+                    "date": 1735037134406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,13 +17,10 @@\n              '@media(min-width : 300px)' : {\r\n                          width : '300px',\r\n                          marginX : 'auto'  },\r\n              '@media(min-width : 524px)' : {\r\n-                         width : '300px'\r\n-                                         },\r\n-            \r\n-            \r\n-              }} >\r\n+                         width : '300px' },\r\n+             }} >\r\n       <Stack\r\n         height=\"100%\"\r\n         width=\"100%\"\r\n         padding=\"2rem 0\"\r\n"
+                },
+                {
+                    "date": 1735037146426,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n                          width : '300px',\r\n                          marginX : 'auto'  },\r\n              '@media(min-width : 524px)' : {\r\n                          width : '300px' },\r\n-             }} >\r\n+                          }} >\r\n       <Stack\r\n         height=\"100%\"\r\n         width=\"100%\"\r\n         padding=\"2rem 0\"\r\n"
+                },
+                {
+                    "date": 1735037152904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n                          width : '300px',\r\n                          marginX : 'auto'  },\r\n              '@media(min-width : 524px)' : {\r\n                          width : '300px' },\r\n-                          }} >\r\n+              '&' }} >\r\n       <Stack\r\n         height=\"100%\"\r\n         width=\"100%\"\r\n         padding=\"2rem 0\"\r\n"
+                },
+                {
+                    "date": 1735037162275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,11 @@\n                          width : '300px',\r\n                          marginX : 'auto'  },\r\n              '@media(min-width : 524px)' : {\r\n                          width : '300px' },\r\n-              '&' }} >\r\n+              '&:hover' : {\r\n+                sca\r\n+              } }} >\r\n       <Stack\r\n         height=\"100%\"\r\n         width=\"100%\"\r\n         padding=\"2rem 0\"\r\n"
+                },
+                {
+                    "date": 1735037169508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,10 @@\n                          marginX : 'auto'  },\r\n              '@media(min-width : 524px)' : {\r\n                          width : '300px' },\r\n               '&:hover' : {\r\n-                sca\r\n+                scale : 1.1,\r\n+                \r\n               } }} >\r\n       <Stack\r\n         height=\"100%\"\r\n         width=\"100%\"\r\n"
+                },
+                {
+                    "date": 1735037178260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n              '@media(min-width : 524px)' : {\r\n                          width : '300px' },\r\n               '&:hover' : {\r\n                 scale : 1.1,\r\n-                \r\n+                transition : '0.3s'\r\n               } }} >\r\n       <Stack\r\n         height=\"100%\"\r\n         width=\"100%\"\r\n"
+                },
+                {
+                    "date": 1735037227527,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n               '&:hover' : {\r\n                 scale : 1.1,\r\n                 transition : '0.3s'\r\n               } }} >\r\n-      <Stack\r\n+           <Stack\r\n         height=\"100%\"\r\n         width=\"100%\"\r\n         padding=\"2rem 0\"\r\n         boxSizing=\"border-box\"\r\n"
+                },
+                {
+                    "date": 1735037233256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,10 +22,9 @@\n               '&:hover' : {\r\n                 scale : 1.1,\r\n                 transition : '0.3s'\r\n               } }} >\r\n-           <Stack\r\n-        height=\"100%\"\r\n+         <Stack height=\"100%\"\r\n         width=\"100%\"\r\n         padding=\"2rem 0\"\r\n         boxSizing=\"border-box\"\r\n         borderRadius=\"12px\"\r\n"
+                },
+                {
+                    "date": 1735037239533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,10 +23,10 @@\n                 scale : 1.1,\r\n                 transition : '0.3s'\r\n               } }} >\r\n          <Stack height=\"100%\"\r\n-        width=\"100%\"\r\n-        padding=\"2rem 0\"\r\n+                width=\"100%\"\r\n+                padding=\"2rem 0\"\r\n         boxSizing=\"border-box\"\r\n         borderRadius=\"12px\"\r\n         alignItems=\"center\"\r\n         bgcolor=\"rgba(0, 0, 0, 0.5)\"\r\n"
+                },
+                {
+                    "date": 1735037247127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,10 +25,10 @@\n               } }} >\r\n          <Stack height=\"100%\"\r\n                 width=\"100%\"\r\n                 padding=\"2rem 0\"\r\n-        boxSizing=\"border-box\"\r\n-        borderRadius=\"12px\"\r\n+                boxSizing=\"border-box\"\r\n+                borderRadius=\"12px\"\r\n         alignItems=\"center\"\r\n         bgcolor=\"rgba(0, 0, 0, 0.5)\"\r\n         position=\"absolute\"\r\n         zIndex={1}\r\n"
+                },
+                {
+                    "date": 1735037279400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n                          marginX : 'auto'  },\r\n              '@media(min-width : 524px)' : {\r\n                          width : '300px' },\r\n               '&:hover' : {\r\n-                scale : 1.1,\r\n+                tra\r\n                 transition : '0.3s'\r\n               } }} >\r\n          <Stack height=\"100%\"\r\n                 width=\"100%\"\r\n"
+                },
+                {
+                    "date": 1735037285803,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n                          marginX : 'auto'  },\r\n              '@media(min-width : 524px)' : {\r\n                          width : '300px' },\r\n               '&:hover' : {\r\n-                tra\r\n+                transform : scale\r\n                 transition : '0.3s'\r\n               } }} >\r\n          <Stack height=\"100%\"\r\n                 width=\"100%\"\r\n"
+                },
+                {
+                    "date": 1735037292017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n                          marginX : 'auto'  },\r\n              '@media(min-width : 524px)' : {\r\n                          width : '300px' },\r\n               '&:hover' : {\r\n-                transform : scale\r\n+                transform : Scale(1.1),\r\n                 transition : '0.3s'\r\n               } }} >\r\n          <Stack height=\"100%\"\r\n                 width=\"100%\"\r\n"
+                },
+                {
+                    "date": 1735037306215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n                          marginX : 'auto'  },\r\n              '@media(min-width : 524px)' : {\r\n                          width : '300px' },\r\n               '&:hover' : {\r\n-                transform : Scale(1.1),\r\n+                transform : 'scale(1.1),\r\n                 transition : '0.3s'\r\n               } }} >\r\n          <Stack height=\"100%\"\r\n                 width=\"100%\"\r\n"
+                },
+                {
+                    "date": 1735037346080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\r\n \r\n const PremiumItem = ({ tour }) => {\r\n   return (\r\n-    <Box height=\"95%\"\r\n+    <Box height=\"90%\"\r\n          display=\"flex\"\r\n          justifyContent=\"center\"\r\n          alignItems=\"center\"\r\n          borderRadius=\"12px\"\r\n@@ -19,9 +19,9 @@\n                          marginX : 'auto'  },\r\n              '@media(min-width : 524px)' : {\r\n                          width : '300px' },\r\n               '&:hover' : {\r\n-                transform : 'scale(1.1),\r\n+                transform : 'scale(1.1)',\r\n                 transition : '0.3s'\r\n               } }} >\r\n          <Stack height=\"100%\"\r\n                 width=\"100%\"\r\n"
+                },
+                {
+                    "date": 1735037481177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,10 @@\n              '@media(min-width : 524px)' : {\r\n                          width : '300px' },\r\n               '&:hover' : {\r\n                 transform : 'scale(1.1)',\r\n-                transition : '0.3s'\r\n+                transition : '0.3s',\r\n+                zi\r\n               } }} >\r\n          <Stack height=\"100%\"\r\n                 width=\"100%\"\r\n                 padding=\"2rem 0\"\r\n"
+                },
+                {
+                    "date": 1735037500519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,10 @@\n                          width : '300px' },\r\n               '&:hover' : {\r\n                 transform : 'scale(1.1)',\r\n                 transition : '0.3s',\r\n-                zi\r\n+                zIndex : 2,\r\n+                position : 'absolute'\r\n               } }} >\r\n          <Stack height=\"100%\"\r\n                 width=\"100%\"\r\n                 padding=\"2rem 0\"\r\n"
+                },
+                {
+                    "date": 1735037510185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,10 +21,8 @@\n                          width : '300px' },\r\n               '&:hover' : {\r\n                 transform : 'scale(1.1)',\r\n                 transition : '0.3s',\r\n-                zIndex : 2,\r\n-                position : 'absolute'\r\n               } }} >\r\n          <Stack height=\"100%\"\r\n                 width=\"100%\"\r\n                 padding=\"2rem 0\"\r\n"
+                },
+                {
+                    "date": 1735037516125,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\r\n \r\n const PremiumItem = ({ tour }) => {\r\n   return (\r\n-    <Box height=\"90%\"\r\n+    <Box height=\"80%\"\r\n          display=\"flex\"\r\n          justifyContent=\"center\"\r\n          alignItems=\"center\"\r\n          borderRadius=\"12px\"\r\n"
+                },
+                {
+                    "date": 1735037589096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\r\n \r\n const PremiumItem = ({ tour }) => {\r\n   return (\r\n-    <Box height=\"80%\"\r\n+    <Box height=\"90%\"\r\n          display=\"flex\"\r\n          justifyContent=\"center\"\r\n          alignItems=\"center\"\r\n          borderRadius=\"12px\"\r\n"
+                },
+                {
+                    "date": 1735037656098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n \r\n const PremiumItem = ({ tour }) => {\r\n   return (\r\n     <Box height=\"90%\"\r\n+    width\r\n          display=\"flex\"\r\n          justifyContent=\"center\"\r\n          alignItems=\"center\"\r\n          borderRadius=\"12px\"\r\n"
+                },
+                {
+                    "date": 1735037661568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n const PremiumItem = ({ tour }) => {\r\n   return (\r\n     <Box height=\"90%\"\r\n-    width\r\n+    width=\"auto\"\r\n          display=\"flex\"\r\n          justifyContent=\"center\"\r\n          alignItems=\"center\"\r\n          borderRadius=\"12px\"\r\n"
+                },
+                {
+                    "date": 1735037671250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n const PremiumItem = ({ tour }) => {\r\n   return (\r\n     <Box height=\"90%\"\r\n-    width=\"auto\"\r\n+         \r\n          display=\"flex\"\r\n          justifyContent=\"center\"\r\n          alignItems=\"center\"\r\n          borderRadius=\"12px\"\r\n"
+                },
+                {
+                    "date": 1735037680110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n const PremiumItem = ({ tour }) => {\r\n   return (\r\n     <Box height=\"90%\"\r\n-         \r\n+         maxWidth=\"300px\"\r\n          display=\"flex\"\r\n          justifyContent=\"center\"\r\n          alignItems=\"center\"\r\n          borderRadius=\"12px\"\r\n"
+                },
+                {
+                    "date": 1735037690017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n const PremiumItem = ({ tour }) => {\r\n   return (\r\n     <Box height=\"90%\"\r\n-         maxWidth=\"300px\"\r\n+         width=\"300px\"\r\n          display=\"flex\"\r\n          justifyContent=\"center\"\r\n          alignItems=\"center\"\r\n          borderRadius=\"12px\"\r\n"
+                },
+                {
+                    "date": 1735037708387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n const PremiumItem = ({ tour }) => {\r\n   return (\r\n     <Box height=\"90%\"\r\n-         width=\"300px\"\r\n+         width=\"500px\"\r\n          display=\"flex\"\r\n          justifyContent=\"center\"\r\n          alignItems=\"center\"\r\n          borderRadius=\"12px\"\r\n"
+                },
+                {
+                    "date": 1735037906607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n const PremiumItem = ({ tour }) => {\r\n   return (\r\n     <Box height=\"90%\"\r\n-         width=\"500px\"\r\n+    width=\"auto\"\r\n          display=\"flex\"\r\n          justifyContent=\"center\"\r\n          alignItems=\"center\"\r\n          borderRadius=\"12px\"\r\n"
+                },
+                {
+                    "date": 1735037919765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n \r\n const PremiumItem = ({ tour }) => {\r\n   return (\r\n     <Box height=\"90%\"\r\n-    width=\"auto\"\r\n          display=\"flex\"\r\n          justifyContent=\"center\"\r\n          alignItems=\"center\"\r\n          borderRadius=\"12px\"\r\n@@ -28,9 +27,9 @@\n                 width=\"100%\"\r\n                 padding=\"2rem 0\"\r\n                 boxSizing=\"border-box\"\r\n                 borderRadius=\"12px\"\r\n-        alignItems=\"center\"\r\n+                alignItems=\"center\"\r\n         bgcolor=\"rgba(0, 0, 0, 0.5)\"\r\n         position=\"absolute\"\r\n         zIndex={1}\r\n         sx={{\r\n"
+                },
+                {
+                    "date": 1735037927067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,10 +28,10 @@\n                 padding=\"2rem 0\"\r\n                 boxSizing=\"border-box\"\r\n                 borderRadius=\"12px\"\r\n                 alignItems=\"center\"\r\n-        bgcolor=\"rgba(0, 0, 0, 0.5)\"\r\n-        position=\"absolute\"\r\n+                bgcolor=\"rgba(0, 0, 0, 0.5)\"\r\n+                position=\"absolute\"\r\n         zIndex={1}\r\n         sx={{\r\n           '@media(min-width : 300px)' : {\r\n             justifyContent : 'center',\r\n"
+                },
+                {
+                    "date": 1735037933602,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,10 +30,10 @@\n                 borderRadius=\"12px\"\r\n                 alignItems=\"center\"\r\n                 bgcolor=\"rgba(0, 0, 0, 0.5)\"\r\n                 position=\"absolute\"\r\n-        zIndex={1}\r\n-        sx={{\r\n+                zIndex={1}\r\n+                sx={{\r\n           '@media(min-width : 300px)' : {\r\n             justifyContent : 'center',\r\n             alignItems : 'center',\r\n             paddingX : '1rem',\r\n"
+                },
+                {
+                    "date": 1735037939830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,10 +32,10 @@\n                 bgcolor=\"rgba(0, 0, 0, 0.5)\"\r\n                 position=\"absolute\"\r\n                 zIndex={1}\r\n                 sx={{\r\n-          '@media(min-width : 300px)' : {\r\n-            justifyContent : 'center',\r\n+                  '@media(min-width : 300px)' : {\r\n+                         justifyContent : 'center',\r\n             alignItems : 'center',\r\n             paddingX : '1rem',\r\n             gap : '1rem'\r\n           },\r\n"
+                },
+                {
+                    "date": 1735037948608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,10 +34,10 @@\n                 zIndex={1}\r\n                 sx={{\r\n                   '@media(min-width : 300px)' : {\r\n                          justifyContent : 'center',\r\n-            alignItems : 'center',\r\n-            paddingX : '1rem',\r\n+                         alignItems : 'center',\r\n+                         paddingX : '1rem',\r\n             gap : '1rem'\r\n           },\r\n           '@media(min-width : 524px)' : {\r\n             justifyContent : 'flex-end',\r\n"
+                },
+                {
+                    "date": 1735037956463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,10 +36,9 @@\n                   '@media(min-width : 300px)' : {\r\n                          justifyContent : 'center',\r\n                          alignItems : 'center',\r\n                          paddingX : '1rem',\r\n-            gap : '1rem'\r\n-          },\r\n+                         gap : '1rem' },\r\n           '@media(min-width : 524px)' : {\r\n             justifyContent : 'flex-end',\r\n             alignItems : 'start'\r\n           }\r\n"
+                },
+                {
+                    "date": 1735037965138,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,10 +37,10 @@\n                          justifyContent : 'center',\r\n                          alignItems : 'center',\r\n                          paddingX : '1rem',\r\n                          gap : '1rem' },\r\n-          '@media(min-width : 524px)' : {\r\n-            justifyContent : 'flex-end',\r\n+                  '@media(min-width : 524px)' : {\r\n+                         justifyContent : 'flex-end',\r\n             alignItems : 'start'\r\n           }\r\n         }}\r\n         >\r\n"
+                },
+                {
+                    "date": 1735037972719,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,10 +39,9 @@\n                          paddingX : '1rem',\r\n                          gap : '1rem' },\r\n                   '@media(min-width : 524px)' : {\r\n                          justifyContent : 'flex-end',\r\n-            alignItems : 'start'\r\n-          }\r\n+                         alignItems : 'start' }\r\n         }}\r\n         >\r\n         <Typography\r\n           variant=\"h3\"\r\n"
+                },
+                {
+                    "date": 1735037979174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,11 +39,9 @@\n                          paddingX : '1rem',\r\n                          gap : '1rem' },\r\n                   '@media(min-width : 524px)' : {\r\n                          justifyContent : 'flex-end',\r\n-                         alignItems : 'start' }\r\n-        }}\r\n-        >\r\n+                         alignItems : 'start' } }} >\r\n         <Typography\r\n           variant=\"h3\"\r\n           sx={{\r\n             fontWeight: 'bold',\r\n"
+                },
+                {
+                    "date": 1735037987918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,10 +40,9 @@\n                          gap : '1rem' },\r\n                   '@media(min-width : 524px)' : {\r\n                          justifyContent : 'flex-end',\r\n                          alignItems : 'start' } }} >\r\n-        <Typography\r\n-          variant=\"h3\"\r\n+                 <Typography variant=\"h3\"\r\n           sx={{\r\n             fontWeight: 'bold',\r\n             fontFamily: 'Poppins',\r\n             color: 'white',\r\n"
+                },
+                {
+                    "date": 1735037996692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,10 +41,10 @@\n                   '@media(min-width : 524px)' : {\r\n                          justifyContent : 'flex-end',\r\n                          alignItems : 'start' } }} >\r\n                  <Typography variant=\"h3\"\r\n-          sx={{\r\n-            fontWeight: 'bold',\r\n+                             sx={{\r\n+                               fontWeight: 'bold',\r\n             fontFamily: 'Poppins',\r\n             color: 'white',\r\n             textAlign: 'start',\r\n             paddingRight: '10px',\r\n"
+                },
+                {
+                    "date": 1735038006156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,10 +43,10 @@\n                          alignItems : 'start' } }} >\r\n                  <Typography variant=\"h3\"\r\n                              sx={{\r\n                                fontWeight: 'bold',\r\n-            fontFamily: 'Poppins',\r\n-            color: 'white',\r\n+                               fontFamily: 'Poppins',\r\n+                               color: 'white',\r\n             textAlign: 'start',\r\n             paddingRight: '10px',\r\n             margin: 0,\r\n             width: 'auto',\r\n"
+                },
+                {
+                    "date": 1735038012234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                              sx={{\r\n                                fontWeight: 'bold',\r\n                                fontFamily: 'Poppins',\r\n                                color: 'white',\r\n-            textAlign: 'start',\r\n+                               textAlign: 'start',\r\n             paddingRight: '10px',\r\n             margin: 0,\r\n             width: 'auto',\r\n            \r\n"
+                },
+                {
+                    "date": 1735038019492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,10 +46,10 @@\n                                fontWeight: 'bold',\r\n                                fontFamily: 'Poppins',\r\n                                color: 'white',\r\n                                textAlign: 'start',\r\n-            paddingRight: '10px',\r\n-            margin: 0,\r\n+                               paddingRight: '10px',\r\n+                               margin: 0,\r\n             width: 'auto',\r\n            \r\n             '@media (min-width: 300px)': {\r\n               fontSize: '18px',\r\n"
+                },
+                {
+                    "date": 1735038030877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,11 +48,10 @@\n                                color: 'white',\r\n                                textAlign: 'start',\r\n                                paddingRight: '10px',\r\n                                margin: 0,\r\n-            width: 'auto',\r\n-           \r\n-            '@media (min-width: 300px)': {\r\n+                               width: 'auto',\r\n+                             '@media (min-width: 300px)': {\r\n               fontSize: '18px',\r\n             },\r\n \r\n             '@media (min-width : 524px)' : {\r\n"
+                },
+                {
+                    "date": 1735038036539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,10 +49,10 @@\n                                textAlign: 'start',\r\n                                paddingRight: '10px',\r\n                                margin: 0,\r\n                                width: 'auto',\r\n-                             '@media (min-width: 300px)': {\r\n-              fontSize: '18px',\r\n+                              '@media (min-width: 300px)': {\r\n+                                      fontSize: '18px',\r\n             },\r\n \r\n             '@media (min-width : 524px)' : {\r\n               fontSize : '22px'\r\n"
+                },
+                {
+                    "date": 1735038042626,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,10 +50,9 @@\n                                paddingRight: '10px',\r\n                                margin: 0,\r\n                                width: 'auto',\r\n                               '@media (min-width: 300px)': {\r\n-                                      fontSize: '18px',\r\n-            },\r\n+                                      fontSize: '18px'  },\r\n \r\n             '@media (min-width : 524px)' : {\r\n               fontSize : '22px'\r\n             }\r\n"
+                },
+                {
+                    "date": 1735038048740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,10 +51,9 @@\n                                margin: 0,\r\n                                width: 'auto',\r\n                               '@media (min-width: 300px)': {\r\n                                       fontSize: '18px'  },\r\n-\r\n-            '@media (min-width : 524px)' : {\r\n+                              '@media (min-width : 524px)' : {\r\n               fontSize : '22px'\r\n             }\r\n           }}\r\n         >\r\n"
+                },
+                {
+                    "date": 1735038057876,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,10 +52,9 @@\n                                width: 'auto',\r\n                               '@media (min-width: 300px)': {\r\n                                       fontSize: '18px'  },\r\n                               '@media (min-width : 524px)' : {\r\n-              fontSize : '22px'\r\n-            }\r\n+                                      fontSize : '22px'  }\r\n           }}\r\n         >\r\n           {tour.title}\r\n         </Typography>\r\n"
+                },
+                {
+                    "date": 1735038065831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,11 +52,9 @@\n                                width: 'auto',\r\n                               '@media (min-width: 300px)': {\r\n                                       fontSize: '18px'  },\r\n                               '@media (min-width : 524px)' : {\r\n-                                      fontSize : '22px'  }\r\n-          }}\r\n-        >\r\n+                                      fontSize : '22px'  }  }}  >\r\n           {tour.title}\r\n         </Typography>\r\n         <Typography\r\n           width=\"auto\"\r\n"
+                },
+                {
+                    "date": 1735038075381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,10 +53,10 @@\n                               '@media (min-width: 300px)': {\r\n                                       fontSize: '18px'  },\r\n                               '@media (min-width : 524px)' : {\r\n                                       fontSize : '22px'  }  }}  >\r\n-          {tour.title}\r\n-        </Typography>\r\n+                               {tour.title}\r\n+                  </Typography>\r\n         <Typography\r\n           width=\"auto\"\r\n           sx={{\r\n             color: 'white',\r\n"
+                },
+                {
+                    "date": 1735038080813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n                               '@media (min-width : 524px)' : {\r\n                                       fontSize : '22px'  }  }}  >\r\n                                {tour.title}\r\n                   </Typography>\r\n-        <Typography\r\n+                  <Typography\r\n           width=\"auto\"\r\n           sx={{\r\n             color: 'white',\r\n             textAlign: 'start',\r\n"
+                },
+                {
+                    "date": 1735038087886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,11 +55,10 @@\n                               '@media (min-width : 524px)' : {\r\n                                       fontSize : '22px'  }  }}  >\r\n                                {tour.title}\r\n                   </Typography>\r\n-                  <Typography\r\n-          width=\"auto\"\r\n-          sx={{\r\n+                  <Typography width=\"auto\"\r\n+                              sx={{\r\n             color: 'white',\r\n             textAlign: 'start',\r\n             \r\n             '@media (min-width: 300px)': {\r\n"
+                },
+                {
+                    "date": 1735038097065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,10 +57,10 @@\n                                {tour.title}\r\n                   </Typography>\r\n                   <Typography width=\"auto\"\r\n                               sx={{\r\n-            color: 'white',\r\n-            textAlign: 'start',\r\n+                                color: 'white',\r\n+                                textAlign: 'start',\r\n             \r\n             '@media (min-width: 300px)': {\r\n               fontSize: '12px',\r\n               height : 'auto',\r\n"
+                },
+                {
+                    "date": 1735038104872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,10 +59,9 @@\n                   <Typography width=\"auto\"\r\n                               sx={{\r\n                                 color: 'white',\r\n                                 textAlign: 'start',\r\n-            \r\n-            '@media (min-width: 300px)': {\r\n+                               '@media (min-width: 300px)': {\r\n               fontSize: '12px',\r\n               height : 'auto',\r\n               textAlign : 'center'\r\n             },\r\n"
+                },
+                {
+                    "date": 1735038110697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n                               sx={{\r\n                                 color: 'white',\r\n                                 textAlign: 'start',\r\n                                '@media (min-width: 300px)': {\r\n-              fontSize: '12px',\r\n+                                        fontSize: '12px',\r\n               height : 'auto',\r\n               textAlign : 'center'\r\n             },\r\n             '@media (min-width : 524px)' : {\r\n"
+                },
+                {
+                    "date": 1735038119765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,10 +61,10 @@\n                                 color: 'white',\r\n                                 textAlign: 'start',\r\n                                '@media (min-width: 300px)': {\r\n                                         fontSize: '12px',\r\n-              height : 'auto',\r\n-              textAlign : 'center'\r\n+                                        height : 'auto',\r\n+                                        textAlign : 'center'\r\n             },\r\n             '@media (min-width : 524px)' : {\r\n               fontSize : '16px',\r\n               textAlign : 'start'\r\n"
+                },
+                {
+                    "date": 1735038128564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,11 +62,10 @@\n                                 textAlign: 'start',\r\n                                '@media (min-width: 300px)': {\r\n                                         fontSize: '12px',\r\n                                         height : 'auto',\r\n-                                        textAlign : 'center'\r\n-            },\r\n-            '@media (min-width : 524px)' : {\r\n+                                        textAlign : 'center' },\r\n+                                 '@media (min-width : 524px)' : {\r\n               fontSize : '16px',\r\n               textAlign : 'start'\r\n             }\r\n           }}>\r\n"
+                },
+                {
+                    "date": 1735038133758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,10 +63,10 @@\n                                '@media (min-width: 300px)': {\r\n                                         fontSize: '12px',\r\n                                         height : 'auto',\r\n                                         textAlign : 'center' },\r\n-                                 '@media (min-width : 524px)' : {\r\n-              fontSize : '16px',\r\n+                                '@media (min-width : 524px)' : {\r\n+                                        fontSize : '16px',\r\n               textAlign : 'start'\r\n             }\r\n           }}>\r\n           {tour.paragraph}\r\n"
+                },
+                {
+                    "date": 1735038138929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n                                         height : 'auto',\r\n                                         textAlign : 'center' },\r\n                                 '@media (min-width : 524px)' : {\r\n                                         fontSize : '16px',\r\n-              textAlign : 'start'\r\n+                                        textAlign : 'start'\r\n             }\r\n           }}>\r\n           {tour.paragraph}\r\n         </Typography>\r\n"
+                },
+                {
+                    "date": 1735038147138,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,11 +65,9 @@\n                                         height : 'auto',\r\n                                         textAlign : 'center' },\r\n                                 '@media (min-width : 524px)' : {\r\n                                         fontSize : '16px',\r\n-                                        textAlign : 'start'\r\n-            }\r\n-          }}>\r\n+                                        textAlign : 'start' } }}>\r\n           {tour.paragraph}\r\n         </Typography>\r\n         <Button\r\n           variant=\"contained\"\r\n"
+                },
+                {
+                    "date": 1735038152613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,9 @@\n                                         textAlign : 'center' },\r\n                                 '@media (min-width : 524px)' : {\r\n                                         fontSize : '16px',\r\n                                         textAlign : 'start' } }}>\r\n-          {tour.paragraph}\r\n+                                        {tour.paragraph}\r\n         </Typography>\r\n         <Button\r\n           variant=\"contained\"\r\n           sx={{\r\n"
+                },
+                {
+                    "date": 1735038161608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,10 +67,10 @@\n                                 '@media (min-width : 524px)' : {\r\n                                         fontSize : '16px',\r\n                                         textAlign : 'start' } }}>\r\n                                         {tour.paragraph}\r\n-        </Typography>\r\n-        <Button\r\n+                   </Typography>\r\n+                  <Button\r\n           variant=\"contained\"\r\n           sx={{\r\n             color: 'white',\r\n             backgroundColor: '#FF7518',\r\n"
+                },
+                {
+                    "date": 1735038167883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,10 +68,9 @@\n                                         fontSize : '16px',\r\n                                         textAlign : 'start' } }}>\r\n                                         {tour.paragraph}\r\n                    </Typography>\r\n-                  <Button\r\n-          variant=\"contained\"\r\n+                   <Button variant=\"contained\"\r\n           sx={{\r\n             color: 'white',\r\n             backgroundColor: '#FF7518',\r\n             width : '80%',\r\n"
+                },
+                {
+                    "date": 1735038175297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,10 +69,10 @@\n                                         textAlign : 'start' } }}>\r\n                                         {tour.paragraph}\r\n                    </Typography>\r\n                    <Button variant=\"contained\"\r\n-          sx={{\r\n-            color: 'white',\r\n+                           sx={{\r\n+                              color: 'white',\r\n             backgroundColor: '#FF7518',\r\n             width : '80%',\r\n             margin : '0 auto'\r\n           }}>\r\n"
+                },
+                {
+                    "date": 1735038183053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,10 +71,10 @@\n                    </Typography>\r\n                    <Button variant=\"contained\"\r\n                            sx={{\r\n                               color: 'white',\r\n-            backgroundColor: '#FF7518',\r\n-            width : '80%',\r\n+                              backgroundColor: '#FF7518',\r\n+                              width : '80%',\r\n             margin : '0 auto'\r\n           }}>\r\n           Biz bilan bog'laning\r\n         </Button>\r\n"
+                },
+                {
+                    "date": 1735038190893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,10 +73,9 @@\n                            sx={{\r\n                               color: 'white',\r\n                               backgroundColor: '#FF7518',\r\n                               width : '80%',\r\n-            margin : '0 auto'\r\n-          }}>\r\n+                              margin : '0 auto' }}>\r\n           Biz bilan bog'laning\r\n         </Button>\r\n       </Stack>\r\n     </Box>\r\n"
+                },
+                {
+                    "date": 1735038198898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,10 +74,10 @@\n                               color: 'white',\r\n                               backgroundColor: '#FF7518',\r\n                               width : '80%',\r\n                               margin : '0 auto' }}>\r\n-          Biz bilan bog'laning\r\n-        </Button>\r\n+                           Biz bilan bog'laning\r\n+                    </Button>\r\n       </Stack>\r\n     </Box>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1735038224308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\r\n \r\n const PremiumItem = ({ tour }) => {\r\n   return (\r\n-    <Box height=\"90%\"\r\n+    <Box height=\"25rem\"\r\n          display=\"flex\"\r\n          justifyContent=\"center\"\r\n          alignItems=\"center\"\r\n          borderRadius=\"12px\"\r\n@@ -75,9 +75,9 @@\n                               backgroundColor: '#FF7518',\r\n                               width : '80%',\r\n                               margin : '0 auto' }}>\r\n                            Biz bilan bog'laning\r\n-                    </Button>\r\n+                  </Button>\r\n       </Stack>\r\n     </Box>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1735038439967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n \r\n const PremiumItem = ({ tour }) => {\r\n   return (\r\n     <Box height=\"25rem\"\r\n+    width\r\n          display=\"flex\"\r\n          justifyContent=\"center\"\r\n          alignItems=\"center\"\r\n          borderRadius=\"12px\"\r\n"
+                },
+                {
+                    "date": 1735038445856,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n const PremiumItem = ({ tour }) => {\r\n   return (\r\n     <Box height=\"25rem\"\r\n-    width\r\n+    width='100%'\r\n          display=\"flex\"\r\n          justifyContent=\"center\"\r\n          alignItems=\"center\"\r\n          borderRadius=\"12px\"\r\n"
+                },
+                {
+                    "date": 1735038456903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n \r\n const PremiumItem = ({ tour }) => {\r\n   return (\r\n     <Box height=\"25rem\"\r\n-    width='100%'\r\n          display=\"flex\"\r\n          justifyContent=\"center\"\r\n          alignItems=\"center\"\r\n          borderRadius=\"12px\"\r\n"
+                },
+                {
+                    "date": 1735038510084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n          sx={{\r\n              transition : '0.3s',\r\n              backgroundImage: `url(${tour?.image})`,\r\n              backgroundSize: 'cover',\r\n-             '@media(min-width : 300px)' : {\r\n+             '@media(max-width : 300px)' : {\r\n                          width : '300px',\r\n                          marginX : 'auto'  },\r\n              '@media(min-width : 524px)' : {\r\n                          width : '300px' },\r\n"
+                },
+                {
+                    "date": 1735038516118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n          sx={{\r\n              transition : '0.3s',\r\n              backgroundImage: `url(${tour?.image})`,\r\n              backgroundSize: 'cover',\r\n-             '@media(max-width : 300px)' : {\r\n+             '@media(max-width : 524px)' : {\r\n                          width : '300px',\r\n                          marginX : 'auto'  },\r\n              '@media(min-width : 524px)' : {\r\n                          width : '300px' },\r\n"
+                },
+                {
+                    "date": 1735038522404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n              transition : '0.3s',\r\n              backgroundImage: `url(${tour?.image})`,\r\n              backgroundSize: 'cover',\r\n              '@media(max-width : 524px)' : {\r\n-                         width : '300px',\r\n+                         width : '100%',\r\n                          marginX : 'auto'  },\r\n              '@media(min-width : 524px)' : {\r\n                          width : '300px' },\r\n               '&:hover' : {\r\n"
+                },
+                {
+                    "date": 1735038529701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n              backgroundSize: 'cover',\r\n              '@media(max-width : 524px)' : {\r\n                          width : '100%',\r\n                          marginX : 'auto'  },\r\n-             '@media(min-width : 524px)' : {\r\n+             '@media(min-width : 525px)' : {\r\n                          width : '300px' },\r\n               '&:hover' : {\r\n                 transform : 'scale(1.1)',\r\n                 transition : '0.3s',\r\n"
+                },
+                {
+                    "date": 1735038553458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n              transition : '0.3s',\r\n              backgroundImage: `url(${tour?.image})`,\r\n              backgroundSize: 'cover',\r\n              '@media(max-width : 524px)' : {\r\n-                         width : '100%',\r\n+                         width : '90%',\r\n                          marginX : 'auto'  },\r\n              '@media(min-width : 525px)' : {\r\n                          width : '300px' },\r\n               '&:hover' : {\r\n"
+                },
+                {
+                    "date": 1735038594767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n              backgroundSize: 'cover',\r\n              '@media(max-width : 524px)' : {\r\n                          width : '90%',\r\n                          marginX : 'auto'  },\r\n-             '@media(min-width : 525px)' : {\r\n+             '@media(max-width : 525px)' : {\r\n                          width : '300px' },\r\n               '&:hover' : {\r\n                 transform : 'scale(1.1)',\r\n                 transition : '0.3s',\r\n"
+                },
+                {
+                    "date": 1735038607669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,10 +16,10 @@\n              backgroundSize: 'cover',\r\n              '@media(max-width : 524px)' : {\r\n                          width : '90%',\r\n                          marginX : 'auto'  },\r\n-             '@media(max-width : 525px)' : {\r\n-                         width : '300px' },\r\n+             '@media(max-width : 765px)' : {\r\n+                         width : '' },\r\n               '&:hover' : {\r\n                 transform : 'scale(1.1)',\r\n                 transition : '0.3s',\r\n               } }} >\r\n"
+                },
+                {
+                    "date": 1735038641346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,10 +16,10 @@\n              backgroundSize: 'cover',\r\n              '@media(max-width : 524px)' : {\r\n                          width : '90%',\r\n                          marginX : 'auto'  },\r\n-             '@media(max-width : 765px)' : {\r\n-                         width : '' },\r\n+             '@media(min-width : 765px)' : {\r\n+                         width : '45%' },\r\n               '&:hover' : {\r\n                 transform : 'scale(1.1)',\r\n                 transition : '0.3s',\r\n               } }} >\r\n"
+                },
+                {
+                    "date": 1735038710583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n          sx={{\r\n              transition : '0.3s',\r\n              backgroundImage: `url(${tour?.image})`,\r\n              backgroundSize: 'cover',\r\n-             '@media(max-width : 524px)' : {\r\n+             '@media(min-width : 524px)' : {\r\n                          width : '90%',\r\n                          marginX : 'auto'  },\r\n              '@media(min-width : 765px)' : {\r\n                          width : '45%' },\r\n"
+                },
+                {
+                    "date": 1735038728203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,12 +13,12 @@\n          sx={{\r\n              transition : '0.3s',\r\n              backgroundImage: `url(${tour?.image})`,\r\n              backgroundSize: 'cover',\r\n-             '@media(min-width : 524px)' : {\r\n+             '@media(min-width : 300px)' : {\r\n                          width : '90%',\r\n                          marginX : 'auto'  },\r\n-             '@media(min-width : 765px)' : {\r\n+             '@media(min-width : 75px)' : {\r\n                          width : '45%' },\r\n               '&:hover' : {\r\n                 transform : 'scale(1.1)',\r\n                 transition : '0.3s',\r\n"
+                },
+                {
+                    "date": 1735038765790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,10 +16,10 @@\n              backgroundSize: 'cover',\r\n              '@media(min-width : 300px)' : {\r\n                          width : '90%',\r\n                          marginX : 'auto'  },\r\n-             '@media(min-width : 75px)' : {\r\n-                         width : '45%' },\r\n+             '@media(min-width : 525px)' : {\r\n+                         width : '50%' },\r\n               '&:hover' : {\r\n                 transform : 'scale(1.1)',\r\n                 transition : '0.3s',\r\n               } }} >\r\n"
+                },
+                {
+                    "date": 1735038871641,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n              '@media(min-width : 300px)' : {\r\n                          width : '90%',\r\n                          marginX : 'auto'  },\r\n              '@media(min-width : 525px)' : {\r\n-                         width : '50%' },\r\n+                         width : '40%' },\r\n               '&:hover' : {\r\n                 transform : 'scale(1.1)',\r\n                 transition : '0.3s',\r\n               } }} >\r\n"
+                },
+                {
+                    "date": 1735038897196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n              '@media(min-width : 300px)' : {\r\n                          width : '90%',\r\n                          marginX : 'auto'  },\r\n              '@media(min-width : 525px)' : {\r\n-                         width : '40%' },\r\n+                         width : '50%' },\r\n               '&:hover' : {\r\n                 transform : 'scale(1.1)',\r\n                 transition : '0.3s',\r\n               } }} >\r\n"
+                },
+                {
+                    "date": 1735038994998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,10 +16,9 @@\n              backgroundSize: 'cover',\r\n              '@media(min-width : 300px)' : {\r\n                          width : '90%',\r\n                          marginX : 'auto'  },\r\n-             '@media(min-width : 525px)' : {\r\n-                         width : '50%' },\r\n+             \r\n               '&:hover' : {\r\n                 transform : 'scale(1.1)',\r\n                 transition : '0.3s',\r\n               } }} >\r\n"
+                },
+                {
+                    "date": 1735039196365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,11 @@\n          sx={{\r\n              transition : '0.3s',\r\n              backgroundImage: `url(${tour?.image})`,\r\n              backgroundSize: 'cover',\r\n+             \r\n+             '@media(min-width : 525px)' : {\r\n+                         width : '50%' },\r\n              '@media(min-width : 300px)' : {\r\n                          width : '90%',\r\n                          marginX : 'auto'  },\r\n              \r\n"
+                },
+                {
+                    "date": 1735039202402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n          sx={{\r\n              transition : '0.3s',\r\n              backgroundImage: `url(${tour?.image})`,\r\n              backgroundSize: 'cover',\r\n-             \r\n+             '@media()'\r\n              '@media(min-width : 525px)' : {\r\n                          width : '50%' },\r\n              '@media(min-width : 300px)' : {\r\n                          width : '90%',\r\n"
+                },
+                {
+                    "date": 1735039208348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n          sx={{\r\n              transition : '0.3s',\r\n              backgroundImage: `url(${tour?.image})`,\r\n              backgroundSize: 'cover',\r\n-             '@media()'\r\n+             '@media(min-width : ')'\r\n              '@media(min-width : 525px)' : {\r\n                          width : '50%' },\r\n              '@media(min-width : 300px)' : {\r\n                          width : '90%',\r\n"
+                },
+                {
+                    "date": 1735039217299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n          sx={{\r\n              transition : '0.3s',\r\n              backgroundImage: `url(${tour?.image})`,\r\n              backgroundSize: 'cover',\r\n-             '@media(min-width : ')'\r\n+             '@media(min-width : '900px')'\r\n              '@media(min-width : 525px)' : {\r\n                          width : '50%' },\r\n              '@media(min-width : 300px)' : {\r\n                          width : '90%',\r\n"
+                },
+                {
+                    "date": 1735039225089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n          sx={{\r\n              transition : '0.3s',\r\n              backgroundImage: `url(${tour?.image})`,\r\n              backgroundSize: 'cover',\r\n-             '@media(min-width : '900px')'\r\n+             '@media(min-width : 900px')'\r\n              '@media(min-width : 525px)' : {\r\n                          width : '50%' },\r\n              '@media(min-width : 300px)' : {\r\n                          width : '90%',\r\n"
+                },
+                {
+                    "date": 1735039231068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,11 @@\n          sx={{\r\n              transition : '0.3s',\r\n              backgroundImage: `url(${tour?.image})`,\r\n              backgroundSize: 'cover',\r\n-             '@media(min-width : 900px')'\r\n+             '@media(min-width : 900px)' : {\r\n+              \r\n+             }\r\n              '@media(min-width : 525px)' : {\r\n                          width : '50%' },\r\n              '@media(min-width : 300px)' : {\r\n                          width : '90%',\r\n"
+                },
+                {
+                    "date": 1735039236369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n              transition : '0.3s',\r\n              backgroundImage: `url(${tour?.image})`,\r\n              backgroundSize: 'cover',\r\n              '@media(min-width : 900px)' : {\r\n-              \r\n+              width : '30%'\r\n              }\r\n              '@media(min-width : 525px)' : {\r\n                          width : '50%' },\r\n              '@media(min-width : 300px)' : {\r\n"
+                },
+                {
+                    "date": 1735039323281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\r\n \r\n const PremiumItem = ({ tour }) => {\r\n   return (\r\n-    <Box height=\"25rem\"\r\n+    <Box height=\"30rem\"\r\n          display=\"flex\"\r\n          justifyContent=\"center\"\r\n          alignItems=\"center\"\r\n          borderRadius=\"12px\"\r\n@@ -15,9 +15,9 @@\n              backgroundImage: `url(${tour?.image})`,\r\n              backgroundSize: 'cover',\r\n              '@media(min-width : 900px)' : {\r\n               width : '30%'\r\n-             }\r\n+             },\r\n              '@media(min-width : 525px)' : {\r\n                          width : '50%' },\r\n              '@media(min-width : 300px)' : {\r\n                          width : '90%',\r\n"
+                }
+            ],
+            "date": 1735037075351,
+            "name": "Commit-0",
+            "content": "import { Box, Button, Stack, Typography } from '@mui/material';\r\nimport React from 'react';\r\n\r\nconst PremiumItem = ({ tour }) => {\r\n  return (\r\n    <Box height=\"90%\"\r\n         display=\"flex\"\r\n         justifyContent=\"center\"\r\n         alignItems=\"center\"\r\n         borderRadius=\"12px\"\r\n         overflow=\"hidden\"\r\n         position=\"relative\"\r\n         \r\n         sx={{\r\n             transition : '0.3s',\r\n            backgroundImage: `url(${tour?.image})`,\r\n            backgroundSize: 'cover',\r\n           '@media(min-width : 300px)' : {\r\n                   width : '300px',\r\n                   marginX : 'auto'\r\n                                         },\r\n           '@media(min-width : 524px)' : {\r\n                   width : '300px'\r\n                                         },\r\n            \r\n            \r\n              }} >\r\n      <Stack\r\n        height=\"100%\"\r\n        width=\"100%\"\r\n        padding=\"2rem 0\"\r\n        boxSizing=\"border-box\"\r\n        borderRadius=\"12px\"\r\n        alignItems=\"center\"\r\n        bgcolor=\"rgba(0, 0, 0, 0.5)\"\r\n        position=\"absolute\"\r\n        zIndex={1}\r\n        sx={{\r\n          '@media(min-width : 300px)' : {\r\n            justifyContent : 'center',\r\n            alignItems : 'center',\r\n            paddingX : '1rem',\r\n            gap : '1rem'\r\n          },\r\n          '@media(min-width : 524px)' : {\r\n            justifyContent : 'flex-end',\r\n            alignItems : 'start'\r\n          }\r\n        }}\r\n        >\r\n        <Typography\r\n          variant=\"h3\"\r\n          sx={{\r\n            fontWeight: 'bold',\r\n            fontFamily: 'Poppins',\r\n            color: 'white',\r\n            textAlign: 'start',\r\n            paddingRight: '10px',\r\n            margin: 0,\r\n            width: 'auto',\r\n           \r\n            '@media (min-width: 300px)': {\r\n              fontSize: '18px',\r\n            },\r\n\r\n            '@media (min-width : 524px)' : {\r\n              fontSize : '22px'\r\n            }\r\n          }}\r\n        >\r\n          {tour.title}\r\n        </Typography>\r\n        <Typography\r\n          width=\"auto\"\r\n          sx={{\r\n            color: 'white',\r\n            textAlign: 'start',\r\n            \r\n            '@media (min-width: 300px)': {\r\n              fontSize: '12px',\r\n              height : 'auto',\r\n              textAlign : 'center'\r\n            },\r\n            '@media (min-width : 524px)' : {\r\n              fontSize : '16px',\r\n              textAlign : 'start'\r\n            }\r\n          }}>\r\n          {tour.paragraph}\r\n        </Typography>\r\n        <Button\r\n          variant=\"contained\"\r\n          sx={{\r\n            color: 'white',\r\n            backgroundColor: '#FF7518',\r\n            width : '80%',\r\n            margin : '0 auto'\r\n          }}>\r\n          Biz bilan bog'laning\r\n        </Button>\r\n      </Stack>\r\n    </Box>\r\n  );\r\n};\r\n\r\nexport default PremiumItem;\r\n"
+        }
+    ]
+}

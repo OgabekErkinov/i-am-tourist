@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 17,
+            "activePatchIndex": 18,
             "patches": [
                 {
                     "date": 1734937889558,
@@ -76,6 +76,10 @@
                 {
                     "date": 1734938313000,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,9 +72,9 @@\n               524: {\r\n                 slidesPerView: 1,\r\n                 spaceBetween: 10,\r\n               },\r\n-              768: {\r\n+              76: {\r\n                 slidesPerView: 3,\r\n                 spaceBetween: 20,\r\n               },\r\n               1200: {\r\n"
+                },
+                {
+                    "date": 1735037814816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n                                alignItems : 'center' }}\r\n                           breakpoints={{\r\n                                450 : {\r\n                                 slidesPerView : 1,\r\n-                                space\r\n+                                spaceBetween\r\n                                }\r\n                                524: {\r\n                                   slidesPerView: 1,\r\n                                   spaceBetween: 10 },\r\n"
                 }
             ],
             "date": 1734937889558,

@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1734937818984,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1735036235391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,19 @@\n import { Stack } from '@mui/material'\r\n import React from 'react'\r\n import PremiumTours from '../premium/PremiumTours'\r\n import TourPlaces from '../tourPlaces/TourPlaces'\r\n+import About from '../about/About'\r\n \r\n const Main = () => {\r\n   return (\r\n     <Stack width={'100%'}\r\n            height={'auto'}\r\n-    alignItems={'center'}>\r\n+           alignItems={'center'}\r\n+           gap='1rem'>\r\n         <PremiumTours/>\r\n-        <TourPlaces/>\r\n+        {/* <TourPlaces/> */}\r\n+        <About/>\r\n \r\n     </Stack>\r\n   )\r\n }\r\n"
                 }
             ],
             "date": 1734937818984,
