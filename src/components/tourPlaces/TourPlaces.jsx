@@ -8,12 +8,11 @@ const TourPlaces = () => {
     <Stack
       height={'auto'}
       width={'100%'}
-      padding={'120px 20px 20px 80px'}
+      padding={'80px 10px 10px 10px'}
       display={'flex'}
       justifyContent={'center'}
       alignItems={'center'}
-      boxSizing={'border-box'}
-    >
+      boxSizing={'border-box'}>
       <Typography
         variant='h4'
         color='black'
@@ -37,14 +36,18 @@ const TourPlaces = () => {
         height={'auto'}
         width={'100%'}
         display={'flex'}
-        justifyContent={'start'}
+        justifyContent={'space-evenly'}
         flexWrap={'wrap'}
         gap={'16px'}
         sx={{
-          '@media (max-width: 600px)': {
-            justifyContent: 'center',  
-            gap: '10px',  
+          '@media (min-width: 300px)': {  
+            gap: '5px',  
           },
+          '@media (min-width : 524px)' : {
+            display : 'grid',
+            gridTemplateColumns : 'repeat(3, 1fr)',
+            justifyItems : 'center',
+          }
         }}
       >
         {tourPlaces?.map((place, idx) => {

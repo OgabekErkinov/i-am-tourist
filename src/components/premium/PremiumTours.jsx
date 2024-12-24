@@ -12,10 +12,9 @@ import PremiumItem from './PremiumItem';
 const PremiumTours = () => {
 
   return (
-    <Stack height={'730px'}
+    <Stack height={'auto'}
            width={'100%'}
-           padding={'80px 35px'}
-           marginY={'5rem'}
+           padding={'60px 25px'}
            alignItems={'center'}
            justifyContent={'center'}
            bgcolor={'#F97316'}
@@ -24,7 +23,6 @@ const PremiumTours = () => {
                  width={'100%'}
                  justifyContent={'space-between'}
                  alignItems={'center'}
-                 paddingX={'20px'}
                  gap={'1rem'}>
               {/* Title */}
                 <Typography fontFamily={'Poppins'}
@@ -39,12 +37,11 @@ const PremiumTours = () => {
                                fontSize: '36px',
                                lineHeight: '40px',
                                 },
-            '@media (max-width: 600px)': {
-              fontSize: '24px',
-              lineHeight: '28px',
-            },
-          }}
-        >
+                              '@media (max-width: 600px)': {
+                                fontSize: '24px',
+                                lineHeight: '28px',
+                                },
+                               }}>
           Bizning Premium Turlarimizni Kashf Etish
         </Typography>
 
@@ -57,17 +54,16 @@ const PremiumTours = () => {
              padding={'0.5rem'}>
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, Autoplay]}
-            spaceBetween={50}
-            slidesPerView={3}
             autoplay={{ delay: 2500, disableOnInteraction: false }}
             navigation
             pagination={{ clickable: false }}
             scrollbar={{ draggable: true }}
             loop={true}
             style={{
-              position: 'relative',
               width: '100%', 
               height: '100%',
+              display : 'flex',
+              justifyContent : 'center'
             }}
             breakpoints={{
               524: {
@@ -75,7 +71,7 @@ const PremiumTours = () => {
                 spaceBetween: 10,
               },
               767: {
-                slidesPerView: 3,
+                slidesPerView: 2,
                 spaceBetween: 20,
               },
               1200: {
@@ -87,7 +83,13 @@ const PremiumTours = () => {
             {
               premiumToursServices?.map((tour, idx) => {
                 return (
-                  <SwiperSlide key={idx}>
+                  <SwiperSlide key={idx} style={{
+                    transition : '0.3s',
+                    '&:hover' : {
+                      scale : 1.1,
+                      transition : '0.3s'
+                    }
+                  }}>
                     <PremiumItem tour={tour} />
                   </SwiperSlide>
                 );

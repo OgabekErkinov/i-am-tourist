@@ -5,15 +5,11 @@ const OnePlace = ({ place }) => {
     <Stack
       height={'auto'}
       width={'100%'}
-      maxWidth={'400px'}
+      maxWidth={'350px'}
+      borderRadius={'10px'}
+      overflow={'hidden'}
       boxSizing={'border-box'}
-      alignItems={'start'}
-      sx={{
-        '@media (max-width: 600px)': {
-          width: '100%',  
-        },
-      }}
-    >
+      alignItems={'start'}>
       {/* Rasm va gradient qismi */}
       <Box
         height={'192px'}

@@ -20,71 +20,61 @@ const Slider = () => {
       pagination={{ clickable: false }}
       scrollbar={{ draggable: true }}
       loop={true}
-      style={{
-        width: '100%', 
-        height: '90vh',
-        objectFit : 'cover'
-      }}
-    >
+      style={{ width: '100%', 
+               height: '90vh',
+               objectFit : 'cover',
+      }}>
       {
         SliderItems.map((item, idx) => {
           return (
             <SwiperSlide key={idx}>
-              <Stack
-                height={'100%'}
-                width={'100%'}
-                display={'flex'}
-                alignItems={'center'}
-                justifyContent={'center'}
-                sx={{
-                  backgroundImage: `url(${item.url})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  objectFit : 'cover' }}
-              >
-                <Stack height={'100%'}
-                       width={'100%'}
-                       paddingTop={'40vh'}
-                       justifyContent={'start'}
-                       alignItems={'center'}
-                       position={'absolute'}
-                       zIndex={1}
-                       bgcolor={'rgba(0, 0, 0, 0.5)'}>
-                             <Typography
-                                  fontSize="5rem"
-                                  fontFamily="Poppins"
-                                  fontWeight={700}
-                                  textAlign={'center'}
-                                  sx={{
-                                     opacity: 1,
-                                     color: 'white',
-                                     textShadow: '2px 2px 8px rgba(0, 0, 0, 0.7)',
-                                     '@media (min-width : 300px)' : {
-                                      fontSize : '2rem'
-                                     },
-                                     '@media (min-width : 520px)' : {
-                                      fontSize : '3rem'
-                                     },
-                                     '@media (min-width : 765px)' : {
-                                      fontSize : '5rem'
-                                     }
-                                      }}>
-                                     {item.heading}
+              <Stack height='100%'
+                     width='100%'
+                     display='flex'
+                     alignItems='center'
+                     justifyContent={'center'}
+                     sx={{
+                        backgroundImage: `url(${item.url})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        objectFit : 'cover' }}>
+                       <Stack height={'100%'}
+                              width={'100%'}
+                              paddingTop={'40vh'}
+                              justifyContent={'start'}
+                              alignItems={'center'}
+                              position={'absolute'}
+                              zIndex={1}
+                              bgcolor={'rgba(0, 0, 0, 0.5)'}>
+                             <Typography fontSize="5rem"
+                                         fontFamily="Poppins"
+                                         fontWeight={700}
+                                         textAlign={'center'}
+                                         width={'100%'}
+                                         sx={{
+                                            opacity: 1,
+                                            color: 'white',
+                                            textShadow: '2px 2px 8px rgba(0, 0, 0, 0.7)',
+                                            '@media (min-width : 300px)' : {
+                                                    fontSize : '2rem' },
+                                            '@media (min-width : 520px)' : {
+                                                    fontSize : '3rem' },
+                                            '@media (min-width : 765px)' : {
+                                                    fontSize : '5rem' }
+                                             }}>
+                                            {item.heading}
                               </Typography>
-                              <Typography
-                                     fontFamily="Poppins"
-                                     fontSize="1.2rem"
-                                     sx={{
-                                        color: 'white',
-                                        textAlign: 'center',
-                                         maxWidth: '80%', 
-                                         textShadow: '2px 2px 8px rgba(0, 0, 0, 0.9)',
-                                         }}>
-                                        {item.paragraph}
+                              <Typography fontFamily="Poppins"
+                                          fontSize="1.2rem"
+                                          width={'80%'}
+                                          sx={{
+                                             color: 'white',
+                                             textAlign: 'center',
+                                             textShadow: '2px 2px 8px rgba(0, 0, 0, 0.9)',
+                                              }}>
+                                             {item.paragraph}
                                </Typography>
-
                 </Stack>
-               
               </Stack>
             </SwiperSlide>
           );
