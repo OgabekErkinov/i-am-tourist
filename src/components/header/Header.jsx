@@ -10,18 +10,19 @@ const Header = () => {
            width='100%'
            gap="2rem"
            marginBottom='1rem'
-           boxSizing="border-box">
+           bgcolor="transparent"
+           alignItems="center">
              <Stack width="100%" 
                     height="auto"
                     alignItems='center'>
-                         {/* <Box width="100%"
+                         <Box width="100%"
                               height="10vh" 
-                              bgcolor="transparent">
-                        </Box> */}
-                        {/* <Navbar /> */}
-                        {/* <Slider /> */}
+                              bgcolor="orange">
+                        </Box>
+                        <Navbar />
+                        <Slider />
                </Stack>
-               {/* <Cards /> */}
+               <Cards />
     </Stack>
   );
 }

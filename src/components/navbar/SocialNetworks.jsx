@@ -1,7 +1,6 @@
-import { List, ListItem, useMediaQuery } from '@mui/material';
+import { Link, List, ListItem, useMediaQuery } from '@mui/material';
 import React from 'react';
 import { social_medias } from '../../Database/db';
-import NavbarItem from './NavbarItem';
 
 const SocialNetworks = () => {
   const lgScreen = useMediaQuery('(min-width : 767px)');
@@ -9,11 +8,9 @@ const SocialNetworks = () => {
   return (
     <List
       sx={{
-        width: lgScreen ? '120px' : 'auto',  
+        width:'120px',  
         height: '24px',
-        marginX: '10px',
         display: lgScreen ? 'flex' : 'none', 
-        gap: '5px',
         justifyContent: 'center',   
       }}
     >
@@ -22,17 +19,20 @@ const SocialNetworks = () => {
           <ListItem
             key={idx}
             sx={{
-              padding: 0,
               lineHeight: '33px',
-              fontSize: '22px',
-              fontWeight: 'medium',
+              fontWeight: '500',
+              height : '100%',
+              width : '24px',
+              cursor : 'pointer',
              
               '@media (max-width: 600px)': {
                 fontSize: '18px', 
               },
             }}
           >
-            <NavbarItem url={media?.link} pathD={media?.pathD} name={media?.name} />
+            <Link href = {media?.url}>
+                <img src={media?.imgUrl} alt={media?.name}/>
+            </Link>
           </ListItem>
         );
       })}

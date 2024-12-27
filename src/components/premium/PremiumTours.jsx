@@ -1,6 +1,6 @@
 import React from 'react';
-import { Stack, Typography, Box } from '@mui/material';
-import 'swiper/css'; 
+import { Stack, Typography } from '@mui/material';
+import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
@@ -10,79 +10,74 @@ import { premiumToursServices } from '../../Database/db';
 import PremiumItem from './PremiumItem';
 
 const PremiumTours = () => {
-
   return (
-    <Stack height={'auto'}
-           width={'100%'}
-           padding={'2rem 2rem'}
-           bgcolor={'#F97316'}
-           boxSizing={'border-box'} >
-          <Stack height={'100%'}
-                 width={'100%'}
-                 justifyContent={'space-between'}
-                 alignItems={'center'}
-                 gap={'2rem'}>
-              {/* Title */}
-                <Typography fontFamily={'Poppins'}
-                            width={'70%'}
-                            fontSize={'48px'}
-                            lineHeight={'48px'}
-                            fontWeight={'bold'}
-                            textAlign={'center'}
-                            height={'auto'}
-                            sx={{
-                              '@media (max-width: 900px)': {
-                               fontSize: '36px',
-                               lineHeight: '40px',
-                                },
-                              '@media (max-width: 600px)': {
-                                fontSize: '24px',
-                                lineHeight: '28px',
-                                },
-                               }}>
-                               Bizning Premium Turlarimizni Kashf Etish
-                 </Typography>
-            {/* Slider */}
-                 <Box display={'flex'} 
-                      alignItems={'center'} 
-                      justifyContent={'center'} 
-                      height={'35rem'} 
-                      width={'80%'}>
-                      <Swiper
-                          modules={[Navigation, Pagination, Scrollbar, Autoplay]}
-                          autoplay={{ delay: 2500, disableOnInteraction: false }}
-                          navigation
-                          pagination={{ clickable: false }}
-                          scrollbar={{ draggable: true }}
-                          loop={true}
-                          style={{
-                               width: '100%', 
-                               height: '100%',
-                               padding : '3rem',
-                               display : 'flex',
-                               justifyContent : 'center',
-                               alignItems : 'center' }}
-                          breakpoints={{
-                               525: {
-                                  slidesPerView: 1,
-                                  spaceBetween: 10 },
-                               900: {
-                                  slidesPerView: 2,
-                                  spaceBetween: 20 },
-                              1200: {
-                                  slidesPerView: 3,
-                                  spaceBetween: 30 } }}>
-                          {
-                           premiumToursServices?.map((tour, idx) => {
-                                  return (
-                                         <SwiperSlide key={idx}>
-                                                 <PremiumItem tour={tour} />
-                                           </SwiperSlide>
-                                          );  })
-                           }
-                       </Swiper>
-                  </Box>
-            </Stack>
+    <Stack
+      height="auto"
+      width="90%"
+      padding="2rem"
+      bgcolor="#F97316"
+      alignItems="center"
+    >
+      <Stack
+        height="auto"
+        width="100%"
+        maxWidth="1496px"
+        justifyContent="space-between"
+        alignItems="center"
+        gap="2rem"
+      >
+        {/* Title */}
+        <Typography
+          fontFamily="Poppins"
+          fontSize={{ xs: '24px', sm: '36px', md: '48px' }}
+          lineHeight={{ xs: '28px', sm: '40px', md: '48px' }}
+          fontWeight="700"
+          textAlign="center"
+          width="70%"
+        >
+          Bizning Premium Turlarimizni Kashf Etish
+        </Typography>
+        {/* Slider */}
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+          autoplay={{ delay: 2500, disableOnInteraction: false }}
+          slidesPerView={3}
+          spaceBetween={30}
+          navigation
+          pagination={{ clickable: true }}
+          scrollbar={{ draggable: true }}
+          loop
+          style={{
+            maxWidth: '1496px',
+            height: '465px',
+            padding: '2rem',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            boxSizing : 'border-box'
+          }}
+          breakpoints={{
+            300: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            524: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          }}
+        >
+          {premiumToursServices?.map((tour, idx) => (
+            <SwiperSlide key={idx}>
+              <PremiumItem tour={tour} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </Stack>
     </Stack>
   );
 };

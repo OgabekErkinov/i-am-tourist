@@ -14,7 +14,7 @@ const LanguageButton = ({language, setOpen, setCurrentLanguage}) => {
     <Stack height='auto'>
           <Button sx={{
                height: '36px',
-               width: 'auto',
+               width: '100px',
                display: 'flex',
                alignItems: 'center',
                gap: '5px',

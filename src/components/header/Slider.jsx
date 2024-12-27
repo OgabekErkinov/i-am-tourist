@@ -46,7 +46,7 @@ const Slider = () => {
                               position={'absolute'}
                               zIndex={1}
                               bgcolor={'rgba(0, 0, 0, 0.5)'}>
-                             <Typography fontSize="5rem"
+                             <Typography fontSize="6rem"
                                          fontFamily="Poppins"
                                          fontWeight={700}
                                          textAlign={'center'}
@@ -55,12 +55,9 @@ const Slider = () => {
                                             opacity: 1,
                                             color: 'white',
                                             textShadow: '2px 2px 8px rgba(0, 0, 0, 0.7)',
-                                            '@media (min-width : 300px)' : {
-                                                    fontSize : '2rem' },
-                                            '@media (min-width : 520px)' : {
+                                            '@media (max-width : 524px)' : {
                                                     fontSize : '3rem' },
-                                            '@media (min-width : 765px)' : {
-                                                    fontSize : '5rem' }
+                                            
                                              }}>
                                             {item.heading}
                               </Typography>

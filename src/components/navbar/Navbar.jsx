@@ -5,27 +5,26 @@ import SocialNetworks from "./SocialNetworks";
 import Logo from "./Logo";
 import SectionsLinks from "./SectionsLinks";
 import Languages from "./languages/Languages";
+import { MenuOpenOutlined } from "@mui/icons-material";
+import MenuButton from "./MenuButton";
 
 const Navbar = () => {
   // Media query for large screen
-  const lgScreen = useMediaQuery('(min-width : 767px)');
+  const xlgScreen = useMediaQuery('(min-width : 1225px)');
 
   return (
     <Box width="100%"
          height="10vh"
-         paddingX={{ xs: '1rem', sm: '2rem', md: '5%' }}
-         boxSizing="border-box"
+         display="flex"
+         justifyContent="center"
          bgcolor="rgba(17,24,39, 0.1)"
-         border = "1px solid red"
          position="fixed"
          top={0}
          zIndex={2}
          sx={{
             backdropFilter: 'blur(5px)'}}>
-        <Box width="100%" 
-             height="100%" 
-             paddingX="1rem">
-                <Stack width="100%"
+
+                <Stack width="80%"
                        height="100%"
                        direction="row"
                        justifyContent="space-between"
@@ -34,22 +33,26 @@ const Navbar = () => {
                        <SectionsLinks />
                        <Stack direction="row"
                               alignItems="center"
+                              justifyContent={xlgScreen ? 'space-between' : 'flex-end'}
                               gap="1.5rem"
-                              height="40px"
-                              maxWidth='450px' 
-                              sx={{ 
-                                  justifyContent: lgScreen ? 'space-between' : 'center', 
-                                  }}>
+                              height="18px"
+                              width='380px'>
                               <SocialNetworks />
                               <Stack direction="row"
-                                     justifyContent="center"
-                                     gap="10px">
+                                     justifyContent="space-between"
+                                     gap="0.2rem">
                                      <Languages/>
-                                     <LightDarkButton />
-                               </Stack>
+                                    <LightDarkButton />
+                                    {
+                                      !xlgScreen && <MenuButton/>
+                                    }
+                                    
+                              </Stack>
+                              
+                               
                          </Stack>
                  </Stack>
-        </Box>
+
     </Box>
   );
 };

@@ -4,7 +4,7 @@ import { IoClose, IoMenuOutline } from 'react-icons/io5'
 
 const MenuButton = () => {
 
-    const [menu, setMenu] = useState(false)
+    const [menu, setMenu] = useState(true)
   return (
     <Box sx={{
         height : '40px',
@@ -31,7 +31,7 @@ const MenuButton = () => {
         }}
         onClick={() => setMenu(prev => !prev)}>
           {
-            light ? <IoMenuOutline color="orange" style={{scale : '1.5'}}/> : 
+            menu ? <IoMenuOutline color="orange" style={{scale : '1.5'}}/> : 
                     <IoClose color='orange' style={{scale : '1.5'}}/>
           }    
         </Button>

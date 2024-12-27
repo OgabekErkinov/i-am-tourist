@@ -1,28 +1,30 @@
-import { List, ListItem, useMediaQuery } from '@mui/material'
+import { Link, List, ListItem, useMediaQuery } from '@mui/material'
 import React from 'react'
 import { navLinks } from '../../Database/db'
-import NavbarItem from './NavbarItem'
 
 const SectionsLinks = () => {
-    const xlgScreen = useMediaQuery('(min-width : 1024px)')
+    const xlgScreen = useMediaQuery('(min-width : 1225px)')
   return (
     <List sx={{
         height : '35px',
-        width : '500px',
+        maxWidth : '700px',
         display : xlgScreen ? 'flex' : 'none',
-        justifyContent : 'center',
+        justifyContent : 'flex-end',
         
         }}>
       {
         navLinks?.map(item => 
                   <ListItem key={item?.id}
-                            sx={{ margin : '0px',
-                                  width : 'auto',
-                                 fontWeight : 'medium',
-                                 fontSize : '22px'}}>
-                       <NavbarItem url={item?.link}
-                                   pathD={item?.pathD}
-                                   name={item?.name}/>
+                            sx={{ fontWeight : '500',
+                                  fontSize : '22px',
+                                  cursor : 'pointer'}}>
+                             <Link href = {item?.link}
+                                   style={{
+                                    textDecoration : 'none',
+                                    color : '#F4F4F5'
+                                   }}>
+                                   {item?.name}
+                             </Link>
                   </ListItem>)
        }
        </List>

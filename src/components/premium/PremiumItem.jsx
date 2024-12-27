@@ -3,26 +3,21 @@ import React from 'react';
 
 const PremiumItem = ({ tour }) => {
   return (
-    <Box height="30rem"
+    <Box height="384px"
          display="flex"
          justifyContent="center"
          alignItems="center"
          borderRadius="12px"
          overflow="hidden"
          position="relative"
+         width={'auto'}
          sx={{
              transition : '0.3s',
              backgroundImage: `url(${tour?.image})`,
              backgroundSize: 'cover',
-             '@media(min-width : 900px)' : {
-              width : '30%'
-             },
-             '@media(min-width : 525px)' : {
-                         width : '50%' },
-             '@media(min-width : 300px)' : {
-                         width : '90%',
-                         marginX : 'auto'  },
-             
+             '@media(max-width : 525px)' : {
+                         width : '100%',
+                        marginX : 'auto' },
               '&:hover' : {
                 transform : 'scale(1.1)',
                 transition : '0.3s',
