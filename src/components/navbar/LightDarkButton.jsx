@@ -2,43 +2,28 @@ import { Box, Button } from '@mui/material'
 import React, { useState } from 'react'
 import { BsLightningCharge } from 'react-icons/bs'
 import { FiSun } from 'react-icons/fi'
+import useColorsStore from '../../Store/store'
 
 const LightDarkButton = () => {
-
+  
+   const toggleBg = useColorsStore(state => state.toggleBgColor)
+  
+ 
     const [light, setLight] = useState(true)
+    const handleClick = () => {
+      setLight(prev => !prev)
+      toggleBg()
+    }
+    const Icon = light ? BsLightningCharge : FiSun;
 
   return (
-    <Box sx={{
-        height : '40px',
-        width : '40px',
-        padding : '8px',
-        textAlign : 'center',
-        bgcolor : 'white',
-        boxSizing : 'border-box',
-        borderRadius : '5px',
-        display : 'flex',
-        justifyContent : 'center',
-        alignItems : 'center'
-       }}>
-        <Button
-              disableElevation
-              disableRipple
-              sx={{
-          width : '24px',
-          height : '24px',
-          '&:active': {
-             backgroundColor: 'transparent',
-                      },  
-        }}
-        onClick={() => setLight(prev => !prev)}>
-          {
-            light ? <BsLightningCharge color="orange" style={{scale : '1.5'}}/> : 
-                    <FiSun color='orange' style={{scale : '1.5'}}/>
-          }    
+    <Box height = "40px" width="40px" bgcolor="white" borderRadius="5px" display="flex" justifyContent="center" alignItems="center">
+        <Button disableElevation disableRipple sx={{'&:active': { backgroundColor: 'transparent'} }} onClick={handleClick}>
+          <Box width='24px' height='24px' pt='2px' >
+            <Icon color="orange" style={{scale : '1.4'}}/>
+          </Box>           
         </Button>
-       
-
-       </Box>
+    </Box>
   )
 }
 

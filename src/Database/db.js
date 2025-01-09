@@ -153,37 +153,80 @@ export const tourPlaces = [
     {
         image : '/yaponiya.jpg',
         title : 'Tokio, Yaponiya',
-        paragraph : "Tokio Yaponiya poytaxti bo'lib, an'anaviy binolarni zamonaviy osmono'parlar bilan birlashtirish."
+        paragraph : "Tokio Yaponiya poytaxti bo'lib, an'anaviy binolarni zamonaviy osmono'parlar bilan birlashtirish.",
+        population : '37.4 million',
+        regions : '23 special regions',
+        cities : 'Tokyo, Yokohama, Chiba',
+        currency : 'Japanese Yen (JPY)',
+        modalImage : '/tokioModal.jpg',
+        info : "Tokyo offers a wonderful combination of culture, food, technology, and history."
     },
     {
         image : '/orol.jpg',
         title : 'Orol joyi',
-        paragraph : "Shahar shovqinidan uzoqda, tabiatning ajoyib go'zalligida dam oling."
+        paragraph : "Shahar shovqinidan uzoqda, tabiatning ajoyib go'zalligida dam oling.",
+        population : '500,000',
+        regions : 'Various islands',
+        cities : 'Main island city, Beach city',
+        currency : 'Island Dollar (ID)',
+        modalImage : '/islandModal.jpg',
+        info : "Islands are peaceful retreats where you can enjoy the sea, sand, and tranquility."
+
     },
     {
         image : '/dubai.jpg',
         title : 'Dubay, BAA',
-        paragraph : "Dubayning hargi skylinesi va hashamatini guvohi boling."
+        paragraph : "Dubayning hargi skylinesi va hashamatini guvohi boling.",
+        population : '3.3 million',
+        regions : 'Several regions and districts',
+        cities : ' Dubai, Abu Dhabi',
+        currency : 'UAE Dirham (AED)',
+        modalImage : '/dubaiModal.jpg',
+        info : "Dubai offers endless shopping, world-class resorts, and stunning architecture."
     },
     {
         image : '/vetnam.jpg',
         title : 'Vetnam sarguzashti',
-        paragraph : "Vetnamning go'zalligiga kirib boring, rang- barang guruch teraslari va noyob madaniyat bilan tanishing!"
+        paragraph : "Vetnamning go'zalligiga kirib boring, rang- barang guruch teraslari va noyob madaniyat bilan tanishing!",
+        population : '25.7 million',
+        regions : '6 shtat, 2 hudud',
+        cities : 'Sidney, Melburn, Brizben',
+        currency : 'Avstraliya Dollari (AUD)',
+        modalImage : '/vetnamModal.jpg',
+        info : "Vetnam turli xil yovvoyi hayvonlar va tabiiy mo''jizalarga boy."
     },
     {
         image : '/maldiv.jpg',
         title : 'Maldivlar',
-        paragraph : "Oq qumli plyajlar va toza suvlar bilan tropik jannatda dam oling. Hashamatli kurortlar va ajoyib suv osti dunyosidan zavq oling!"
+        paragraph : "Oq qumli plyajlar va toza suvlar bilan tropik jannatda dam oling. Hashamatli kurortlar va ajoyib suv osti dunyosidan zavq oling!",
+        population : '3.9 million',
+        regions : 'Markaziy, Gollivud, Santa Monika',
+        cities : 'Los-Anjeles, Santa Monika, Beverly Xillz',
+        currency : 'AQSH Dollari (USD)',
+        modalImage : '/dubaiModal.jpg',
+        info : "Los-Anjeles rang-barang madaniyat va Gollivud belgilari kabi mashhur joylarni taklif etadi."
     },
     {
         image : '/tailand.jpg',
         title : 'Tropik Tailand',
-        paragraph : "Tailand chiroyli orollari, ko'chada oziq-ovqat va boy madaniyat merosi bilan mashhur."
+        paragraph : "Tailand chiroyli orollari, ko'chada oziq-ovqat va boy madaniyat merosi bilan mashhur.",
+        population : '69.8 million',
+        regions : '76 viloyat',
+        cities : 'Bangkok, Chiang Mai, Phuket',
+        currency : 'Tailand Bat (THB)',
+        modalImage : '/tailandModal.jpg',
+        info : "cite-details-"
     },
     {
         image : '/turkiya.jpg',
         title : "Mo'jizaviy Turkiya",
-        paragraph : "Turkiyaning boy tarixini va go'zal manzaralarini kashf eting."
+        paragraph : "Turkiyaning boy tarixini va go'zal manzaralarini kashf eting.",
+        population : '84 million',
+        regions : '81 viloyat',
+        cities : 'Istanbul, Ankara, Izmir',
+        currency : 'Turk Lirasi (TRY)',
+        modalImage : '/turkiyaModal.jpg',
+        info : "Turkiya Evropa va Osiyo madaniyatlarining noyob aralashmasini taklif etadi."
     }
 ]
 
@@ -213,4 +256,31 @@ export const services = [
         color : 'violet'
     }
     
+]
+
+export const customerSaid = [
+    {
+        name : 'Madina',
+        quote : "Ushbu kompaniya bilan sayohat qilish haqiqatan ham zavq! Ular har bir detaldan e'tibor ber"
+    },
+    {
+        name : 'Bobur',
+        quote : "Sayohat yo'riqlari bilimdon va do'stona edilar. Har bir joy haqida madaniyat va tarixni ju"
+    },
+    {
+        name : 'Nigina',
+        quote : "Buyurtmadan qaytishgacha hamma narsa silliq va yaxshi tashkil etilgan. Men albatta ularnin"
+    },
+    {
+        name : 'Sabina',
+        quote : "Biz uchun tayyorlangan maxsus dastur juda mukammal edi. Go'yoki ular bizning fikrimizni o'"
+    },
+    {
+        name : 'Javohir',
+        quote : "Joylashuvlar juda yuqori darajada edi va mahalliy tajribalar haqiqiy va qiziqarli edi. Kat"
+    }
+]
+
+export const countries = [
+    'Vyetnam', 'Tailand', 'Indoneziya', "O'zbekiston", 'Janubit Koreya', 'Filippin', 'Italiya', 'Xitoy', 'Yaponiya', 'Rossiya'
 ]

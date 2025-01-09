@@ -1,58 +1,36 @@
-import { Box, Stack, useMediaQuery } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import LightDarkButton from "./LightDarkButton";
-import LanguageButton from "./languages/LanguageButton";
 import SocialNetworks from "./SocialNetworks";
 import Logo from "./Logo";
 import SectionsLinks from "./SectionsLinks";
 import Languages from "./languages/Languages";
-import { MenuOpenOutlined } from "@mui/icons-material";
 import MenuButton from "./MenuButton";
+import { useResponsive } from "../sizes/screen";
+import useStore from "../../Store/store";
 
 const Navbar = () => {
   // Media query for large screen
-  const xlgScreen = useMediaQuery('(min-width : 1225px)');
+  const light = useStore(state => state.light)
+  const {lgScreen, xlgScreen} = useResponsive()
+  const navPadding = lgScreen ? '8px' : xlgScreen ? '10%' : '5%'
+  const bgColor = light ? '#F97316' : '#000000'
 
   return (
-    <Box width="100%"
-         height="10vh"
-         display="flex"
-         justifyContent="center"
-         bgcolor="rgba(17,24,39, 0.1)"
-         position="fixed"
-         top={0}
-         zIndex={2}
-         sx={{
-            backdropFilter: 'blur(5px)'}}>
-
-                <Stack width="80%"
-                       height="100%"
-                       direction="row"
-                       justifyContent="space-between"
-                       alignItems="center">
-                       <Logo />
-                       <SectionsLinks />
-                       <Stack direction="row"
-                              alignItems="center"
-                              justifyContent={xlgScreen ? 'space-between' : 'flex-end'}
-                              gap="1.5rem"
-                              height="18px"
-                              width='380px'>
-                              <SocialNetworks />
-                              <Stack direction="row"
-                                     justifyContent="space-between"
-                                     gap="0.2rem">
-                                     <Languages/>
-                                    <LightDarkButton />
-                                    {
-                                      !xlgScreen && <MenuButton/>
-                                    }
-                                    
-                              </Stack>
-                              
-                               
-                         </Stack>
+    <Box width="100%" maxWidth='1922px' height="10vh" position="fixed" top={0} zIndex={4}>
+        <Box width="100%" height="100%" paddingX={navPadding} bgcolor={bgColor} sx={{backdropFilter: 'blur(5px)'}}>
+           <Stack width="100%" height="100%" direction="row" justifyContent="space-between" alignItems="center">
+                <Logo />
+                <Stack direction="row" alignItems="center" gap='1rem'>
+                    <SectionsLinks />
+                    <SocialNetworks />
+                    <Stack direction="row" justifyContent="space-between" gap="0.2rem">
+                        <Languages/>
+                        <LightDarkButton />
+                        { lgScreen && <MenuButton/> }
+                    </Stack>
                  </Stack>
-
+            </Stack>
+        </Box>
     </Box>
   );
 };

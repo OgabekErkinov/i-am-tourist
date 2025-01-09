@@ -7,16 +7,21 @@
   text-decoration: 'none';
 }
 
-
 /* Root Container */
 #root {
   max-width: 1920px;
   min-width: 300px;
-  margin: 0 auto;
+  margin : 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  background-color: "#E5E7EB"
+  background-color: "#E5E7EB";
+  
 }
+html {
+  scroll-behavior: smooth;
+  user-select: none;
+}
+

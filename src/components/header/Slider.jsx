@@ -7,8 +7,11 @@ import 'swiper/css/autoplay';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, EffectFade, Autoplay } from 'swiper/modules';
 import { Box, Stack, Typography } from '@mui/material'
+import { useTranslation } from 'react-i18next';
 
 const Slider = () => {
+  const {t, i18n} = useTranslation()
+  const translatedSliderItems = t("sliderItems", { returnObjects: true });
   return (
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, EffectFade, Autoplay]}
@@ -20,59 +23,34 @@ const Slider = () => {
       pagination={{ clickable: false }}
       scrollbar={{ draggable: true }}
       loop={true}
-      style={{ width: '100%', 
-               height: '90vh',
-               objectFit : 'cover',
-      }}>
+      style={{ width: '100%', height: '90vh', objectFit : 'cover'}}>
       {
-        SliderItems.map((item, idx) => {
+        translatedSliderItems?.map((item, idx) => {
           return (
             <SwiperSlide key={idx}>
-              <Stack height='100%'
-                     width='100%'
-                     display='flex'
-                     alignItems='center'
-                     justifyContent={'center'}
-                     sx={{
-                        backgroundImage: `url(${item.url})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        objectFit : 'cover' }}>
-                       <Stack height={'100%'}
-                              width={'100%'}
-                              paddingTop={'40vh'}
-                              justifyContent={'start'}
-                              alignItems={'center'}
-                              position={'absolute'}
-                              zIndex={1}
-                              bgcolor={'rgba(0, 0, 0, 0.5)'}>
-                             <Typography fontSize="6rem"
-                                         fontFamily="Poppins"
-                                         fontWeight={700}
-                                         textAlign={'center'}
-                                         width={'100%'}
+              <Box height='100%' width='100%'
+                   sx={{ backgroundImage: `url(${SliderItems[idx].url})`, backgroundSize: 'cover', backgroundPosition: 'center', objectFit : 'cover' }}>
+                    <Box height='100%' width='100%' paddingTop='35vh' position='absolute' zIndex='1' bgcolor='rgba(0, 0, 0, 0.5)'>
+                       <Stack height='100%' width='100%' justifyContent='start' alignItems='center' color='white'>
+                          <Box width='95%' textAlign='center'>
+                            <Typography fontSize="6rem" fontFamily="Poppins" fontWeight={700} textAlign='center'
                                          sx={{
                                             opacity: 1,
-                                            color: 'white',
                                             textShadow: '2px 2px 8px rgba(0, 0, 0, 0.7)',
-                                            '@media (max-width : 524px)' : {
-                                                    fontSize : '3rem' },
-                                            
-                                             }}>
+                                            '@media (max-width : 524px)' : { fontSize : '3rem' } }}>
                                             {item.heading}
                               </Typography>
-                              <Typography fontFamily="Poppins"
+                          </Box>
+                          <Box width='90%' textAlign='center'>
+                             <Typography fontFamily="Poppins"
                                           fontSize="1.2rem"
-                                          width={'80%'}
-                                          sx={{
-                                             color: 'white',
-                                             textAlign: 'center',
-                                             textShadow: '2px 2px 8px rgba(0, 0, 0, 0.9)',
-                                              }}>
-                                             {item.paragraph}
-                               </Typography>
-                </Stack>
-              </Stack>
+                                          sx={{ textShadow: '2px 2px 8px rgba(0, 0, 0, 0.9)' }}>
+                                          {item.paragraph}
+                              </Typography>
+                          </Box>             
+                       </Stack>
+                    </Box>       
+              </Box>
             </SwiperSlide>
           );
         })
