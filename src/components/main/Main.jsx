@@ -7,15 +7,11 @@ import BookATicket from '../bookTicket/BookATicket'
 
 const Main = ({rootRef}) => {
   return (
-    <Stack width={'100%'}
-           height={'auto'}
-           alignItems={'center'}
-           gap='1rem'>
-        <PremiumTours/>
+    <Stack width='100%' height='auto' alignItems='center' gap='1rem'>
+        <PremiumTours rootRef = {rootRef}/>
         <TourPlaces rootRef = {rootRef}/>
         <About/>
         <BookATicket/>
-
     </Stack>
   )
 }

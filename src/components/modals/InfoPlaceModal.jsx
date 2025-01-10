@@ -1,37 +1,50 @@
 import { Box, Button, Portal, Stack, Typography } from '@mui/material'
 import React, { useState } from 'react'
-import { IoClose } from 'react-icons/io5'
 import ContactModal from './ContactModal'
 import { useResponsive } from '../sizes/screen'
+import { useTranslation } from 'react-i18next'
 
-const InfoPlaceModal = ({infoObject, closeFunc, root}) => {
+const InfoPlaceModal = ({infoObject, closeFunc, root, idx}) => {
+    const {t} = useTranslation()
+    const tourPlaces = t("tourPlaces", {returnObjects : true})
+    
     const [openContactModal, setOpenContactModal] = useState(false)
     const {mdScreen, lgScreen, xlgScreen} = useResponsive()
-    const widthContainer = mdScreen ? '90%' : lgScreen ? '70%' : xlgScreen ? '50%' : '30%'
+    const widthContainer = mdScreen ? '60%' : lgScreen ? '50%' : xlgScreen ? '50%' : '30%'
   return (
     <Box width='100vw' height='100vh' bgcolor='rgba(0,0,0,0.6)' position='fixed' zIndex={3}>
-        <Box width='100%' height='80%' position='fixed' top='10vh'>
-            <Box width={widthContainer} height='95%' bgcolor='#FFFFFF' m='auto' borderRadius='0.5rem' py='1.5rem'>
+        <Box width='100%' height='90%' position='fixed' top='10vh'>
+            <Box width={widthContainer} height='90%' bgcolor='#FFFFFF' m='auto' borderRadius='0.5rem' py='1.5rem'>
                <Stack width='100%' height='100%' alignItems='center' justifyContent='space-between'>
                 <Box component="img" height='25vh' width='90%' borderRadius='0.5rem' src='./tailandModal.jpg'/>
-                <Typography variant='h4' fontFamily='Poppins' fontWeight='600' width='95%' textAlign='center'>
-                    {infoObject?.title}
+                <Typography variant='h4' fontFamily='Poppins' fontWeight='600' 
+                            width='95%' textAlign='center' fontSize={mdScreen ? '12px' : '22px'}>
+                    {tourPlaces[idx]?.title}
                 </Typography>
-                <Typography fontFamily='Poppins' fontWeight='400' width='95%' textAlign='center'>
-                    {infoObject?.info}
+                <Typography fontFamily='Poppins' fontWeight='400' 
+                            width='95%' textAlign='center' fontSize={mdScreen ? '10px' : '12px'}>
+                    {tourPlaces[idx]?.info}
                 </Typography>
                 <Stack width='100%' alignItems='center'>
                 <Box width='95%' textAlign='center'>
-                    <Typography fontFamily='Poppins' fontSize='18px'><b>Aholi:</b> {infoObject?.population}</Typography>
+                    <Typography fontFamily='Poppins' fontSize={mdScreen ? '12px' : '18px'}>
+                        <b>{t("Population")}:</b>{tourPlaces[idx]?.population}
+                    </Typography>
                 </Box>
                 <Box width='95%' textAlign='center'>
-                    <Typography fontFamily='Poppins' fontSize='18px'><b>Hududlar:</b> {infoObject?.regions}</Typography>
+                    <Typography fontFamily='Poppins' fontSize={mdScreen ? '12px' : '18px'}>
+                        <b>{t("Areas")}:</b> {tourPlaces[idx]?.regions}
+                    </Typography>
                 </Box>
                 <Box width='95%' textAlign='center'>
-                    <Typography fontFamily='Poppins' fontSize='18px'><b>Shaharlar:</b> {infoObject?.cities}</Typography>
+                    <Typography fontFamily='Poppins' fontSize={mdScreen ? '12px' : '18px'}>
+                        <b>{t("Cities")}:</b> {tourPlaces[idx]?.cities}
+                    </Typography>
                 </Box>
                 <Box width='95%' textAlign='center'>
-                    <Typography fontFamily='Poppins' fontSize='18px'><b>Valyuta:</b> {infoObject?.currency}</Typography>
+                    <Typography fontFamily='Poppins' fontSize={mdScreen ? '12px' : '18px'}>
+                        <b>{t("Currency")}:</b> {tourPlaces[idx]?.currency}
+                    </Typography>
                 </Box>
 
                 </Stack>
@@ -40,21 +53,21 @@ const InfoPlaceModal = ({infoObject, closeFunc, root}) => {
                         bgcolor : 'gray',
                         color : 'white',
                         width : '45%',
-                        height : '110%',
+                        height : mdScreen ? '100%' : '110%',
                     }}
                     onClick={()=>closeFunc(false)}>
-                        <Typography fontFamily='Poppins' fontWeight='500'> 
-                            Yopish
+                        <Typography fontFamily='Poppins' fontWeight='500' fontSize={mdScreen ? '12px' : '14px'}> 
+                            {t("Close")}
                         </Typography>
                     </Button>
                     <Button sx={{
                         bgcolor : 'gray',
                         color : 'white',
                         width : '45%',
-                        height : '110%'}}
+                        height : mdScreen ? '100%' : '110%'}}
                         onClick={() => setOpenContactModal(true)}>
-                        <Typography fontFamily='Poppins' fontWeight='500'> 
-                           Aloqa
+                        <Typography fontFamily='Poppins' fontWeight='500' fontSize={mdScreen ? '12px' : '14px'}> 
+                           {t("Contact")}
                        </Typography>
                     </Button>
                     {

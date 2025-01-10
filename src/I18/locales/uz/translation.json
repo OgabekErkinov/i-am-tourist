@@ -95,6 +95,15 @@
         "Avstralia" : "Avstraliya",
         "FastLinks" : "Tez havolalar",
         "OurInviting" : "Biz innovatsion sayohat yechimlari orqali ajoyib tajribalar taqdim etishga intilamiz.",
+        "AboutPremium" : "Bizning Premium Turlarimizni Kashf Etish",
+        "Population": "Aholi",
+        "Areas": "Hududlar",
+        "Cities": "Shaharlar",
+        "Currency": "Valyuta",
+        "Close" : "Yopish",
+        "subject":"Mavzu nima haqida",
+        "message":"Sizning xabaringiz",
+        "sendUs" :"Xabar yuboring",
                         "tourPlaces": [
                 {
                     "title": "Tokio, Yaponiya",

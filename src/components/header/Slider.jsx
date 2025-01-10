@@ -8,10 +8,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, EffectFade, Autoplay } from 'swiper/modules';
 import { Box, Stack, Typography } from '@mui/material'
 import { useTranslation } from 'react-i18next';
+import { useResponsive} from '../sizes/screen'
 
 const Slider = () => {
   const {t, i18n} = useTranslation()
   const translatedSliderItems = t("sliderItems", { returnObjects: true });
+  const {mdScreen, lgScreen} = useResponsive()
+
+  const sizeFont = mdScreen ? '4rem' : lgScreen ? '5rem' : '6rem'
   return (
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, EffectFade, Autoplay]}
@@ -30,20 +34,17 @@ const Slider = () => {
             <SwiperSlide key={idx}>
               <Box height='100%' width='100%'
                    sx={{ backgroundImage: `url(${SliderItems[idx].url})`, backgroundSize: 'cover', backgroundPosition: 'center', objectFit : 'cover' }}>
-                    <Box height='100%' width='100%' paddingTop='35vh' position='absolute' zIndex='1' bgcolor='rgba(0, 0, 0, 0.5)'>
+                    <Box height='100%' width='100%' paddingTop='30vh' position='absolute' zIndex='1' bgcolor='rgba(0, 0, 0, 0.5)'>
                        <Stack height='100%' width='100%' justifyContent='start' alignItems='center' color='white'>
                           <Box width='95%' textAlign='center'>
                             <Typography fontSize="6rem" fontFamily="Poppins" fontWeight={700} textAlign='center'
-                                         sx={{
-                                            opacity: 1,
-                                            textShadow: '2px 2px 8px rgba(0, 0, 0, 0.7)',
-                                            '@media (max-width : 524px)' : { fontSize : '3rem' } }}>
-                                            {item.heading}
+                                         sx={{ opacity: 1, textShadow: '2px 2px 8px rgba(0, 0, 0, 0.7)',
+                                               '@media (max-width : 524px)' : { fontSize : sizeFont } }}>
+                                        {item.heading}
                               </Typography>
                           </Box>
                           <Box width='90%' textAlign='center'>
-                             <Typography fontFamily="Poppins"
-                                          fontSize="1.2rem"
+                             <Typography fontFamily="Poppins" fontSize="1.2rem"
                                           sx={{ textShadow: '2px 2px 8px rgba(0, 0, 0, 0.9)' }}>
                                           {item.paragraph}
                               </Typography>

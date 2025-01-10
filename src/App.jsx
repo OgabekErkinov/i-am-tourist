@@ -9,7 +9,7 @@ function App() {
   const appRef = useRef(null)
   return (
     <Stack ref = {appRef} width='100%' height='auto' alignItems='center' gap='1rem'>
-        <Header/>
+        <Header rootRef={appRef}/>
         <Main rootRef = {appRef}/>
         <Footer/>
         

@@ -7,7 +7,7 @@ const TextBox = ({label, pholder, type, writer, value}) => {
                 {label}
         </Typography>
         <Box height = 'auto' width = '100%' borderRadius = '8px' border='1px solid #D1D5DB'
-             display='flex' alignItems='center' padding='16px'>
+             display='flex' alignItems='center' padding='12px' bgcolor='#FFFFFF'>
             <Input placeholder={pholder} type={type} disableUnderline fullWidth
                    value={value}
                    onChange={(e) => writer(e.target.value)}/>

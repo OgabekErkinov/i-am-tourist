@@ -57,54 +57,24 @@ export const navLinks = [
 export const SliderItems = [
     {
         url : '/malakali.jpg',
-        heading : 'Malakali shahar',
-        paragraph : "Dunyoning ko'ngilochar poytaxtiga sho'ng'ing."
     },
     {
         url : '/turkiya.jpg',
-        heading : 'Sehrli Turkiya',
-        paragraph : "Turkiyaning boy tarixi va ajoyib manzaralarini o'rganing."
     },
     {
         url : '/orol.jpg',
-        heading : 'Orol chekinishi',
-        paragraph : 'Ajoyib orol landshaftlari orasida tinchlikni his eting.'
     },
     {
         url : '/yaponiya.jpg',
-        heading : 'Yaponiya',
-        paragraph : "Zamonaviy hayot va qadimiy an'analar mamlakati"
     },
     {
         url : '/dubai.jpg',
-        heading : "Dubayni kashf eting",
-        paragraph : "Birlashgan Arab Amirliklarida hashamat, innovatsiyalar va sarguzashtlarni kashf eting."
-
     },
     {
         url : '/xitoyni.jpg',
-        heading : 'Xitoyni kashf qiling',
-        paragraph : "Xitoy: qadimgi tarix, Buyuk devor, innovatsiyalar, jonli madaniyat."
     },
     {
         url : '/tailand.jpg',
-        heading : 'Tropik Tailand',
-        paragraph : "Chiroyli plyajlarda dam oling va mazali taomlarni tatib ko'ring."
-    }
-]
-
-export const addBanners = [
-    {
-        heading : 'Ajoyib plyaj',
-        paragraph : 'Zamonaviy plyajlarni kashf eting va quyosh ostida dam oling.'
-    },
-    {
-        heading : "Tog' sarguzashtlari",
-        paragraph : "Qiziqarli tog' sayohatiga chiqing va tabiatni o'rganing."
-    },
-    {
-        heading : 'Shahar sayohatlari',
-        paragraph : "Qiziqarli tog' sayohatiga chiqing va tabiatni o'rganing."
     }
 ]
 
@@ -128,23 +98,16 @@ export const languages = [
 
 export const premiumToursServices = [
     {
-        title : 'Tokio Sarguzashtlari',
-        paragraph : "Yaponiya yuragida an'ana va texnologiyaning uyg'unligini his eting.",
         image : '/tokioprem.jpg'
     },
     {
-        title : 'Dubay Muxlislari',
-        paragraph : "Dubaynig kelajakdagi siluetini va hashamatini ko'ring.",
         image : '/dubaipremium.jpg'
     },
     {
-        title : 'Xitoyni Kashf Etish',
-        paragraph : "Sevgi shahrini kashf eting, madaniyati, san'ati va taomi bilan mashhur.",
         image : '/xitoyprem.jpg'
     },
     {
-        title : 'Yaponiya',
-        paragraph : "Yaponiya – bu sizning barcha sayohat orzularingizni ro'yobga chiqaradigan mamlakat.",
+
         image : '/xitoypremium.jpg'
     }
 ]

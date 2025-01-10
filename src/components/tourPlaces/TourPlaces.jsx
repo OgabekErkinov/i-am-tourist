@@ -7,8 +7,9 @@ import { useTranslation } from 'react-i18next';
 import { useResponsive } from '../sizes/screen';
 
 const TourPlaces = ({rootRef}) => {
-  const {mdScreen, lgScreen, xlgScreen} = useResponsive()
-  const columnsGrid = mdScreen ? '1fr' : xlgScreen ? 'repeat(2,1fr)' : 'repeat(3,1fr)'
+  const {smScreen,mdScreen, lgScreen} = useResponsive()
+  const columnsGrid = smScreen ? '1fr' : lgScreen ? 'repeat(2,1fr)' : 'repeat(3,1fr)'
+  const sizeFont = smScreen ? '24px' : lgScreen ? '32px' : '40px'
   const {t} = useTranslation()
   useEffect(() => {
     Aos.init({
@@ -19,13 +20,7 @@ const TourPlaces = ({rootRef}) => {
   return (
     <Stack id = 'city' height='auto' width='90%' justifyContent='center' alignItems='center' my='2rem' gap='1rem'>
            <Typography variant='h4' color='black' marginBottom='1rem' fontFamily='Poppins' fontWeight='800'
-                       fontSize='40px' data-aos = 'fade-up'
-                       sx={{
-                         '@media (max-width: 900px)': {
-                                  fontSize: '32px',
-                                  textAlign: 'center' },
-                         '@media (max-width: 600px)': {
-                                  fontSize: '24px' } }} >
+                       fontSize={sizeFont} textAlign = 'center' data-aos = 'fade-up'>
                          {t("LearnCountry")}
             </Typography>
             <Box height="auto" width= "100%" display="grid" gap="16px" gridTemplateColumns={columnsGrid}>

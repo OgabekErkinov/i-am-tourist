@@ -8,8 +8,9 @@ import useStore from '../../Store/store'
 
 const BookATicket = () => {
     const light = useStore(state => state.light)
-   const textColor = light ? '#1F2937' : "#F97316"
-   const bgColor = light ? '#F97316' : '#000000'
+    const textColor = light ? '#1F2937' : "#F97316"
+    const bgColor = light ? '#FFFFFF' : '#F97316'
+    const buttonBg = light ? '#F97316' : '#1F2937'
     const { smScreen, mdScreen, lgScreen} = useResponsive()
     const {t} = useTranslation()
     const columns = mdScreen ? '1fr' : lgScreen ? 'repeat(2, 1fr)' : 'repeat(3,1fr)'
@@ -19,9 +20,11 @@ const BookATicket = () => {
 
     <Box  width='90%' height='auto' display='flex' justifyContent='center' alignItems='center'>
         <Box height='100%' width='100%' px='20px'>
-            <Stack width='100%' height='100%' borderRadius='16px' p='32px' gap='1rem' boxShadow = '0px 25px 50px -12px #00000040'>
+            <Stack width='100%' height='100%' borderRadius='16px' p='32px' gap='1rem' 
+                   boxShadow = '0px 25px 50px -12px #00000040' bgcolor={bgColor} sx={{transition : '0.4s'}}>
                 <Box width='96%' height='100%' textAlign='center'>
-                    <Typography fontFamily='Poppins' fontSize='36px' fontWeight='700' color={textColor}>
+                  <Typography fontFamily='Poppins' fontSize={smScreen ? '28px' : '36px'} 
+                              fontWeight='700' color='#1F2937' textAlign='center'>
                         {t("Bron")}
                     </Typography>
                 </Box>
@@ -50,7 +53,7 @@ const BookATicket = () => {
                 </Box>
                {/* submit button */}
                <Box width='100%' height='92px' mx='auto' mt='2rem'>
-                        <Button fullWidth sx={{bgcolor: '#F97316', borderRadius : '8px'}}>
+                        <Button fullWidth sx={{bgcolor: buttonBg, borderRadius : '8px', transition : '0.4s'}}>
                             <Typography color='#FFFFFF'>{t("Submit")}</Typography>
                         </Button>
                     </Box>

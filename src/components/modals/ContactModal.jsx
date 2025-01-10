@@ -4,10 +4,12 @@ import { IoClose } from 'react-icons/io5'
 import TextBox from '../bookTicket/TextBox'
 import { useResponsive } from '../sizes/screen'
 import axios from 'axios'
+import { useTranslation } from 'react-i18next'
 
 const ContactModal = ({closeFunc}) => {
+    const {t} = useTranslation()
     const {smScreen, mdScreen, lgScreen, xlgScreen} = useResponsive()
-    const widthContainer = mdScreen ? '90%' : lgScreen ? '70%' : xlgScreen ? '50%' : '30%'
+    const widthContainer = mdScreen ? '70%' : lgScreen ? '60%' : xlgScreen ? '50%' : '30%'
 
     const [fullName, setFullName] = useState('')
     const [email, setEmail] = useState('')
@@ -33,35 +35,37 @@ const ContactModal = ({closeFunc}) => {
     }
 
   return (
-    <Box width='100vw' height='100vh' bgcolor='rgba(0,0,0,0.6)' position='fixed' zIndex={6}>
-        <Box width={widthContainer} height='90vh' p='1rem' mx='auto' mt='5vh' bgcolor='#FFFFFF' borderRadius='0.5rem' boxSizing='border-box'>
-            <Box display='grid' gridTemplateRows='1fr 1fr 1fr 1fr 2fr 1fr' rowGap='1rem'
+    <Box id = 'contact' width='100vw' height='100vh' bgcolor='rgba(0,0,0,0.6)' position='fixed' zIndex={6}>
+        <Box width={widthContainer} height='95vh' p='1rem' mx='auto' mt='5vh' bgcolor='#FFFFFF' 
+             borderRadius='0.5rem'>
+            <Box display='grid' gridTemplateRows='1fr 1fr 1fr 1fr 1.5fr 1fr' rowGap='1rem'
                  width='100%' height='100%' alignItems='center'>
                 <Stack direction='row' width='95%' justifyContent='space-between'>
-                    <Typography fontFamily='Poppins' fontWeight='700' fontSize='2rem' >Xabar yuboring!</Typography>
+                    <Typography fontFamily='Poppins' fontWeight='700' fontSize={mdScreen ? '1rem' : '2rem'} >
+                        {t("sendUs")}..!
+                    </Typography>
                     <Button sx={{
                         bgcolor : '#F97316',
                         height : '8vh',
                         width : '8vh' }}
                     onClick={() => closeFunc(false)}>
-                        <IoClose color='#FFFFFF' size={'xl'}/>
+                        <IoClose color='#FFFFFF' size={'xs'}/>
                     </Button>
                 </Stack>
-                <TextBox label="To'liq ism" type='text' writer = {setFullName} value = {fullName}/>
-                <TextBox label="Email Manzil" type='email' writer = {setEmail} value = {email}/>
-                <TextBox label="Mavzu nima haqida" type='text' writer = {setAboutMessage} value = {aboutMessage}/>
-                <TextField variant='outlined' multiline rows={5} label = "Sizning xabaringiz" fullWidth
+                <TextBox label={t("FullName")} type='text' writer = {setFullName} value = {fullName}/>
+                <TextBox label={t("Email")} type='email' writer = {setEmail} value = {email}/>
+                <TextBox label={t("subject")} type='text' writer = {setAboutMessage} value = {aboutMessage}/>
+                <TextField variant='outlined' multiline rows={2} label ={t("message")} fullWidth
                            value={message}
                            onChange={(e) => setMessage(e.target.value)} />
                 <Button fullWidth sx={{
                     bgcolor : '#F97316',
                     color : '#FFFFFF',
-                    height : '8vh',
+                    height : '6vh',
                     borderRadius : '0.5rem'
-                }}
-                >
+                }}>
                     <Typography fontFamily='Poppins' fontWeight='600' >
-                       Submit
+                       {t("Submit")}
                     </Typography>
                 </Button>
 
