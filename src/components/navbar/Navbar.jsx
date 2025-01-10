@@ -11,7 +11,7 @@ import useStore from "../../Store/store";
 const Navbar = ({root}) => {
   const light = useStore(state => state.light)
   const {lgScreen, xlgScreen} = useResponsive()
-  const navPadding = lgScreen ? '8px' : xlgScreen ? '5px' : '5%'
+  const navPadding = lgScreen ? '8px' : lgScreen ? '5px' : '5%'
   const bgColor = light ? '#F97316' : '#1F2937'
 
   return (
