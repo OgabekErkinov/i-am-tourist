@@ -9,8 +9,8 @@ const InfoPlaceModal = ({infoObject, closeFunc, root, idx}) => {
     const tourPlaces = t("tourPlaces", {returnObjects : true})
     
     const [openContactModal, setOpenContactModal] = useState(false)
-    const {mdScreen, lgScreen, xlgScreen} = useResponsive()
-    const widthContainer = mdScreen ? '60%' : lgScreen ? '50%' : xlgScreen ? '50%' : '30%'
+    const {smScreen, mdScreen, lgScreen, xlgScreen} = useResponsive()
+    const widthContainer =smScreen ? '300px' : mdScreen ? '60%' : lgScreen ? '50%' : xlgScreen ? '50%' : '30%'
   return (
     <Box width='100vw' height='100vh' bgcolor='rgba(0,0,0,0.6)' position='fixed' zIndex={3}>
         <Box width='100%' height='90%' position='fixed' top='10vh'>
