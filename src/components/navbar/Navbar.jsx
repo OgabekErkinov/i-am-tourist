@@ -27,7 +27,7 @@ const Navbar = ({root}) => {
                     <Stack direction="row" justifyContent="space-between" gap="0.2rem">
                         <Languages/>
                         <LightDarkButton />
-                        { lgScreen && <MenuButton/> }
+                        { lgScreen && <MenuButton root = {root}/> }
                     </Stack>
                 </Stack>
           </Box>

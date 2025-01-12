@@ -13,6 +13,7 @@
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@glidejs/glide": "^3.7.1",
+    "@hookform/resolvers": "^3.10.0",
     "@mui/icons-material": "^6.2.1",
     "@mui/material": "^6.2.1",
     "@splidejs/react-splide": "^0.7.12",
@@ -23,9 +24,11 @@
     "i18next": "^24.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-hook-form": "^7.54.2",
     "react-i18next": "^15.2.0",
     "react-icons": "^5.4.0",
     "swiper": "^11.1.15",
+    "yup": "^1.6.1",
     "zustand": "^5.0.2"
   },
   "devDependencies": {

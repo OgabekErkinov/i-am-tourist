@@ -13,9 +13,9 @@ import { useResponsive} from '../sizes/screen'
 const Slider = () => {
   const {t, i18n} = useTranslation()
   const translatedSliderItems = t("sliderItems", { returnObjects: true });
-  const {mdScreen, lgScreen} = useResponsive()
+  const {smScreen, mdScreen, lgScreen} = useResponsive()
 
-  const sizeFont = mdScreen ? '4rem' : lgScreen ? '5rem' : '6rem'
+  const sizeFont = mdScreen ? '2rem' : lgScreen ? '4rem' : '6rem'
   return (
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, EffectFade, Autoplay]}
@@ -37,9 +37,8 @@ const Slider = () => {
                     <Box height='100%' width='100%' paddingTop='30vh' position='absolute' zIndex='1' bgcolor='rgba(0, 0, 0, 0.5)'>
                        <Stack height='100%' width='100%' justifyContent='start' alignItems='center' color='white'>
                           <Box width='95%' textAlign='center'>
-                            <Typography fontSize="6rem" fontFamily="Poppins" fontWeight={700} textAlign='center'
-                                         sx={{ opacity: 1, textShadow: '2px 2px 8px rgba(0, 0, 0, 0.7)',
-                                               '@media (max-width : 524px)' : { fontSize : sizeFont } }}>
+                            <Typography fontSize={sizeFont} fontFamily="Poppins" fontWeight={700} textAlign='center'
+                                         sx={{ opacity: 1, textShadow: '2px 2px 8px rgba(0, 0, 0, 0.7)'}}>
                                         {item.heading}
                               </Typography>
                           </Box>

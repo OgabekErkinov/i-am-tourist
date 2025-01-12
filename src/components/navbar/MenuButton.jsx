@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { IoClose, IoMenuOutline } from 'react-icons/io5'
 import MobileMenu from '../modals/MobileMenu'
 
-const MenuButton = () => {
+const MenuButton = ({root}) => {
   const [menu, setMenu] = useState(false)
   return (
     <Box height="40px" width="40px" padding="8px" border="0.5px solid orange"  
@@ -18,7 +18,7 @@ const MenuButton = () => {
                   }    
            </Button>
         </Box>
-        {menu &&  <MobileMenu/>}
+        {menu &&  <MobileMenu root = {root}/>}
     </Box>
   )
 }

@@ -4,11 +4,10 @@ import { useResponsive } from '../sizes/screen';
 
 const SocialNetworks = () => {
   const {mdScreen, lgScreen} = useResponsive()
-  const widthContainer = lgScreen ? '120px' : '180px'
   const paddingItem = mdScreen ? '0px' : lgScreen ? '4px' : '8px'
 
   return (
-    <Box width={widthContainer} display={!mdScreen ? 'flex' : 'none'}>
+    <Box width='auto' display={!mdScreen ? 'flex' : 'none'}>
       <List sx={{ width: '100%', height: '24px', display: 'flex', justifyContent: 'center', alignItems : 'center'}}>
       {social_medias?.map((media, idx) => {
         return (

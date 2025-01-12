@@ -10,7 +10,7 @@ const LanguageButton = ({language, setOpen, setCurrentLanguage, color, border}) 
     setOpen(prev => !prev)
   }
   return (
-          <Button sx={{ height : '36px', display: 'flex', alignItems: 'center', justifyContent : 'flex-start',
+          <Button sx={{ height : '36px', width : '100%', display: 'flex', alignItems: 'center', justifyContent : 'flex-start',
                         padding: '8px 12px', borderBottom : border,
                         '&:active': { bgcolor: 'transparent' },
                         '&:hover' : {bgcolor : 'gray'}}} disableRipple onClick={handleClick}>

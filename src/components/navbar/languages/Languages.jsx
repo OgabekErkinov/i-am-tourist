@@ -17,7 +17,7 @@ const Languages = () => {
         </Box>
         {
         openLanguages &&   
-            <Box height='auto' width='140px' position='absolute' top={60} zIndex={9999} 
+            <Box height='auto' width='140px' position='absolute' top={75} zIndex={9999} 
                  borderRadius='5px' overflow='hidden'>
                 <Stack height='100%' width='100%' bgcolor="#FFFFFF" alignItems = 'start'
                        boxShadow="0px 4px 8px rgba(0, 0, 0, 0.2)">
