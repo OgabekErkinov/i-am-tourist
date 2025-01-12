@@ -47,7 +47,12 @@ const ContactModal = ({ closeFunc }) => {
         setAlertMessage([{ fieldName: 'success', message: 'Xabar yuborildi!' }]);
         setAlertSeverity('success');
         setOpenAlert(true);
-        reset();
+        reset({
+          FullName : '',
+          Email : '',
+          Subject : '',
+          Message : ''
+        });
       })
       .catch(() => {
         setAlertMessage([{ fieldName: 'error', message: 'Xabar yuborilmadi!' }]);
