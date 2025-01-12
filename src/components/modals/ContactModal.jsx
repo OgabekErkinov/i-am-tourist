@@ -53,6 +53,7 @@ const ContactModal = ({ closeFunc }) => {
           Subject : '',
           Message : ''
         });
+        closeFunc(false)
       })
       .catch(() => {
         setAlertMessage([{ fieldName: 'error', message: 'Xabar yuborilmadi!' }]);
