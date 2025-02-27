@@ -1,26 +1,46 @@
-import { Box, Button, Portal } from '@mui/material'
-import React, { useState } from 'react'
-import { IoClose, IoMenuOutline } from 'react-icons/io5'
-import MobileMenu from '../modals/MobileMenu'
+import { Box, Button } from "@mui/material";
+import React from "react";
+import { IoClose, IoMenuOutline } from "react-icons/io5";
+import MobileMenu from "../modals/MobileMenu";
+import useStore from "../../Store/store";
 
-const MenuButton = ({root}) => {
-  const [menu, setMenu] = useState(false)
+const MenuButton = ({ root }) => {
+  const menuOpen = useStore((state) => state.menuOpen);
+  const toggleMenu = useStore((state) => state.toggleMenu);
+
   return (
-    <Box height="40px" width="40px" padding="8px" border="0.5px solid orange"  
-         borderRadius="5px" overflow="hidden" bgcolor="white">
-        <Box height="100%" width="100%"  display="flex" 
-             justifyContent="center" alignItems="center">
-           <Button disableElevation disableRipple
-                  sx={{ width : '24px', height : '24px', '&:active': {backgroundColor: 'transparent'}}}
-                  onClick={() => setMenu(prev => !prev)}>
-                  { !menu ? <IoMenuOutline color="orange" style={{scale : '1.5'}}/> : 
-                            <IoClose color='orange' style={{scale : '1.5'}}/>
-                  }    
-           </Button>
-        </Box>
-        {menu &&  <MobileMenu root = {root}/>}
-    </Box>
-  )
-}
+    <Box
+      height="40px"
+      width="40px"
+      bgcolor="white"
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        border: "0.5px solid orange",
+        borderRadius: "5px",
+      }}
+    >
+      <Button
+        disableElevation
+        disableRipple
+        onClick={toggleMenu}
+        sx={{
+          minWidth: 0,
+          padding: 0,
+          "&:active": { backgroundColor: "transparent" },
+        }}
+      >
+        {menuOpen ? (
+          <IoClose color="orange" fontSize="24px" />
+        ) : (
+          <IoMenuOutline color="orange" fontSize="24px" />
+        )}
+      </Button>
 
-export default MenuButton
+      {menuOpen && <MobileMenu root={root} />}
+    </Box>
+  );
+};
+
+export default MenuButton;

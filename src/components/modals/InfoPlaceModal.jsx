@@ -16,7 +16,7 @@ const InfoPlaceModal = ({infoObject, closeFunc, root, idx}) => {
         <Box width='100%' height='90%' position='fixed' top='10vh'>
             <Box width={widthContainer} height='90%' bgcolor='#FFFFFF' m='auto' borderRadius='0.5rem' py='1.5rem'>
                <Stack width='100%' height='100%' alignItems='center' justifyContent='space-between'>
-                <Box component="img" height='25vh' width='90%' borderRadius='0.5rem' src='./tailandModal.jpg'/>
+                <Box component="img" height='25vh' width='90%' borderRadius='0.5rem' src={infoObject?.image}/>
                 <Typography variant='h4' fontFamily='Poppins' fontWeight='600' 
                             width='95%' textAlign='center' fontSize={mdScreen ? '12px' : '22px'}>
                     {tourPlaces[idx]?.title}

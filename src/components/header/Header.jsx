@@ -16,7 +16,6 @@ const Header = ({rootRef}) => {
     <Box height='auto' width='100%' mb='1rem' bgcolor='transparent'>
         <Stack height="100%" width='100%' gap="2rem" alignItems="center">
              <Stack width="100%" height="100%" alignItems='center'>
-                 <Box width="100%" height={boxHeight} bgcolor={bgColor} sx={{transition : '0.4s'}}></Box>
                  <Navbar root = {rootRef}  />
                  <Slider />
           </Stack>

@@ -72,7 +72,7 @@
         "AboutCompany": "About our company",
         "AboutServices": "We have been providing unique travel experiences for over 20 years.",
         "OurHistory" : "Our history",
-        "AboutHistory" : "Since its establishment, IFLY has been providing customers with unforgettable travel experiences. We always strive to offer the best services and take into account the wishes and needs of our clients.",
+        "AboutHistory" : "Since its establishment, iAmTourist has been providing customers with unforgettable travel experiences. We always strive to offer the best services and take into account the wishes and needs of our clients.",
         "CustomersSaid": "What our customers say",
         "Bron" : "Flight booking",
         "FullName": "Your full name:",
@@ -114,7 +114,8 @@
                     "regions": "23 special regions",
                     "cities": "Tokyo, Yokohama, Chiba",
                     "currency": "Japanese Yen (JPY)",
-                    "info": "Tokyo offers a wonderful combination of culture, food, technology, and history."
+                    "info": "Tokyo offers a wonderful combination of culture, food, technology, and history.",
+                    "image":"/tokio.webp"
                 },
                 {
                     "title": "Island Paradise",
@@ -123,7 +124,8 @@
                     "regions": "Various islands",
                     "cities": "Main island city, Beach city",
                     "currency": "Island Dollar (ID)",
-                    "info": "Islands are peaceful retreats where you can enjoy the sea, sand, and tranquility."
+                    "info": "Islands are peaceful retreats where you can enjoy the sea, sand, and tranquility.",
+                    "image":"/islandModal.webp"
                 },
                 {
                     "title": "Dubai, UAE",
@@ -132,7 +134,8 @@
                     "regions": "Several regions and districts",
                     "cities": "Dubai, Abu Dhabi",
                     "currency": "UAE Dirham (AED)",
-                    "info": "Dubai offers endless shopping, world-class resorts, and stunning architecture."
+                    "info": "Dubai offers endless shopping, world-class resorts, and stunning architecture.",
+                    "image":"/dubai.webp"
                 },
                 {
                     "title": "Vietnam Adventure",
@@ -141,7 +144,8 @@
                     "regions": "6 states, 2 territories",
                     "cities": "Sydney, Melbourne, Brisbane",
                     "currency": "Australian Dollar (AUD)",
-                    "info": "Vietnam is rich in wildlife and natural wonders."
+                    "info": "Vietnam is rich in wildlife and natural wonders.",
+                    "image":"/vetnam.webp"
                 },
                 {
                     "title": "Maldives",
@@ -150,7 +154,8 @@
                     "regions": "Central, Hollywood, Santa Monica",
                     "cities": "Los Angeles, Santa Monica, Beverly Hills",
                     "currency": "USD (United States Dollar)",
-                    "info": "Los Angeles offers vibrant culture and famous landmarks like Hollywood."
+                    "info": "Los Angeles offers vibrant culture and famous landmarks like Hollywood.",
+                    "image":"/maldiv.webp"
                 },
                 {
                     "title": "Tropical Thailand",
@@ -159,7 +164,8 @@
                     "regions": "76 provinces",
                     "cities": "Bangkok, Chiang Mai, Phuket",
                     "currency": "Thai Baht (THB)",
-                    "info": "Thailand offers a rich history and unique experiences."
+                    "info": "Thailand offers a rich history and unique experiences.",
+                    "image" : "/tailand.webp"
                 },
                 {
                     "title": "Marvelous Turkey",
@@ -168,7 +174,8 @@
                     "regions": "81 provinces",
                     "cities": "Istanbul, Ankara, Izmir",
                     "currency": "Turkish Lira (TRY)",
-                    "info": "Turkey offers a unique blend of European and Asian cultures."
+                    "info": "Turkey offers a unique blend of European and Asian cultures.",
+                    "image" : "/turkiya.webp"
                 }
                   ] , 
         "services" : [

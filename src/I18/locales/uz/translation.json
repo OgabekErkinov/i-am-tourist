@@ -71,7 +71,7 @@
         "AboutCompany" : "Kompaniyamiz haqida",
         "AboutServices" : "20 yildan ortiq vaqt davomida noyob sayohat tajribalarini taqdim etamiz.",
         "OurHistory" : "Bizning tariximiz",
-        "AboutHistory" : "IFLY kompaniyasi tashkil etilganidan beri mijozlarga unutilmas sayohat tajribalarini taqdim etmoqda. Biz har doim eng yaxshi xizmatlarni ko'rsatishga intilamiz va mijozlarimizning istak va ehtiyojlarini e'tiborga olamiz.",
+        "AboutHistory" : "iAmTourist kompaniyasi tashkil etilganidan beri mijozlarga unutilmas sayohat tajribalarini taqdim etmoqda. Biz har doim eng yaxshi xizmatlarni ko'rsatishga intilamiz va mijozlarimizning istak va ehtiyojlarini e'tiborga olamiz.",
         "CustomersSaid" : "Mijozlarimiz nima deyishadi",
         "Bron" : "Aviabiletlarni bron qilish",
         "FullName" : "To'liq ismingiz :",
@@ -104,7 +104,7 @@
         "subject":"Mavzu nima haqida",
         "message":"Sizning xabaringiz",
         "sendUs" :"Xabar yuboring",
-                        "tourPlaces": [
+        "tourPlaces": [
                 {
                     "title": "Tokio, Yaponiya",
                     "paragraph": "Tokio Yaponiya poytaxti bo'lib, an'anaviy binolarni zamonaviy osmono'parlar bilan birlashtirish.",
@@ -112,7 +112,8 @@
                     "regions": "23 maxsus hudud",
                     "cities": "Tokyo, Yokohama, Chiba",
                     "currency": "Yaponiya Yenasi (JPY)",
-                    "info": "Tokio madaniyat, taomlar, texnologiya va tarixning ajoyib kombinatsiyasini taklif etadi."
+                    "info": "Tokio madaniyat, taomlar, texnologiya va tarixning ajoyib kombinatsiyasini taklif etadi.",
+                    "image":"/tokio.webp"
                 },
                 {
                     "title": "Orol joyi",
@@ -121,7 +122,8 @@
                     "regions": "Turli orollar",
                     "cities": "Asosiy orol shahri, Plyaj shahri",
                     "currency": "Orol Dollari (ID)",
-                    "info": "Orollar tinch dam olish joylari bo'lib, siz dengiz, qum va sokinlikdan bahramand bo'lishingiz mumkin."
+                    "info": "Orollar tinch dam olish joylari bo'lib, siz dengiz, qum va sokinlikdan bahramand bo'lishingiz mumkin.",
+                    "image":"/islandModal.webp"
                 },
                 {
                     "title": "Dubay, BAA",
@@ -130,7 +132,8 @@
                     "regions": "Bir nechta hududlar va tumanlar",
                     "cities": "Dubay, Abu-Dabi",
                     "currency": "BAA Dirhami (AED)",
-                    "info": "Dubay cheksiz savdolar, dunyo miqyosidagi kurortlar va ajoyib arxitekturani taklif etadi."
+                    "info": "Dubay cheksiz savdolar, dunyo miqyosidagi kurortlar va ajoyib arxitekturani taklif etadi.",
+                    "image":"/dubai.webp"
                 },
                 {
                     "title": "Vetnam sarguzashti",
@@ -139,7 +142,8 @@
                     "regions": "6 shtat, 2 hudud",
                     "cities": "Sidney, Melburn, Brizben",
                     "currency": "Avstraliya Dollari (AUD)",
-                    "info": "Vetnam turli xil yovvoyi hayvonlar va tabiiy mo''jizalarga boy."
+                    "info": "Vetnam turli xil yovvoyi hayvonlar va tabiiy mo''jizalarga boy.",
+                    "image":"/vetnam.webp"
                 },
                 {
                     "title": "Maldivlar",
@@ -148,7 +152,8 @@
                     "regions": "Markaziy, Gollivud, Santa Monika",
                     "cities": "Los-Anjeles, Santa Monika, Beverly Xillz",
                     "currency": "AQSH Dollari (USD)",
-                    "info": "Los-Anjeles rang-barang madaniyat va Gollivud belgilari kabi mashhur joylarni taklif etadi."
+                    "info": "Los-Anjeles rang-barang madaniyat va Gollivud belgilari kabi mashhur joylarni taklif etadi.",
+                    "image":"/maldiv.webp"
                 },
                 {
                     "title": "Tropik Tailand",
@@ -157,7 +162,8 @@
                     "regions": "76 viloyat",
                     "cities": "Bangkok, Chiang Mai, Phuket",
                     "currency": "Tailand Bat (THB)",
-                    "info": "Tailand boy tarix va noyob tajribalarni taklif etadi."
+                    "info": "Tailand boy tarix va noyob tajribalarni taklif etadi.",
+                    "image":"/tailand.webp"
                 },
                 {
                     "title": "Mo'jizaviy Turkiya",
@@ -166,7 +172,8 @@
                     "regions": "81 viloyat",
                     "cities": "Istanbul, Ankara, Izmir",
                     "currency": "Turk Lirasi (TRY)",
-                    "info": "Turkiya Evropa va Osiyo madaniyatlarining noyob aralashmasini taklif etadi."
+                    "info": "Turkiya Evropa va Osiyo madaniyatlarining noyob aralashmasini taklif etadi.",
+                    "image":"/turkiya.webp"
                 }
             ],
         "services": [

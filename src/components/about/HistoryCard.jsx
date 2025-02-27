@@ -1,53 +1,93 @@
-import { Box, Link, Stack, Typography } from '@mui/material'
-import { useResponsive } from '../sizes/screen'
-import { useEffect } from 'react'
-import Aos from 'aos'
-import { useTranslation } from 'react-i18next';
+import { Box, Link, Stack, Typography } from "@mui/material";
+import { useResponsive } from "../sizes/screen";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useTranslation } from "react-i18next";
 
 const HistoryCard = () => {
-    const {smScreen, mdScreen, lgScreen} = useResponsive()
-    const sizeFont = smScreen ? '12px' : mdScreen ? '14px' : '16px'
-    const {t} = useTranslation()
-    useEffect(()=>{
-        Aos.init({
-            duration : 1000,
-            delay : 500
-        })
-    },[])
+  const { smScreen, mdScreen } = useResponsive();
+  const { t } = useTranslation();
+
+  useEffect(() => {
+    Aos.init({ duration: 1000, delay: 500 });
+  }, []);
+
   return (
-    <Box width='90%' height={mdScreen ? '25rem' : '15rem'} data-aos = 'fade-up' mt='4rem' mx='auto' borderRadius='0.5rem' bgcolor='#FFFFFF'>
-        <Stack height='100%' width='90%' direction={mdScreen ? 'column' : 'row'} 
-               justifyContent='space-between' alignItems='center' gap='0.2rem'>
-                
-                <Box height={mdScreen ? '60%' : '100%'} width={mdScreen ? '100%' : '30%'} 
-                     overflow='hidden' display='flex' justifyContent='center' alignItems='center'>
-                <Box component='img' src="https://www.ifly.com.uz/assets/logo-BPA5zOgc.png" alt="image" 
-                     style={{height : mdScreen ? '200%' : '80%', width : '60%', margin : '0 auto', 
-                             transform : mdScreen ? 'scale(1.5) translateX(1rem)' : 'scale(1)'}}/>
-                </Box>
-               
+    <Box
+      width="90%"
+      data-aos="fade-up"
+      mt="4rem"
+      mx="auto"
+      borderRadius="12px"
+      bgcolor="#FFFFFF"
+      boxShadow="0 4px 10px rgba(0, 0, 0, 0.1)"
+      p={smScreen ? "1rem" : "2rem"}
+      display="flex"
+      flexDirection={mdScreen ? "column" : "row"}
+      alignItems="center"
+      justifyContent="space-between"
+      gap="1rem"
+      height={smScreen ? "20rem" : mdScreen ? "25rem" : "18rem"}
+    >
+      {/* Rasm qismi */}
+      <Box
+        height={mdScreen ? "50%" : "100%"}
+        width={mdScreen ? "100%" : "35%"}
+        overflow="hidden"
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+         borderRadius = '50%'
+      >
+        <Box
+          component="img"
+          src="/logo.webp"
+          alt="Company History Image"
+          sx={{
+            height: '100%',
+            width: '100%',
+            objectFit: "contain",
+            transition: "0.3s",
+            "&:hover": { transform: "scale(1.05)" },
            
-            <Stack height={mdScreen ? '60%' : '100%'} width='80%' p='8px' 
-                   justifyContent='center' gap={mdScreen ? '0' : '1rem'} >
-              <Typography fontFamily='Poppins' fontWeight='600' fontSize='12px' textTransform='uppercase'>
-                 {t("OurHistory")}
-              </Typography>
-              <Typography fontFamily='Poppins' mt='1rem' color='gray' width={mdScreen ? '100%' : '90%'} fontSize={sizeFont}>
-                 {t("AboutHistory")}
-              </Typography>
-              <Box width='100%' textAlign='start'>
-                <Link href = '#'>
-                  <Typography fontWeight='600' fontFamily='Poppins' fontSize='12px'>
-                        {t("Info")} →
-                  </Typography>
-                </Link>
-               </Box>
+          }}
+        />
+      </Box>
 
-            </Stack>
-
-        </Stack>
+      {/* Matn qismi */}
+      <Stack
+        height={mdScreen ? "50%" : "100%"}
+        width={mdScreen ? "100%" : "60%"}
+        p="8px"
+        justifyContent="center"
+        gap="1rem"
+        textAlign={smScreen || mdScreen ? "center" : "left"}
+      >
+        <Typography
+          fontFamily="Poppins"
+          fontWeight="600"
+          fontSize="14px"
+          textTransform="uppercase"
+        >
+          {t("OurHistory")}
+        </Typography>
+        <Typography fontFamily="Poppins" mt="1rem" color="gray" width="100%" fontSize={smScreen ? "12px" : mdScreen ? "14px" : "16px"}>
+          {t("AboutHistory")}
+        </Typography>
+        <Box width="100%" textAlign={smScreen || mdScreen ? "center" : "start"}>
+          <Link
+            href="#"
+            sx={{ textDecoration: "none", color: "black", "&:hover": { color: "#F97316" } }}
+          >
+            <Typography fontWeight="600" fontFamily="Poppins" fontSize="14px">
+              {t("Info")} →
+            </Typography>
+          </Link>
+        </Box>
+      </Stack>
     </Box>
-  )
-}
+  );
+};
 
-export default HistoryCard
+export default HistoryCard;

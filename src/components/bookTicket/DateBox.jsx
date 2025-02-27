@@ -1,17 +1,23 @@
-import { Box, Input, Typography } from '@mui/material'
+import React from 'react';
+import { Box, Typography, TextField } from '@mui/material';
 
-const DateBox = ({label}) => {
+const DateBox = ({ label, error, helperText, ...props }) => {
   return (
-    <Box height='100%' width='100%'>
-    <Typography fontFamily='Poppins' fontSize='14px' fontWeight='500' color='#374151'>
+    <Box width="100%">
+      <Typography fontFamily="Poppins" fontSize="14px" fontWeight="600" color="#374151" mb={0.5}>
         {label}
-    </Typography>
-    <Box height='auto' width='100%' borderRadius='8px' border='1px solid #D1D5DB' bgcolor='#FFFFFF'
-         display='flex' alignItems='center' padding='16px'>
-        <Input type='date' disableUnderline fullWidth/>
+      </Typography>
+      <TextField sx={{bgcolor : 'white', borderRadius : '10px'}}
+        fullWidth
+        type="date"
+        variant="outlined"
+        error={!!error}
+        helperText={helperText}
+        {...props}
+        InputLabelProps={{ shrink: true }}
+      />
     </Box>
-</Box>
-  )
-}
+  );
+};
 
-export default DateBox
+export default DateBox;
