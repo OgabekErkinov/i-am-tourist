@@ -1,17 +1,16 @@
-import { Box, List, ListItem, Portal } from '@mui/material';
-import React, { useState } from 'react';
+import { Box, Button, List, ListItem, Typography } from '@mui/material';
+import React from 'react';
 import { navLinks } from '../../Database/db';
 import { useResponsive } from '../sizes/screen';
 import { useTranslation } from 'react-i18next';
-import ContactModal from '../modals/ContactModal';
-import ButtonItem from '../listElements/ButtonItem';
 import LinkItem from '../listElements/LinkItem';
+import useStore from '../../Store/store';
 
-const SectionsLinks = ({ root }) => {
-  const [openContactModal, setOpenContactModal] = useState(false);
+const SectionsLinks = () => {
   const lgScreen = useResponsive().lgScreen;
   const xlgScreen = useResponsive().xlgScreen;
   const { t } = useTranslation();
+  const toggleContactModal = useStore(state => state.toggleContactModal)
 
   const fontSize = xlgScreen ? '16px' : '20px';
   const contact = t("Contact"); 
@@ -29,17 +28,15 @@ const SectionsLinks = ({ root }) => {
             {item.name !== contact ? (
               <LinkItem item={item} fontSize={fontSize} />
             ) : (
-              <ButtonItem openFunction={setOpenContactModal} item={item} fontSize={fontSize} />
+              <Button disableTouchRipple onClick={toggleContactModal}>
+                 <Typography color='#ffffff' fontFamily='Poppins' fontWeight='500' fontSize={fontSize}>
+                    {contact}
+                 </Typography>
+              </Button>
             )}
           </ListItem>
         ))}
       </List>
-
-      {openContactModal && (
-        <Portal container={root.current}>
-          <ContactModal closeFunc={() => setOpenContactModal(false)} />
-        </Portal>
-      )}
     </Box>
   );
 };

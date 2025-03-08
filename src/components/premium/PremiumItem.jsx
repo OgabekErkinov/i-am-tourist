@@ -3,9 +3,10 @@ import React, { useState, useMemo, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 import ContactModal from "../modals/ContactModal";
 import { useResponsive } from "../sizes/screen";
+import useStore from "../../Store/store";
 
 const PremiumItem = ({ tour, idx, rootRef }) => {
-  const [openContactModal, setOpenContactModal] = useState(false);
+  const toggleContactModal = useStore(state => state.toggleContactModal)
   const { t } = useTranslation();
   const premiumServices = t("premiumToursServices", { returnObjects: true }) || [];
   const { smScreen, mdScreen } = useResponsive();
@@ -13,14 +14,6 @@ const PremiumItem = ({ tour, idx, rootRef }) => {
   const sizeFont = useMemo(() => (smScreen ? "16px" : mdScreen ? "22px" : "28px"), [smScreen, mdScreen]);
   const paragraphSize = useMemo(() => (smScreen ? "14px" : mdScreen ? "18px" : "20px"), [smScreen, mdScreen]);
   const buttonSize = useMemo(() => (smScreen ? "10px" : "12px"), [smScreen]);
-
-  const handleOpenModal = useCallback(() => {
-    setOpenContactModal(true);
-  }, []);
-
-  const handleCloseModal = useCallback(() => {
-    setOpenContactModal(false);
-  }, []);
 
   return (
     <Box
@@ -65,18 +58,12 @@ const PremiumItem = ({ tour, idx, rootRef }) => {
               margin: "0 auto",
               fontSize: buttonSize,
             }}
-            onClick={handleOpenModal}
+            onClick={toggleContactModal}
           >
             {t("ContactUs")}
           </Button>
         </Stack>
       </Box>
-
-      {openContactModal && (
-        <Portal container={rootRef.current}>
-          <ContactModal closeFunc={handleCloseModal} />
-        </Portal>
-      )}
     </Box>
   );
 };

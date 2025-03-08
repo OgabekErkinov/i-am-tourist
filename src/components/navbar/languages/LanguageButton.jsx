@@ -45,7 +45,7 @@ const LanguageButton = ({ language, setOpen, setCurrentLanguage, color, border }
           width="auto"
           height="100%"
           color={color}
-          fontSize="12px"
+          fontSize="16px"
           fontFamily="Poppins"
           sx={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
         >

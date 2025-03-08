@@ -26,14 +26,9 @@ const Navbar = ({ root }) => {
   }, []);
 
   const bgColor = transparent ? "transparent" : light ? "#F97316" : "#1F2937";
-  const navPadding = lgScreen ? "8px" : "5%";
 
   return (
-    <Box
-      width="100%"
-      maxWidth="100%"
-      height="10vh"
-      position="fixed"
+    <Box width="100%" height="10vh" position="fixed"
       top={0}
       zIndex={12}
       sx={{ transition: "background-color 0.6s ease-in-out" }}
@@ -41,7 +36,7 @@ const Navbar = ({ root }) => {
       <Box
         width="100%"
         height="100%"
-        paddingX={navPadding}
+        paddingX='12px'
         bgcolor={bgColor}
         sx={{
           backdropFilter: transparent ? "blur(5px)" : "none",

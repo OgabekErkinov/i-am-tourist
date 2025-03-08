@@ -17,7 +17,6 @@ const MenuButton = ({ root }) => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        border: "0.5px solid orange",
         borderRadius: "5px",
       }}
     >
@@ -37,8 +36,6 @@ const MenuButton = ({ root }) => {
           <IoMenuOutline color="orange" fontSize="24px" />
         )}
       </Button>
-
-      {menuOpen && <MobileMenu root={root} />}
     </Box>
   );
 };

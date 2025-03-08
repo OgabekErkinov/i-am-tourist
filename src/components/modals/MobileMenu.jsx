@@ -1,4 +1,4 @@
-import { List, ListItem, Stack, Portal, keyframes } from "@mui/material";
+import { List, ListItem, Stack, Portal, keyframes, Box, Typography } from "@mui/material";
 import { navLinks } from "../../Database/db";
 import useStore from "../../Store/store";
 import { useResponsive } from "../sizes/screen";
@@ -31,10 +31,9 @@ const slideOut = keyframes`
 
 const MobileMenu = ({ root }) => {
   const { mdScreen, xlgScreen } = useResponsive();
-  const [openContactModal, setOpenContactModal] = useState(false);
   const menuOpen = useStore((state) => state.menuOpen);
   const light = useStore((state) => state.light);
-  const widthContainer = mdScreen ? "50vw" : "40vw";
+  const widthContainer = mdScreen ? "300px" : "40vw";
   const bgColor = light ? "#F97316" : "#1F2937";
   const contact = "Contact" || "Bog'lanish" || "Контакт";
   const fontSize = xlgScreen ? "20px" : "22px";
@@ -45,39 +44,35 @@ const MobileMenu = ({ root }) => {
   };
 
   return (
-    <Stack
-      width={widthContainer}
+    <Stack width={widthContainer}
       height="100vh"
       position="fixed"
       left="0"
       top="0"
-      zIndex={5} 
-      bgcolor={bgColor}
-      pt="10vh"
+      zIndex={12} 
       sx={{
         animation: `${menuOpen ? slideIn : slideOut} 0.7s ease-in-out`,
         display: menuOpen ? "flex" : "none", 
         boxShadow: menuOpen ? "4px 0 10px rgba(0, 0, 0, 0.2)" : "none",
+        background : `linear-gradient(to right bottom, ${bgColor},rgb(82, 81, 81) )`
       }}
     >
+      <Box height='48px' width='100%' p='8px' display='flex' alignItems='center' 
+           gap='12px' borderBottom='1px solid grey'>
+        <Box component='img' src="/logo.webp" height='100%' borderRadius='50%'/>
+        <Typography fontWeight='600' fontSize='24px' color="#ffffff" >I am Tourist</Typography>
+      </Box>
       <List>
         {navLinks?.map((item, idx) => (
           <ListItem key={idx} sx={{ "&:hover": hoverStyle, transition: "0.4s" }}>
             {item.name !== contact ? (
               <LinkItem item={item} fontSize={fontSize} />
             ) : (
-              <ButtonItem openFunction={setOpenContactModal} item={item} fontSize={fontSize} />
+              <ButtonItem item={item} fontSize={fontSize} />
             )}
           </ListItem>
         ))}
       </List>
-
-      {/* Contact modal */}
-      {openContactModal && (
-        <Portal container={root.current}>
-          <ContactModal closeFunc={() => setOpenContactModal(false)} />
-        </Portal>
-      )}
     </Stack>
   );
 };

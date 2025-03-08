@@ -1,98 +1,86 @@
-import { Box, Stack, Typography, Button, Portal } from '@mui/material';
-import { useState, useMemo, useCallback } from 'react';
-import InfoPlaceModal from '../modals/InfoPlaceModal';
+import { Box, Stack, Typography, Button } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { useResponsive } from '../sizes/screen';
+import useStore from '../../Store/store';
+import { memo } from 'react';
 
-const OnePlace = ({ place, rootRef, idx }) => {
-  const [openInfoModal, setOpenInfoModal] = useState(false);
+const OnePlace = ({ place }) => {
   const { smScreen, mdScreen } = useResponsive();
   const { t } = useTranslation();
+  const setSelectedPlace = useStore(state => state.setSelectedPlace);
+  const toggleInfoModal = useStore(state => state.toggleInfoModal);
 
-  const places = useMemo(() => t("tourPlaces", { returnObjects: true }), [t]);
-
-  const handleOpenModal = useCallback(() => {
-    setOpenInfoModal(true);
-  }, []);
-
-  const handleCloseModal = useCallback(() => {
-    setOpenInfoModal(false);
-  }, []);
-
-  const buttonStyles = {
-    height: '28px',
-    width: 'auto',
-    bgcolor: '#FFFFFF',
-    padding: '4px 16px',
-  };
-
-  const gradientBackground = {
-    background: 'linear-gradient(to bottom right, #F59E0B, #EC4899)',
+  const handleClick = () => {
+    setSelectedPlace(place);
+    toggleInfoModal();
   };
 
   return (
-    <Stack height="auto" width="100%" borderRadius="12px" overflow="hidden" alignItems="start">
+    <Stack 
+      height="auto" 
+      width="100%" 
+      borderRadius="12px" 
+      overflow="hidden" 
+      alignItems="start"
+      sx={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', transition: '0.3s', '&:hover': { transform: 'scale(1.02)' } }}
+    >
+      {/* Rasm qismi */}
       <Box
-        height="192px"
+        height="200px"
         width="100%"
         sx={{
           backgroundImage: `url(${place?.image})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           position: 'relative',
+          '&::after': {
+            content: '""',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            background: 'linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6))',
+          },
         }}
       />
 
+      {/* Matn va tugma qismi */}
       <Stack
         height="164px"
         width="100%"
         alignItems="start"
         gap="8px"
-        padding={mdScreen ? '12px' : '16px'}
-        position="relative"
-        sx={gradientBackground}
+        sx={{ p: { xs: '12px', md: '16px' }, background: 'linear-gradient(to bottom right, #F59E0B, #EC4899)', color: 'white' }}
       >
-        <Typography variant="h4" fontFamily="Poppins" fontSize={mdScreen ? '20px' : '24px'} color="#FFFFFF">
-          {places[idx]?.title}
+        <Typography variant="h4" fontFamily="Poppins" fontSize={mdScreen ? '20px' : '24px'} fontWeight="700">
+          {place?.title}
         </Typography>
-        <Typography width="100%" fontSize={smScreen ? '12px' : '14px'} color="#E5E7EB">
-          {places[idx]?.paragraph}
+        <Typography fontSize={smScreen ? '12px' : '14px'} color="#E5E7EB" lineHeight="1.5" letterSpacing="0.5px">
+          {place?.paragraph}
         </Typography>
 
-        <Box
-          display="flex"
-          justifyContent="flex-start"
-          alignItems="flex-end"
-          width="95%"
-          m="auto"
-          pt="10px"
-          position="absolute"
-          bottom="10px"
-          left="10px"
+        {/* Info tugmasi */}
+        <Button 
+          sx={{ 
+            bgcolor: "white", 
+            padding: '6px 18px',
+            fontSize: '14px',
+            fontWeight: "500",
+            color: "black", 
+            borderRadius: "20px",
+            transition: "0.3s",
+            '&:hover': { bgcolor: '#F3F4F6' } 
+          }} 
+          onClick={handleClick}
         >
-          <Button sx={buttonStyles} onClick={handleOpenModal}>
-            <Typography
-              textTransform="lowercase"
-              fontSize="14px"
-              fontWeight="400"
-              fontFamily="Poppins"
-              color="black"
-              sx={{ "::first-letter": { textTransform: "uppercase" } }}
-            >
-              {t("Info")}
-            </Typography>
-          </Button>
-        </Box>
-
-        {openInfoModal && (
-          <Portal container={rootRef.current}>
-            <InfoPlaceModal infoObject={place} closeFunc={handleCloseModal} root={rootRef} idx={idx} />
-          </Portal>
-        )}
+          <Typography textTransform="capitalize" fontFamily="Poppins">
+            {t("Info")}
+          </Typography>
+        </Button>
       </Stack>
     </Stack>
   );
 };
 
-export default OnePlace;
-
+export default memo(OnePlace);

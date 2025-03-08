@@ -38,15 +38,17 @@ const HistoryCard = () => {
         display="flex"
         justifyContent="center"
         alignItems="center"
-         borderRadius = '50%'
+        
       >
         <Box
           component="img"
           src="/logo.webp"
           alt="Company History Image"
+          
           sx={{
             height: '100%',
             width: '100%',
+            borderRadius:'12px',
             objectFit: "contain",
             transition: "0.3s",
             "&:hover": { transform: "scale(1.05)" },

@@ -5,11 +5,11 @@ import TourPlaces from '../tourPlaces/TourPlaces'
 import About from '../about/About'
 import BookATicket from '../bookTicket/BookATicket'
 
-const Main = ({rootRef}) => {
+const Main = () => {
   return (
     <Stack width='100%' height='auto' alignItems='center' gap='1rem'>
-        <PremiumTours rootRef = {rootRef}/>
-        <TourPlaces rootRef = {rootRef}/>
+        <PremiumTours/>
+        <TourPlaces/>
         <About/>
         <BookATicket/>
     </Stack>

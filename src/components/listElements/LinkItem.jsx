@@ -1,4 +1,4 @@
-import { Box, Link, Typography } from '@mui/material'
+import { Box, Button, Link, Typography } from '@mui/material'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
@@ -9,9 +9,12 @@ const LinkItem = ({item, fontSize}) => {
                '&:hover': { color: 'gray', transform: 'scale(1.05)'},
                '&:focus': { outline: 'none', color: 'darkgray' }}}>
         <Link href = {item?.link} style={{ textDecoration : 'none', color : '#F4F4F5'}}>
-            <Typography fontFamily='Poppins' fontWeight='500' fontSize={fontSize} width='auto'>
+            <Button disableTouchRipple sx={{bgcolor : 'transparent', color : '#F4F4F5'}}>
+              <Typography fontFamily='Poppins' fontWeight='500' fontSize={fontSize} width='auto'>
                     {t(item?.name)}
-           </Typography>
+              </Typography>
+            </Button>
+            
         </Link>
     </Box>
 

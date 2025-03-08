@@ -1,182 +1,182 @@
 {
-    "Excursions" : "Ekskursiyalar",
-    "City" : "Shahar",
-    "About" : "Biz haqimizda",
-    "Contact" : "Bog'lanish",
-    "sliderItems" : [
-        {
-            "heading" : "Malakali shahar",
-            "paragraph" : "Dunyoning ko'ngilochar poytaxtiga sho'ng'ing."
-        },
-        {
-            "heading" : "Sehrli Turkiya",
-            "paragraph" : "Turkiyaning boy tarixi va ajoyib manzaralarini o'rganing."
-        },
-        {
-            "heading" : "Orol chiqishi",
-            "paragraph" : "Ajoyib orol landshaftlari orasida tinchlikni his eting."
-        },
-        {
-            "heading" : "Yaponiya",
-            "paragraph" : "Zamonaviy hayot va qadimiy an'analar mamlakati"
-        },
-        {
-            "heading" : "Dubayni kashf eting",
-            "paragraph" : "Birlashgan Arab Amirliklarida hashamat, innovatsiyalar va sarguzashtlarni kashf eting."
-        },
-        {
-            "heading" : "Xitoyni kashf qiling",
-            "paragraph" : "Xitoy: qadimgi tarix, Buyuk devor, innovatsiyalar, jonli madaniyat."
-        },
-        {
-            "heading" : "Tropik Tailand",
-            "paragraph" : "Chiroyli plyajlarda dam oling va mazali taomlarni tatib ko'ring."
-        }
+    "Excursions": "Ekskursiyalar",
+    "City": "Shahar",
+    "About": "Biz haqimizda",
+    "Contact": "Bog'lanish",
+    "sliderItems": [
+      {
+        "heading": "Malakali shahar",
+        "paragraph": "Dunyoning ko'ngilochar poytaxtiga sho'ng'ing."
+      },
+      {
+        "heading": "Sehrli Turkiya",
+        "paragraph": "Turkiyaning boy tarixi va ajoyib manzaralarini o'rganing."
+      },
+      {
+        "heading": "Orol chiqishi",
+        "paragraph": "Ajoyib orol landshaftlari orasida tinchlikni his eting."
+      },
+      {
+        "heading": "Yaponiya",
+        "paragraph": "Zamonaviy hayot va qadimiy an'analar mamlakati"
+      },
+      {
+        "heading": "Dubayni kashf eting",
+        "paragraph": "Birlashgan Arab Amirliklarida hashamat, innovatsiyalar va sarguzashtlarni kashf eting."
+      },
+      {
+        "heading": "Xitoyni kashf qiling",
+        "paragraph": "Xitoy: qadimgi tarix, Buyuk devor, innovatsiyalar, jonli madaniyat."
+      },
+      {
+        "heading": "Tropik Tailand",
+        "paragraph": "Chiroyli plyajlarda dam oling va mazali taomlarni tatib ko'ring."
+      }
     ],
-    "addCards" : [
-        {
-            "heading" : "Ajoyib plyaj",
-            "paragraph" : "Zamonaviy plyajlarni kashf eting va quyosh ostida dam oling."
-        },
-        {
-            "heading" : "Tog' sarguzashtlari",
-            "paragraph" : "Qiziqarli tog' sayohatiga chiqing va tabiatni o'rganing."
-        },
-        {
-            "heading" : "Shahar sayohatlari",
-            "paragraph" : "Qiziqarli tog' sayohatiga chiqing va tabiatni o'rganing."
-        }
+    "addCards": [
+      {
+        "heading": "Ajoyib plyaj",
+        "paragraph": "Zamonaviy plyajlarni kashf eting va quyosh ostida dam oling."
+      },
+      {
+        "heading": "Tog' sarguzashtlari",
+        "paragraph": "Qiziqarli tog' sayohatiga chiqing va tabiatni o'rganing."
+      },
+      {
+        "heading": "Shahar sayohatlari",
+        "paragraph": "Qiziqarli tog' sayohatiga chiqing va tabiatni o'rganing."
+      }
     ],
-        "premiumToursServices": [
-            {
-                "title": "Tokio Sarguzashtlari",
-                "paragraph": "Yaponiya yuragida an'ana va texnologiyaning uyg'unligini his eting."
-            },
-            {
-                "title": "Dubay Muxlislari",
-                "paragraph": "Dubaynig kelajakdagi siluetini va hashamatini ko'ring."
-            },
-            {
-                "title": "Xitoyni Kashf Etish",
-                "paragraph": "Sevgi shahrini kashf eting, madaniyati, san'ati va taomi bilan mashhur."
-            },
-            {
-                "title": "Yaponiya",
-                "paragraph": "Yaponiya – bu sizning barcha sayohat orzularingizni ro'yobga chiqaradigan mamlakat."
-            }
-        ],
-        "ContactUs" : "Biz bilan bog'laning",
-        "LearnCountry" : "Davlatlarni o'rganing",
-        "Info" : "Batafsil ma'lumot",
-        "AboutCompany" : "Kompaniyamiz haqida",
-        "AboutServices" : "20 yildan ortiq vaqt davomida noyob sayohat tajribalarini taqdim etamiz.",
-        "OurHistory" : "Bizning tariximiz",
-        "AboutHistory" : "iAmTourist kompaniyasi tashkil etilganidan beri mijozlarga unutilmas sayohat tajribalarini taqdim etmoqda. Biz har doim eng yaxshi xizmatlarni ko'rsatishga intilamiz va mijozlarimizning istak va ehtiyojlarini e'tiborga olamiz.",
-        "CustomersSaid" : "Mijozlarimiz nima deyishadi",
-        "Bron" : "Aviabiletlarni bron qilish",
-        "FullName" : "To'liq ismingiz :",
-        "PHolderName" : "Ismingizni, otangiz ismini va familiyangizni kiriting",
-        "FirstNumber" : "Birinchi raqamingiz :",
-        "PHolderFirstNum" : "Birinchi mobil raqamni kiriting",
-        "SecondNumber" : "Ikkinchi raqamingiz :",
-        "PHolderSecondNum" : "Ikkinchi mobil raqamni kiriting",
-        "WhereFrom" : "Qayerdan",
-        "WhereTo" : "Qayerga",
-        "LeaveDate" : "Jo'nash sanasi",
-        "ComeDate" : "Qaytish sanasi",
-        "Email" : "Email",
-        "TgName" : "Telegram Foydalanuvchi nomi",
-        "Submit" : "Yuborish",
-        "Locations" : "Manzillar",
-        "OurLocation" : "Bizning manzilimiz",
-        "Europe" : "Yevropa",
-        "Asia" : "Osiyo",
-        "Africa" : "Afrika",
-        "Avstralia" : "Avstraliya",
-        "FastLinks" : "Tez havolalar",
-        "OurInviting" : "Biz innovatsion sayohat yechimlari orqali ajoyib tajribalar taqdim etishga intilamiz.",
-        "AboutPremium" : "Bizning Premium Turlarimizni Kashf Etish",
-        "Population": "Aholi",
-        "Areas": "Hududlar",
-        "Cities": "Shaharlar",
-        "Currency": "Valyuta",
-        "Close" : "Yopish",
-        "subject":"Mavzu nima haqida",
-        "message":"Sizning xabaringiz",
-        "sendUs" :"Xabar yuboring",
-        "tourPlaces": [
-                {
-                    "title": "Tokio, Yaponiya",
-                    "paragraph": "Tokio Yaponiya poytaxti bo'lib, an'anaviy binolarni zamonaviy osmono'parlar bilan birlashtirish.",
-                    "population": "37.4 million",
-                    "regions": "23 maxsus hudud",
-                    "cities": "Tokyo, Yokohama, Chiba",
-                    "currency": "Yaponiya Yenasi (JPY)",
-                    "info": "Tokio madaniyat, taomlar, texnologiya va tarixning ajoyib kombinatsiyasini taklif etadi.",
-                    "image":"/tokio.webp"
-                },
-                {
-                    "title": "Orol joyi",
-                    "paragraph": "Shahar shovqinidan uzoqda, tabiatning ajoyib go'zalligida dam oling.",
-                    "population": "500,000",
-                    "regions": "Turli orollar",
-                    "cities": "Asosiy orol shahri, Plyaj shahri",
-                    "currency": "Orol Dollari (ID)",
-                    "info": "Orollar tinch dam olish joylari bo'lib, siz dengiz, qum va sokinlikdan bahramand bo'lishingiz mumkin.",
-                    "image":"/islandModal.webp"
-                },
-                {
-                    "title": "Dubay, BAA",
-                    "paragraph": "Dubayning hashamatini va osmoni bilan tanishing.",
-                    "population": "3.3 million",
-                    "regions": "Bir nechta hududlar va tumanlar",
-                    "cities": "Dubay, Abu-Dabi",
-                    "currency": "BAA Dirhami (AED)",
-                    "info": "Dubay cheksiz savdolar, dunyo miqyosidagi kurortlar va ajoyib arxitekturani taklif etadi.",
-                    "image":"/dubai.webp"
-                },
-                {
-                    "title": "Vetnam sarguzashti",
-                    "paragraph": "Vetnamning go'zalligiga kirib boring, rang-barang guruch teraslari va noyob madaniyat bilan tanishing!",
-                    "population": "25.7 million",
-                    "regions": "6 shtat, 2 hudud",
-                    "cities": "Sidney, Melburn, Brizben",
-                    "currency": "Avstraliya Dollari (AUD)",
-                    "info": "Vetnam turli xil yovvoyi hayvonlar va tabiiy mo''jizalarga boy.",
-                    "image":"/vetnam.webp"
-                },
-                {
-                    "title": "Maldivlar",
-                    "paragraph": "Oq qumli plyajlar va toza suvlar bilan tropik jannatda dam oling. Hashamatli kurortlar va ajoyib suv osti dunyosidan zavq oling!",
-                    "population": "3.9 million",
-                    "regions": "Markaziy, Gollivud, Santa Monika",
-                    "cities": "Los-Anjeles, Santa Monika, Beverly Xillz",
-                    "currency": "AQSH Dollari (USD)",
-                    "info": "Los-Anjeles rang-barang madaniyat va Gollivud belgilari kabi mashhur joylarni taklif etadi.",
-                    "image":"/maldiv.webp"
-                },
-                {
-                    "title": "Tropik Tailand",
-                    "paragraph": "Tailand chiroyli orollari, ko'chada oziq-ovqat va boy madaniyat merosi bilan mashhur.",
-                    "population": "69.8 million",
-                    "regions": "76 viloyat",
-                    "cities": "Bangkok, Chiang Mai, Phuket",
-                    "currency": "Tailand Bat (THB)",
-                    "info": "Tailand boy tarix va noyob tajribalarni taklif etadi.",
-                    "image":"/tailand.webp"
-                },
-                {
-                    "title": "Mo'jizaviy Turkiya",
-                    "paragraph": "Turkiyaning boy tarixini va go'zal manzaralarini kashf eting.",
-                    "population": "84 million",
-                    "regions": "81 viloyat",
-                    "cities": "Istanbul, Ankara, Izmir",
-                    "currency": "Turk Lirasi (TRY)",
-                    "info": "Turkiya Evropa va Osiyo madaniyatlarining noyob aralashmasini taklif etadi.",
-                    "image":"/turkiya.webp"
-                }
-            ],
-        "services": [
+    "premiumToursServices": [
+      {
+        "title": "Tokio Sarguzashtlari",
+        "paragraph": "Yaponiya yuragida an'ana va texnologiyaning uyg'unligini his eting."
+      },
+      {
+        "title": "Dubay Muxlislari",
+        "paragraph": "Dubaynig kelajakdagi siluetini va hashamatini ko'ring."
+      },
+      {
+        "title": "Xitoyni Kashf Etish",
+        "paragraph": "Sevgi shahrini kashf eting, madaniyati, san'ati va taomi bilan mashhur."
+      },
+      {
+        "title": "Yaponiya",
+        "paragraph": "Yaponiya – bu sizning barcha sayohat orzularingizni ro'yobga chiqaradigan mamlakat."
+      }
+    ],
+    "ContactUs": "Biz bilan bog'laning",
+    "LearnCountry": "Davlatlarni o'rganing",
+    "Info": "Batafsil ma'lumot",
+    "AboutCompany": "Kompaniyamiz haqida",
+    "AboutServices": "20 yildan ortiq vaqt davomida noyob sayohat tajribalarini taqdim etamiz.",
+    "OurHistory": "Bizning tariximiz",
+    "AboutHistory": "iAmTourist kompaniyasi tashkil etilganidan beri mijozlarga unutilmas sayohat tajribalarini taqdim etmoqda. Biz har doim eng yaxshi xizmatlarni ko'rsatishga intilamiz va mijozlarimizning istak va ehtiyojlarini e'tiborga olamiz.",
+    "CustomersSaid": "Mijozlarimiz nima deyishadi",
+    "Bron": "Aviabiletlarni bron qilish",
+    "FullName": "To'liq ismingiz :",
+    "PHolderName": "Ismingizni, otangiz ismini va familiyangizni kiriting",
+    "FirstNumber": "Birinchi raqamingiz :",
+    "PHolderFirstNum": "Birinchi mobil raqamni kiriting",
+    "SecondNumber": "Ikkinchi raqamingiz :",
+    "PHolderSecondNum": "Ikkinchi mobil raqamni kiriting",
+    "WhereFrom": "Qayerdan",
+    "WhereTo": "Qayerga",
+    "LeaveDate": "Jo'nash sanasi",
+    "ComeDate": "Qaytish sanasi",
+    "Email": "Email",
+    "TgName": "Telegram Foydalanuvchi nomi",
+    "Submit": "Yuborish",
+    "Locations": "Manzillar",
+    "OurLocation": "Bizning manzilimiz",
+    "Europe": "Yevropa",
+    "Asia": "Osiyo",
+    "Africa": "Afrika",
+    "Avstralia": "Avstraliya",
+    "FastLinks": "Tez havolalar",
+    "OurInviting": "Biz innovatsion sayohat yechimlari orqali ajoyib tajribalar taqdim etishga intilamiz.",
+    "AboutPremium": "Bizning Premium Turlarimizni Kashf Etish",
+    "Population": "Aholi",
+    "Areas": "Hududlar",
+    "Cities": "Shaharlar",
+    "Currency": "Valyuta",
+    "Close": "Yopish",
+    "subject": "Mavzu nima haqida",
+    "message": "Sizning xabaringiz",
+    "sendUs": "Xabar yuboring",
+    "tourPlaces": [
+      {
+        "title": "Tokio, Yaponiya",
+        "paragraph": "Tokio Yaponiya poytaxti bo'lib, an'anaviy binolarni zamonaviy osmono'parlar bilan birlashtirish.",
+        "population": "37.4 million",
+        "regions": "23 maxsus hudud",
+        "cities": "Tokyo, Yokohama, Chiba",
+        "currency": "Yaponiya Yenasi (JPY)",
+        "info": "Tokio madaniyat, taomlar, texnologiya va tarixning ajoyib kombinatsiyasini taklif etadi.",
+        "image": "/tokio.webp"
+      },
+      {
+        "title": "Orol joyi",
+        "paragraph": "Shahar shovqinidan uzoqda, tabiatning ajoyib go'zalligida dam oling.",
+        "population": "500,000",
+        "regions": "Turli orollar",
+        "cities": "Asosiy orol shahri, Plyaj shahri",
+        "currency": "Orol Dollari (ID)",
+        "info": "Orollar tinch dam olish joylari bo'lib, siz dengiz, qum va sokinlikdan bahramand bo'lishingiz mumkin.",
+        "image": "/islandModal.webp"
+      },
+      {
+        "title": "Dubay, BAA",
+        "paragraph": "Dubayning hashamatini va osmoni bilan tanishing.",
+        "population": "3.3 million",
+        "regions": "Bir nechta hududlar va tumanlar",
+        "cities": "Dubay, Abu-Dabi",
+        "currency": "BAA Dirhami (AED)",
+        "info": "Dubay cheksiz savdolar, dunyo miqyosidagi kurortlar va ajoyib arxitekturani taklif etadi.",
+        "image": "/dubai.webp"
+      },
+      {
+        "title": "Vetnam sarguzashti",
+        "paragraph": "Vetnamning go'zalligiga kirib boring, rang-barang guruch teraslari va noyob madaniyat bilan tanishing!",
+        "population": "25.7 million",
+        "regions": "6 shtat, 2 hudud",
+        "cities": "Sidney, Melburn, Brizben",
+        "currency": "Avstraliya Dollari (AUD)",
+        "info": "Vetnam turli xil yovvoyi hayvonlar va tabiiy mo''jizalarga boy.",
+        "image": "/vetnam.webp"
+      },
+      {
+        "title": "Maldivlar",
+        "paragraph": "Oq qumli plyajlar va toza suvlar bilan tropik jannatda dam oling. Hashamatli kurortlar va ajoyib suv osti dunyosidan zavq oling!",
+        "population": "3.9 million",
+        "regions": "Markaziy, Gollivud, Santa Monika",
+        "cities": "Los-Anjeles, Santa Monika, Beverly Xillz",
+        "currency": "AQSH Dollari (USD)",
+        "info": "Los-Anjeles rang-barang madaniyat va Gollivud belgilari kabi mashhur joylarni taklif etadi.",
+        "image": "/maldiv.webp"
+      },
+      {
+        "title": "Tropik Tailand",
+        "paragraph": "Tailand chiroyli orollari, ko'chada oziq-ovqat va boy madaniyat merosi bilan mashhur.",
+        "population": "69.8 million",
+        "regions": "76 viloyat",
+        "cities": "Bangkok, Chiang Mai, Phuket",
+        "currency": "Tailand Bat (THB)",
+        "info": "Tailand boy tarix va noyob tajribalarni taklif etadi.",
+        "image": "/tailand.webp"
+      },
+      {
+        "title": "Mo'jizaviy Turkiya",
+        "paragraph": "Turkiyaning boy tarixini va go'zal manzaralarini kashf eting.",
+        "population": "84 million",
+        "regions": "81 viloyat",
+        "cities": "Istanbul, Ankara, Izmir",
+        "currency": "Turk Lirasi (TRY)",
+        "info": "Turkiya Evropa va Osiyo madaniyatlarining noyob aralashmasini taklif etadi.",
+        "image": "/turkiya.webp"
+      }
+    ],
+    "services": [
       {
         "title": "Xalqaro Sayohat",
         "paragraph": "Dunyodagi eng go'zal joylarga sayohatlarni tashkil etamiz."
@@ -193,36 +193,33 @@
         "title": "Malakali yo'riqchilar",
         "paragraph": "Har bir mijoz uchun individual yo'nalishlarni yaratamiz."
       }
-                    ],
-        "customers" : [
-        {
-            "name": "Madina",
-            "quote": "Ushbu kompaniya bilan sayohat qilish haqiqatan ham zavq! Ular har bir detaldan e'tibor berishadi."
-        },
-        {
-            "name": "Bobur",
-            "quote": "Sayohat yo'riqlari bilimdon va do'stona edilar. Har bir joy haqida madaniyat va tarixni juda yaxshi tushuntirishdi."
-        },
-        {
-            "name": "Nigina",
-            "quote": "Buyurtmadan qaytishgacha hamma narsa silliq va yaxshi tashkil etilgan. Men albatta ularning xizmatidan yana foydalanaman."
-        },
-        {
-            "name": "Sabina",
-            "quote": "Biz uchun tayyorlangan maxsus dastur juda mukammal edi. Go'yoki ular bizning fikrimizni o'qigandek."
-        },
-        {
-            "name": "Javohir",
-            "quote": "Joylashuvlar juda yuqori darajada edi va mahalliy tajribalar haqiqiy va qiziqarli edi. Katta rahmat!"
-        }
-                      ],
-        "countries": [
-        "Vyetnam", "Tailand", "Indoneziya", "O'zbekiston", "Janubiy Koreya", "Filippin", "Italiya", "Xitoy", "Yaponiya", "Rossiya"
-                     ]
-
-    
-
-        
-    
-
-}
+    ],
+    "customers": [
+      {
+        "name": "Madina",
+        "quote": "Ushbu kompaniya bilan sayohat qilish haqiqatan ham zavq! Ular har bir detaldan e'tibor berishadi."
+      },
+      {
+        "name": "Bobur",
+        "quote": "Sayohat yo'riqlari bilimdon va do'stona edilar. Har bir joy haqida madaniyat va tarixni juda yaxshi tushuntirishdi."
+      },
+      {
+        "name": "Nigina",
+        "quote": "Buyurtmadan qaytishgacha hamma narsa silliq va yaxshi tashkil etilgan. Men albatta ularning xizmatidan yana foydalanaman."
+      },
+      {
+        "name": "Sabina",
+        "quote": "Biz uchun tayyorlangan maxsus dastur juda mukammal edi. Go'yoki ular bizning fikrimizni o'qigandek."
+      },
+      {
+        "name": "Javohir",
+        "quote": "Joylashuvlar juda yuqori darajada edi va mahalliy tajribalar haqiqiy va qiziqarli edi. Katta rahmat!"
+      }
+    ],
+    "countries": [
+      "Vyetnam", "Tailand", "Indoneziya", "O'zbekiston", "Janubiy Koreya", "Filippin", "Italiya", "Xitoy", "Yaponiya", "Rossiya"
+    ],
+    "success": "Xabar muvaffaqiyatli yuborildi",
+    "failure": "Xabar yuborilmadi"
+  }
+  

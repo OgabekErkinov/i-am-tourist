@@ -1,4 +1,4 @@
-import { useMediaQuery } from "@mui/material";
+import { useMediaQuery, useTheme } from "@mui/material";
 
 export const useResponsive = () => {
   const smScreen = useMediaQuery("(max-width: 524px)");

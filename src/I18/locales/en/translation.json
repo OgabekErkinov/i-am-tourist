@@ -1,184 +1,182 @@
 {
-     "Excursions" : "Excursions",
-     "City" : "City",
-     "About" : "About",
-     "Contact" : "Contact",
-     "sliderItems": [
-    {
+    "Excursions": "Excursions",
+    "City": "City",
+    "About": "About",
+    "Contact": "Contact",
+    "sliderItems": [
+      {
         "heading": "A Vibrant City",
         "paragraph": "Dive into the entertainment capital of the world."
-    },
-    {
+      },
+      {
         "heading": "Magical Turkey",
         "paragraph": "Explore Turkey's rich history and breathtaking landscapes."
-    },
-    {
+      },
+      {
         "heading": "Island Escape",
         "paragraph": "Feel the serenity amidst stunning island landscapes."
-    },
-    {
+      },
+      {
         "heading": "Japan",
         "paragraph": "The land of modern life and ancient traditions."
-    },
-    {
+      },
+      {
         "heading": "Discover Dubai",
         "paragraph": "Experience luxury, innovation, and adventure in the UAE."
-    },
-    {
+      },
+      {
         "heading": "Explore China",
         "paragraph": "China: ancient history, the Great Wall, innovation, and vibrant culture."
-    },
-    {
+      },
+      {
         "heading": "Tropical Thailand",
         "paragraph": "Relax on beautiful beaches and savor delicious cuisine."
-    }
-],
-
-    "addCards": [
-        {
-            "heading": "Amazing Beach",
-            "paragraph": "Discover modern beaches and relax under the sun."
-        },
-        {
-            "heading": "Mountain Adventures",
-            "paragraph": "Go on an exciting mountain trip and explore nature."
-        },
-        {
-            "heading": "City Tours",
-            "paragraph": "Take an interesting city tour and explore the urban life."
-        }
+      }
     ],
-        "premiumToursServices": [
-            {
-                "title": "Tokyo Adventures",
-                "paragraph": "Experience the harmony of tradition and technology in the heart of Japan."
-            },
-            {
-                "title": "Dubai Fans",
-                "paragraph": "See the futuristic silhouette and luxury of Dubai."
-            },
-            {
-                "title": "Discover China",
-                "paragraph": "Discover the city of love, famous for its culture, art, and food."
-            },
-            {
-                "title": "Japan",
-                "paragraph": "Japan is the country that will make all your travel dreams come true."
-            }
-        ],
-        "ContactUs" : "Contact us",
-        "LearnCountry" : "Learn Countries",
-        "Info" : "More Info",
-        "AboutCompany": "About our company",
-        "AboutServices": "We have been providing unique travel experiences for over 20 years.",
-        "OurHistory" : "Our history",
-        "AboutHistory" : "Since its establishment, iAmTourist has been providing customers with unforgettable travel experiences. We always strive to offer the best services and take into account the wishes and needs of our clients.",
-        "CustomersSaid": "What our customers say",
-        "Bron" : "Flight booking",
-        "FullName": "Your full name:",
-        "PHolderName": "Enter your first name, middle name, and last name",
-        "FirstNumber": "Your first number:",
-        "PHolderFirstNum": "Enter your first mobile number",
-        "SecondNumber": "Your second number:",
-        "PHolderSecondNum": "Enter your second mobile number",
-        "WhereFrom": "Where from",
-        "WhereTo": "Where to",
-        "LeaveDate": "Departure date",
-        "ComeDate": "Return date",
-        "Email": "Email",
-        "TgName": "Telegram username",
-        "Submit": "Submit",
-        "Locations": "Locations",
-        "OurLocation": "Our Location",
-        "Europe": "Europe",
-        "Asia": "Asia",
-        "Africa": "Africa",
-        "Avstralia": "Australia",
-        "FastLinks": "Fast Links",
-        "OurInviting": "We strive to deliver exceptional experiences through innovative travel solutions.",
-        "AboutPremium" : "About Premium Tours",
-        "Population" : "Population",
-        "Areas" : "Areas",
-        "Cities" : "Cities",
-        "Currency" : "Currency",
-        "Close" : "Close",
-        "subject": "What is the subject about",
-        "message":"Your Message",
-        "sendUs" :"Send Message",
-            
-        "tourPlaces": [
-                {
-                    "title": "Tokyo, Japan",
-                    "paragraph": "Tokyo is Japan's capital, blending traditional buildings with modern skyscrapers.",
-                    "population": "37.4 million",
-                    "regions": "23 special regions",
-                    "cities": "Tokyo, Yokohama, Chiba",
-                    "currency": "Japanese Yen (JPY)",
-                    "info": "Tokyo offers a wonderful combination of culture, food, technology, and history.",
-                    "image":"/tokio.webp"
-                },
-                {
-                    "title": "Island Paradise",
-                    "paragraph": "Escape the city noise and relax in the incredible beauty of nature.",
-                    "population": "500,000",
-                    "regions": "Various islands",
-                    "cities": "Main island city, Beach city",
-                    "currency": "Island Dollar (ID)",
-                    "info": "Islands are peaceful retreats where you can enjoy the sea, sand, and tranquility.",
-                    "image":"/islandModal.webp"
-                },
-                {
-                    "title": "Dubai, UAE",
-                    "paragraph": "Witness Dubai's stunning skyline and luxury.",
-                    "population": "3.3 million",
-                    "regions": "Several regions and districts",
-                    "cities": "Dubai, Abu Dhabi",
-                    "currency": "UAE Dirham (AED)",
-                    "info": "Dubai offers endless shopping, world-class resorts, and stunning architecture.",
-                    "image":"/dubai.webp"
-                },
-                {
-                    "title": "Vietnam Adventure",
-                    "paragraph": "Explore the beauty of Vietnam, with colorful rice terraces and unique culture!",
-                    "population": "25.7 million",
-                    "regions": "6 states, 2 territories",
-                    "cities": "Sydney, Melbourne, Brisbane",
-                    "currency": "Australian Dollar (AUD)",
-                    "info": "Vietnam is rich in wildlife and natural wonders.",
-                    "image":"/vetnam.webp"
-                },
-                {
-                    "title": "Maldives",
-                    "paragraph": "Relax in a tropical paradise with white sandy beaches and crystal-clear waters. Enjoy luxurious resorts and a stunning underwater world!",
-                    "population": "3.9 million",
-                    "regions": "Central, Hollywood, Santa Monica",
-                    "cities": "Los Angeles, Santa Monica, Beverly Hills",
-                    "currency": "USD (United States Dollar)",
-                    "info": "Los Angeles offers vibrant culture and famous landmarks like Hollywood.",
-                    "image":"/maldiv.webp"
-                },
-                {
-                    "title": "Tropical Thailand",
-                    "paragraph": "Thailand is famous for its beautiful islands, street food, and rich cultural heritage.",
-                    "population": "69.8 million",
-                    "regions": "76 provinces",
-                    "cities": "Bangkok, Chiang Mai, Phuket",
-                    "currency": "Thai Baht (THB)",
-                    "info": "Thailand offers a rich history and unique experiences.",
-                    "image" : "/tailand.webp"
-                },
-                {
-                    "title": "Marvelous Turkey",
-                    "paragraph": "Discover Turkey's rich history and beautiful landscapes.",
-                    "population": "84 million",
-                    "regions": "81 provinces",
-                    "cities": "Istanbul, Ankara, Izmir",
-                    "currency": "Turkish Lira (TRY)",
-                    "info": "Turkey offers a unique blend of European and Asian cultures.",
-                    "image" : "/turkiya.webp"
-                }
-                  ] , 
-        "services" : [
+    "addCards": [
+      {
+        "heading": "Amazing Beach",
+        "paragraph": "Discover modern beaches and relax under the sun."
+      },
+      {
+        "heading": "Mountain Adventures",
+        "paragraph": "Go on an exciting mountain trip and explore nature."
+      },
+      {
+        "heading": "City Tours",
+        "paragraph": "Take an interesting city tour and explore the urban life."
+      }
+    ],
+    "premiumToursServices": [
+      {
+        "title": "Tokyo Adventures",
+        "paragraph": "Experience the harmony of tradition and technology in the heart of Japan."
+      },
+      {
+        "title": "Dubai Fans",
+        "paragraph": "See the futuristic silhouette and luxury of Dubai."
+      },
+      {
+        "title": "Discover China",
+        "paragraph": "Discover the city of love, famous for its culture, art, and food."
+      },
+      {
+        "title": "Japan",
+        "paragraph": "Japan is the country that will make all your travel dreams come true."
+      }
+    ],
+    "ContactUs": "Contact us",
+    "LearnCountry": "Learn Countries",
+    "Info": "More Info",
+    "AboutCompany": "About our company",
+    "AboutServices": "We have been providing unique travel experiences for over 20 years.",
+    "OurHistory": "Our history",
+    "AboutHistory": "Since its establishment, iAmTourist has been providing customers with unforgettable travel experiences. We always strive to offer the best services and take into account the wishes and needs of our clients.",
+    "CustomersSaid": "What our customers say",
+    "Bron": "Flight booking",
+    "FullName": "Your full name:",
+    "PHolderName": "Enter your first name, middle name, and last name",
+    "FirstNumber": "Your first number:",
+    "PHolderFirstNum": "Enter your first mobile number",
+    "SecondNumber": "Your second number:",
+    "PHolderSecondNum": "Enter your second mobile number",
+    "WhereFrom": "Where from",
+    "WhereTo": "Where to",
+    "LeaveDate": "Departure date",
+    "ComeDate": "Return date",
+    "Email": "Email",
+    "TgName": "Telegram username",
+    "Submit": "Submit",
+    "Locations": "Locations",
+    "OurLocation": "Our Location",
+    "Europe": "Europe",
+    "Asia": "Asia",
+    "Africa": "Africa",
+    "Avstralia": "Australia",
+    "FastLinks": "Fast Links",
+    "OurInviting": "We strive to deliver exceptional experiences through innovative travel solutions.",
+    "AboutPremium": "About Premium Tours",
+    "Population": "Population",
+    "Areas": "Areas",
+    "Cities": "Cities",
+    "Currency": "Currency",
+    "Close": "Close",
+    "subject": "What is the subject about",
+    "message": "Your Message",
+    "sendUs": "Send Message",
+    "tourPlaces": [
+      {
+        "title": "Tokyo, Japan",
+        "paragraph": "Tokyo is Japan's capital, blending traditional buildings with modern skyscrapers.",
+        "population": "37.4 million",
+        "regions": "23 special regions",
+        "cities": "Tokyo, Yokohama, Chiba",
+        "currency": "Japanese Yen (JPY)",
+        "info": "Tokyo offers a wonderful combination of culture, food, technology, and history.",
+        "image": "/tokio.webp"
+      },
+      {
+        "title": "Island Paradise",
+        "paragraph": "Escape the city noise and relax in the incredible beauty of nature.",
+        "population": "500,000",
+        "regions": "Various islands",
+        "cities": "Main island city, Beach city",
+        "currency": "Island Dollar (ID)",
+        "info": "Islands are peaceful retreats where you can enjoy the sea, sand, and tranquility.",
+        "image": "/islandModal.webp"
+      },
+      {
+        "title": "Dubai, UAE",
+        "paragraph": "Witness Dubai's stunning skyline and luxury.",
+        "population": "3.3 million",
+        "regions": "Several regions and districts",
+        "cities": "Dubai, Abu Dhabi",
+        "currency": "UAE Dirham (AED)",
+        "info": "Dubai offers endless shopping, world-class resorts, and stunning architecture.",
+        "image": "/dubai.webp"
+      },
+      {
+        "title": "Vietnam Adventure",
+        "paragraph": "Explore the beauty of Vietnam, with colorful rice terraces and unique culture!",
+        "population": "25.7 million",
+        "regions": "6 states, 2 territories",
+        "cities": "Sydney, Melbourne, Brisbane",
+        "currency": "Australian Dollar (AUD)",
+        "info": "Vietnam is rich in wildlife and natural wonders.",
+        "image": "/vetnam.webp"
+      },
+      {
+        "title": "Maldives",
+        "paragraph": "Relax in a tropical paradise with white sandy beaches and crystal-clear waters. Enjoy luxurious resorts and a stunning underwater world!",
+        "population": "3.9 million",
+        "regions": "Central, Hollywood, Santa Monica",
+        "cities": "Los Angeles, Santa Monica, Beverly Hills",
+        "currency": "USD (United States Dollar)",
+        "info": "Los Angeles offers vibrant culture and famous landmarks like Hollywood.",
+        "image": "/maldiv.webp"
+      },
+      {
+        "title": "Tropical Thailand",
+        "paragraph": "Thailand is famous for its beautiful islands, street food, and rich cultural heritage.",
+        "population": "69.8 million",
+        "regions": "76 provinces",
+        "cities": "Bangkok, Chiang Mai, Phuket",
+        "currency": "Thai Baht (THB)",
+        "info": "Thailand offers a rich history and unique experiences.",
+        "image": "/tailand.webp"
+      },
+      {
+        "title": "Marvelous Turkey",
+        "paragraph": "Discover Turkey's rich history and beautiful landscapes.",
+        "population": "84 million",
+        "regions": "81 provinces",
+        "cities": "Istanbul, Ankara, Izmir",
+        "currency": "Turkish Lira (TRY)",
+        "info": "Turkey offers a unique blend of European and Asian cultures.",
+        "image": "/turkiya.webp"
+      }
+    ],
+    "services": [
       {
         "title": "International Travel",
         "paragraph": "We organize trips to the most beautiful places in the world."
@@ -195,34 +193,33 @@
         "title": "Qualified Guides",
         "paragraph": "We create individual routes for each client."
       }
-    ] ,
-        "customers": [
-            {
-                "name": "Madina",
-                "quote": "Traveling with this company was truly a pleasure! They pay attention to every detail."
-            },
-            {
-                "name": "Bobur",
-                "quote": "The travel guides were knowledgeable and friendly. They explained the culture and history of each place so well."
-            },
-            {
-                "name": "Nigina",
-                "quote": "Everything from booking to return was smooth and well-organized. I will definitely use their service again."
-            },
-            {
-                "name": "Sabina",
-                "quote": "The custom program prepared for us was just perfect. It felt like they read our minds."
-            },
-            {
-                "name": "Javohir",
-                "quote": "The locations were top-notch, and the local experiences were authentic and engaging. Big thanks!"
-            }
-        ],
-        "countries": [
-        "Vietnam", "Thailand", "Indonesia", "Uzbekistan", "South Korea", "Philippines", "Italy", "China", "Japan", "Russia"
-]
-
-    
-    
-    
-}
+    ],
+    "customers": [
+      {
+        "name": "Madina",
+        "quote": "Traveling with this company was truly a pleasure! They pay attention to every detail."
+      },
+      {
+        "name": "Bobur",
+        "quote": "The travel guides were knowledgeable and friendly. They explained the culture and history of each place so well."
+      },
+      {
+        "name": "Nigina",
+        "quote": "Everything from booking to return was smooth and well-organized. I will definitely use their service again."
+      },
+      {
+        "name": "Sabina",
+        "quote": "The custom program prepared for us was just perfect. It felt like they read our minds."
+      },
+      {
+        "name": "Javohir",
+        "quote": "The locations were top-notch, and the local experiences were authentic and engaging. Big thanks!"
+      }
+    ],
+    "countries": [
+      "Vietnam", "Thailand", "Indonesia", "Uzbekistan", "South Korea", "Philippines", "Italy", "China", "Japan", "Russia"
+    ],
+    "success": "Message was sent successfully",
+    "failure": "Message failed to send"
+  }
+  
