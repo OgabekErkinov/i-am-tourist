@@ -28,7 +28,7 @@ const HistoryCard = () => {
       alignItems="center"
       justifyContent="space-between"
       gap="1rem"
-      height={smScreen ? "20rem" : mdScreen ? "25rem" : "18rem"}
+      height={smScreen ? "auto" : mdScreen ? "25rem" : "18rem"}
     >
       {/* Rasm qismi */}
       <Box
@@ -40,6 +40,7 @@ const HistoryCard = () => {
         alignItems="center"
         
       >
+        <Box height='120px' width='120px' borderRadius='50%' overflow='hidden'>
         <Box
           component="img"
           src="/logo.webp"
@@ -53,8 +54,10 @@ const HistoryCard = () => {
             transition: "0.3s",
             "&:hover": { transform: "scale(1.05)" },
            
-          }}
-        />
+          }}/>
+
+        </Box>
+        
       </Box>
 
       {/* Matn qismi */}
