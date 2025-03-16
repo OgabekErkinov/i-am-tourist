@@ -1,26 +1,22 @@
-import { Stack } from "@mui/material"
-import Header from "./components/header/Header"
-import Main from "./components/main/Main"
-import Footer from "./components/footer/Footer"
-import { useRef } from "react"
-import ContactModal from "./components/modals/ContactModal"
-import InfoPlaceModal from "./components/modals/InfoPlaceModal"
-import AlertModal from "./components/modals/AlertModal"
+import { lazy } from "react"
+import { Suspense } from "react"
 import './I18/i18'
-import MobileMenu from "./components/modals/MobileMenu"
+import PageLoading from "./components/loadings/PageLoading"
+
 
 function App() {
+  const ModalContainer = lazy(() => import("./components/modals/ModalContainer"))
+  const Header = lazy(() => import("./components/header/Header"))
+  const Main = lazy(() => import("./components/main/Main"))
+  const Footer = lazy(() => import("./components/footer/Footer"))
 
   return (
-    <Stack  width='100%' height='auto' alignItems='center' gap='1rem'>
+      <Suspense fallback= {<PageLoading/>}>
         <Header/>
-        <Main/>
-        <Footer/> 
-        <MobileMenu/> 
-        <ContactModal/>
-        <InfoPlaceModal/>  
-        <AlertModal/>
-    </Stack>
+         <Main/>
+        {/* <Footer/>  */}
+        <ModalContainer/>
+    </Suspense>
   )
 }
 

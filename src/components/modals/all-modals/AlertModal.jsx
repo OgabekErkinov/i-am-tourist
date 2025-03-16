@@ -1,6 +1,6 @@
 import { Alert, Snackbar } from '@mui/material';
 import React from 'react';
-import useStore from '../../Store/store';
+import useStore from '../../../Store/store';
 
 const AlertModal = () => {
     const isAlert = useStore(state => state.isAlert);

@@ -1,14 +1,15 @@
 import { Box, MenuItem, Select, Typography, FormHelperText } from '@mui/material';
-import React from 'react';
 import { useTranslation } from 'react-i18next';
+import useStore from '../../Store/store';
 
 const SelectBox = ({ label, error, helperText, ...props }) => {
   const { t } = useTranslation();
-  const Countries = t('countries', { returnObjects: true }) || [];
 
+  const Countries = t('countries', { returnObjects: true }) || [];
+  const { themeColors } = useStore()
   return (
     <Box width='100%'>
-      <Typography fontFamily='Poppins' fontSize='14px' fontWeight='600' color='#374151'>
+      <Typography fontFamily='Poppins' fontSize='14px' fontWeight='600' color={themeColors.text}>
         {label}
       </Typography>
       <Box width='100%'>

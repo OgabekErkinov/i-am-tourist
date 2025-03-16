@@ -1,7 +1,7 @@
 import { Box, Button } from "@mui/material";
 import React from "react";
 import { IoClose, IoMenuOutline } from "react-icons/io5";
-import MobileMenu from "../modals/MobileMenu";
+import MobileMenu from "../modals/all-modals/MobileMenu";
 import useStore from "../../Store/store";
 
 const MenuButton = ({ root }) => {

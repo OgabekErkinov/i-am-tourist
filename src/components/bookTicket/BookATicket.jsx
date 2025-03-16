@@ -1,4 +1,4 @@
-import { Box, Button, Stack, Typography, CircularProgress } from '@mui/material';
+import { Box, Button, Stack, Typography } from '@mui/material';
 import SelectBox from './SelectBox';
 import DateBox from './DateBox';
 import TextBox from './TextBox';
@@ -8,20 +8,15 @@ import useStore from '../../Store/store';
 import { useState } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import axios from 'axios';
+import CompLoading from '../loadings/CompLoading';
 
 
 
 const BookATicket = () => {
-    const light = useStore(state => state.light);
-    const textColor = light ? '#F97316' : '#1F2937';
-    const bgColor = light ? '#FFFFFF' : '#F97316';
-    const buttonBg = light ? '#F97316' : '#1F2937';
+    const { light , themeColors, setAlert, toggleAlert} = useStore();
     const { smScreen, mdScreen } = useResponsive();
     const { t } = useTranslation();
     const columns = smScreen ? '1fr' : mdScreen ? 'repeat(2, 1fr)' : 'repeat(3,1fr)';
-
-    const setAlert = useStore(state => state.setAlert);
-    const toggleAlert = useStore(state => state.toggleAlert);
 
     const { control, handleSubmit, formState: { errors }, reset } = useForm({
         defaultValues: {
@@ -61,8 +56,8 @@ const BookATicket = () => {
 
     return (
         <Box maxWidth="1200px" width="100%" mx="auto" px={{ xs: 2, sm: 3, md: 4 }}>
-            <Stack borderRadius="16px" p={{ xs: 2, sm: 3, md: 4 }} gap="1rem" boxShadow="0px 25px 50px -12px #00000040" bgcolor={bgColor} sx={{ transition: '0.4s' }}>
-                <Typography fontFamily="Poppins" fontSize={{ xs: '24px', sm: '28px', md: '36px' }} fontWeight="700" color={textColor} textAlign="center">{t('Bron')}</Typography>
+            <Stack borderRadius="16px" p={{ xs: 2, sm: 3, md: 4 }} gap="1rem" boxShadow="0px 25px 50px -12px #00000040" bgcolor={themeColors.bg} sx={{ transition: '0.4s' }}>
+                <Typography fontFamily="Poppins" fontSize={{ xs: '24px', sm: '28px', md: '36px' }} fontWeight="700" color={themeColors.text} textAlign="center">{t('Bron')}</Typography>
                 
                 <Box width="100%" display="grid" gridTemplateColumns={columns} gap="1rem">
                     <Controller name="fullName" control={control} rules={{ required: "Full Name is required" }} render={({ field }) => (
@@ -95,8 +90,8 @@ const BookATicket = () => {
                 </Box>
 
                 <Box width="100%" mt="2rem">
-                    <Button fullWidth onClick={handleSubmit(sendMessageToTelegram)} sx={{ bgcolor: buttonBg, borderRadius: '8px', transition: '0.4s', py: 1.5 }} disabled={loading}>
-                        {loading ? <CircularProgress size={24} sx={{ color: '#FFF' }} /> : <Typography color="#FFFFFF" fontSize={{ xs: '16px', sm: '18px' }}>{t('Submit')}</Typography>}
+                    <Button fullWidth onClick={handleSubmit(sendMessageToTelegram)} sx={{ bgcolor: themeColors.text, borderRadius: '8px', transition: '0.4s', py: 1.5 }} disabled={loading}>
+                        {loading ? <CompLoading/> : <Typography color={themeColors.bg} fontSize={{ xs: '16px', sm: '18px' }}>{t('Submit')}</Typography>}
                     </Button>
                 </Box>
             </Stack>

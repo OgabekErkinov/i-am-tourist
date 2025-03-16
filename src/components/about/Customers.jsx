@@ -5,7 +5,7 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
-import { useEffect, useMemo, useRef } from "react";
+import { useEffect, useRef } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
@@ -13,8 +13,7 @@ import useStore from "../../Store/store";
 import { useResponsive } from "../sizes/screen";
 
 const Customers = () => {
-  const light = useStore((state) => state.light);
-  const textColor = light ? "#FFFFFF" : "#F97316";
+  const { light, themeColors} = useStore();
   const { t } = useTranslation();
   const { smScreen, mdScreen } = useResponsive();
   const customers = t("customers", { returnObjects: true }) || [];
@@ -34,7 +33,7 @@ const Customers = () => {
           fontFamily="Poppins"
           fontWeight={700}
           mb="2rem"
-          color={textColor}
+          color={themeColors.text}
           textAlign="center"
         >
           {t("CustomersSaid")}

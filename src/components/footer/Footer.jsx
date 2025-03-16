@@ -7,11 +7,9 @@ import { useTranslation } from "react-i18next";
 import useStore from "../../Store/store";
 
 const Footer = () => {
-  const { smScreen, mdScreen, lgScreen, xlgScreen } = useResponsive();
+  const { smScreen, mdScreen, lgScreen } = useResponsive();
   const { t } = useTranslation();
-  const light = useStore(state => state.light);
-  const textColor = light ? '#F97316' : '#1F2937' ;
-  const bgColor = light ? '#1F2937' : '#F97316';
+  const { themeColors } = useStore();
 
   const columns = smScreen
     ? "1fr"
@@ -25,7 +23,7 @@ const Footer = () => {
     <Box
       width="100%"
       padding={smScreen ? "16px" : "32px"}
-      bgcolor={bgColor}
+      bgcolor={themeColors.bg}
       mt="2rem"
       boxSizing="border-box"
     >
@@ -40,7 +38,7 @@ const Footer = () => {
         {/* Logo va ijtimoiy tarmoqlar */}
         <Stack width="100%" gap="1rem" color="#FFFFFF" textAlign={smScreen ? "center" : "left"}>
           <Logo />
-          <Typography fontFamily="Poppins" fontWeight="400" color={textColor}>
+          <Typography fontFamily="Poppins" fontWeight="400" color={themeColors.text}>
             {t("OurInviting")}
           </Typography>
           <Box display="flex" justifyContent={smScreen ? "center" : "start"}>

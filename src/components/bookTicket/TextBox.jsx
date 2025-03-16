@@ -1,8 +1,11 @@
 import React, { forwardRef } from 'react';
 import { Box, Typography, Input } from '@mui/material';
+import useStore from '../../Store/store';
 
 const TextBox = forwardRef(({ label, type, pholder, value, onChange, error, helperText, onlyNumbers }, ref) => {
   
+  const { themeColors } = useStore()
+
   const handleChange = (e) => {
     let newValue = e.target.value;
     
@@ -15,7 +18,7 @@ const TextBox = forwardRef(({ label, type, pholder, value, onChange, error, help
 
   return (
     <Box height='100%' width='100%'>
-      <Typography fontFamily='Poppins' fontSize='14px' fontWeight='600' color='#374151'>
+      <Typography fontFamily='Poppins' fontSize='14px' fontWeight='600' color={themeColors.text}>
         {label}
       </Typography>
       <Box height='auto' width='100%' borderRadius='8px' border='1px solid #D1D5DB'

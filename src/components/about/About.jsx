@@ -11,7 +11,7 @@ import { useTranslation } from "react-i18next";
 import useStore from "../../Store/store";
 
 const About = () => {
-  const light = useStore((state) => state.light);
+  const { themeColors } = useStore();
   const { smScreen, mdScreen, lgScreen, xlgScreen } = useResponsive();
   const { t } = useTranslation();
   const allServices = t("services", { returnObjects: true }) || [];
@@ -19,9 +19,6 @@ const About = () => {
   useEffect(() => {
     Aos.init({ duration: 800, delay: 300 });
   }, []);
-
-  const bgColor = useMemo(() => (light ? "#F97316" : "#1F2937"), [light]);
-  const textColor = useMemo(() => (light ? "#FFFFFF" : "#F97316"), [light]);
 
   const gridTemplate = useMemo(() => {
     if (smScreen) return "repeat(1, 1fr)";
@@ -31,13 +28,13 @@ const About = () => {
   }, [smScreen, mdScreen, lgScreen]);
 
   return (
-    <Box id="about" width="100%" py="5rem" bgcolor={bgColor} sx={{ transition: "0.4s" }}>
+    <Box id="about" width="100%" py="5rem" bgcolor={themeColors.bg} sx={{ transition: "0.4s" }}>
       <Stack alignItems="center" justifyContent="center" spacing={4}>
         <Stack alignItems="center" gap="1.5rem" width="90%">
           <Typography
             data-aos="fade-up"
             variant="h4"
-            color={textColor}
+            color={themeColors.text}
             fontWeight="800"
             fontSize={xlgScreen ? "2.5rem" : lgScreen ? "2rem" : "1.75rem"}
             textAlign="center"
@@ -48,7 +45,7 @@ const About = () => {
           <Typography
             data-aos="fade-up"
             fontSize={xlgScreen ? "1.5rem" : lgScreen ? "1.25rem" : "1rem"}
-            color={textColor}
+            color={themeColors.text}
             textAlign="center"
             width={smScreen ? "90%" : "70%"}
           >

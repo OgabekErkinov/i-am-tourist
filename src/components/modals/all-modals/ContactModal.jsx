@@ -3,17 +3,16 @@ import React, { useState } from "react";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { IoClose } from "react-icons/io5";
-import TextBox from "../bookTicket/TextBox";
-import { useResponsive } from "../sizes/screen";
+import TextBox from "../../bookTicket/TextBox";
+import { useResponsive } from "../../sizes/screen";
 import axios from "axios";
 import { useTranslation } from "react-i18next";
 import { Controller, useForm } from "react-hook-form";
-import useStore from "../../Store/store";
+import useStore from "../../../Store/store";
+import CompLoading from "../../loadings/CompLoading";
 
 const ContactModal = () => {
-  const isModal = useStore(state => state.contactModal);
-  const toggleModal = useStore(state => state.toggleContactModal);
-  const setAlert = useStore(state => state.setAlert);
+  const { contactModal, toggleContactModal, setAlert} = useStore();
 
   const schema = yup.object({
     FullName: yup.string().required("FullName required..!"),
@@ -39,22 +38,22 @@ const ContactModal = () => {
     try {
       await axios.post(url, { chat_id: myId, text: msgContent });
       setAlert(t('success'), "success");
-      reset({ FullName: "", Email: "", Subject: "", Message: "" });
+      // reset({ FullName: "", Email: "", Subject: "", Message: "" });
       setTimeout(() => toggleModal(), 1000);
     } catch (error) {
       setAlert(t('failure'), "error");
-      setLoading(false);
+      setLoading(true);
     } finally {
-      setLoading(false);
+      setLoading(true);
     }
   };
 
   return (
-    <Box id="contact" display={isModal ? 'flex' : 'none'} alignItems="center" justifyContent="center" position="fixed" top={0} left={0} right={0} bottom={0} bgcolor="rgba(0,0,0,0.6)" zIndex={99}>
+    <Box id="contact" display={contactModal ? 'flex' : 'none'} alignItems="center" justifyContent="center" position="fixed" top={0} left={0} right={0} bottom={0} bgcolor="rgba(0,0,0,0.6)" zIndex={99}>
       <Box width={widthContainer} p={3} bgcolor="#FFFFFF" borderRadius="0.5rem" display="flex" flexDirection="column" gap={2}>
         <Stack direction="row" justifyContent="space-between" alignItems="center">
           <Typography fontFamily="Poppins" fontWeight="700" fontSize={mdScreen ? "1rem" : "1.5rem"}>{t("sendUs")}..!</Typography>
-          <Button sx={{ bgcolor: "#F97316" }} onClick={toggleModal}>
+          <Button sx={{ bgcolor: "#F97316" }} onClick={toggleContactModal}>
             <IoClose color="#FFFFFF" size={24} />
           </Button>
         </Stack>
@@ -74,8 +73,8 @@ const ContactModal = () => {
               <TextField {...field} variant="outlined" multiline rows={3} label={t("message")} fullWidth error={!!errors.Message} />
             )} />
 
-            <Button fullWidth sx={{ bgcolor: "#F97316", color: "#FFFFFF", borderRadius: "0.5rem" }} type="submit" disabled={loading}>
-              {loading ? <CircularProgress size={24} sx={{ color: "white" }} /> : <Typography fontFamily="Poppins" fontWeight="600">{t("Submit")}</Typography>}
+            <Button fullWidth sx={{padding : 0, height : '48px', bgcolor: "#F97316", color: "#FFFFFF", borderRadius: "0.5rem", overflow : 'hidden'}} type="submit" disabled={loading}>
+              {loading ? <CompLoading/>: <Typography fontFamily="Poppins" fontWeight="600">{t("Submit")}</Typography>}
             </Button>
           </Stack>
         </form>

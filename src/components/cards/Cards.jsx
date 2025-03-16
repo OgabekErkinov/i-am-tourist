@@ -6,11 +6,10 @@ import useStore from "../../Store/store";
 const Cards = () => {
   const { smScreen, mdScreen } = useResponsive();
   const { t } = useTranslation();
-  const addCards = t("addCards", { returnObjects: true }) || []; // Default bo‘sh array
-  const light = useStore((state) => state.light);
+  const addCards = t("addCards", { returnObjects: true }) || []; 
+  const { light , themeColors } = useStore();
 
-  const bgColor = light ? "#FFFFFF" : "#1F2937";
-  const textColor = light ? "#1F2937" : "#FFFFFF";
+
 
   return (
     <Stack maxWidth="1536px" alignItems="center" justifyContent="center" padding={smScreen ? "8px" : "16px"}>
@@ -27,7 +26,7 @@ const Cards = () => {
             <Box
               key={idx}
               borderRadius="12px"
-              bgcolor={bgColor}
+              bgcolor={light ? '#fff' : themeColors.bg}
               padding={smScreen ? "12px" : "20px"}
               width={smScreen ? "90%" : mdScreen ? "45%" : "30%"}
               boxShadow="1px 1px 5px 1px rgba(95, 99, 105, 0.5)"
@@ -45,13 +44,13 @@ const Cards = () => {
                   fontSize={smScreen ? "14px" : mdScreen ? "20px" : "24px"}
                   fontFamily="Poppins"
                   fontWeight="600"
-                  color={textColor}
+                  color={themeColors.text}
                   sx={{ transition: "0.4s" }}
                 >
                   {item.heading}
                 </Typography>
                 <Typography
-                  color={light ? "#4B5563" : "#D1D5DB"} // Yaxshi kontrast uchun
+                  color={themeColors.text} 
                   fontSize={smScreen ? "10px" : mdScreen ? "14px" : "16px"}
                 >
                   {item.paragraph}

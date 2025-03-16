@@ -3,9 +3,7 @@ import { social_medias } from "../../Database/db";
 import { useResponsive } from "../sizes/screen";
 
 const SocialNetworks = () => {
-  const mdScreen = useResponsive().mdScreen;
-  const lgScreen = useResponsive().lgScreen;
-
+  const {mdScreen, lgScreen} = useResponsive();
   const paddingItem = mdScreen ? "0px" : lgScreen ? "4px" : "8px";
 
   return (
@@ -37,7 +35,6 @@ const SocialNetworks = () => {
                 alt={media?.name}
                 height="100%"
                 width="100%"
-                loading="lazy"
               />
             </Link>
           </ListItem>

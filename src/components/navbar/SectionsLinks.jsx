@@ -7,36 +7,31 @@ import LinkItem from '../listElements/LinkItem';
 import useStore from '../../Store/store';
 
 const SectionsLinks = () => {
-  const lgScreen = useResponsive().lgScreen;
-  const xlgScreen = useResponsive().xlgScreen;
+  const { lgScreen, xlgScreen } = useResponsive();
   const { t } = useTranslation();
-  const toggleContactModal = useStore(state => state.toggleContactModal)
+  const { toggleContactModal } = useStore();
 
   const fontSize = xlgScreen ? '16px' : '20px';
-  const contact = t("Contact"); 
 
   return (
-    <Box height="35px" width="auto" display="flex">
-      <List
-        sx={{
-          display: !lgScreen ? 'flex' : 'none',
-          justifyContent: 'center',
-        }}
-      >
-        {navLinks?.map((item, idx) => (
-          <ListItem key={idx} sx={{ width: 'auto' }}>
-            {item.name !== contact ? (
-              <LinkItem item={item} fontSize={fontSize} />
+    <Box height="35px" display="flex">
+      {lgScreen || (
+        <List sx={{ display: 'flex', justifyContent: 'center' }}>
+          {navLinks?.map((item, idx) =>
+            t(item.name) !== t("Contact") ? (
+              <ListItem key={idx}>
+                <LinkItem item={item} fontSize={fontSize} />
+              </ListItem>
             ) : (
-              <Button disableTouchRipple onClick={toggleContactModal}>
-                 <Typography color='#ffffff' fontFamily='Poppins' fontWeight='500' fontSize={fontSize}>
-                    {contact}
-                 </Typography>
-              </Button>
-            )}
-          </ListItem>
-        ))}
-      </List>
+              <ListItem key={idx}>
+                <Button disableTouchRipple onClick={toggleContactModal} sx={{ color: '#fff', fontFamily: 'Poppins', fontWeight: 500, fontSize }}>
+                  {t("Contact")}
+                </Button>
+              </ListItem>
+            )
+          )}
+        </List>
+      )}
     </Box>
   );
 };

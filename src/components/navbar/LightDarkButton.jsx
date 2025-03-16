@@ -5,8 +5,7 @@ import { FiSun } from "react-icons/fi";
 import useStore from "../../Store/store"; // useColorsStore emas, useStore ishlatamiz!
 
 const LightDarkButton = () => {
-  const light = useStore((state) => state.light);
-  const toggleBg = useStore((state) => state.toggleBgColor);
+  const { toggleBgColor, light } = useStore()
 
   const Icon = light ? BsLightningCharge : FiSun;
 
@@ -26,7 +25,7 @@ const LightDarkButton = () => {
         sx={{
           "&:active": { backgroundColor: "transparent" },
         }}
-        onClick={toggleBg} 
+        onClick={toggleBgColor} 
       >
         <Box width="24px" height="24px" pt="2px">
           <Icon color="orange" style={{ scale: "1.4" }} />

@@ -13,7 +13,7 @@ import { useResponsive } from '../sizes/screen';
 const Slider = () => {
   const { t } = useTranslation();
   const translatedSliderItems = t("sliderItems", { returnObjects: true });
-  const { smScreen, mdScreen, lgScreen, xlgScreen } = useResponsive();
+  const { smScreen, mdScreen, lgScreen } = useResponsive();
 
   const headingSize = smScreen ? '28px' : mdScreen ? '36px' : lgScreen ? '48px' : '64px';
   const paragraphSize = smScreen ? '16px' : mdScreen ? '18px' : lgScreen ? '20px' : '22px';
@@ -48,7 +48,7 @@ const Slider = () => {
               position="absolute" zIndex="1" bgcolor="rgba(0, 0, 0, 0.5)">
               <Stack height="100%" width="100%" justifyContent="start" alignItems="center" color="white">
                 <Box width="95%" textAlign="center">
-                  <Typography
+                  <Typography component='h2'
                     fontSize={headingSize}
                     fontFamily="Poppins"
                     fontWeight={700}

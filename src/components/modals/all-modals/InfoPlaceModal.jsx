@@ -1,8 +1,7 @@
 import { Box, Button, Stack, Typography } from "@mui/material";
-import React from "react";
-import { useResponsive } from "../sizes/screen";
 import { useTranslation } from "react-i18next";
-import useStore from "../../Store/store";
+import useStore from "../../../Store/store";
+import { useResponsive } from "../../sizes/screen";
 
 const InfoPlaceModal = () => {
   const { t } = useTranslation();

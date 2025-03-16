@@ -7,8 +7,7 @@ const Lists = ({ heading, array }) => {
   const fontSizeHeading = smScreen ? "14px" : mdScreen ? "16px" : "18px";
   const fontSizeItems = smScreen ? "12px" : mdScreen ? "14px" : "16px";
   const textAlign = smScreen ? "center" : "left";
-  const light = useStore(state => state.light);
-  const textColor = light ? '#F97316' : '#1F2937' ;
+  const { themeColors } = useStore();
 
   return (
     <Stack
@@ -16,14 +15,14 @@ const Lists = ({ heading, array }) => {
       width="100%"
       alignItems={textAlign === "center" ? "center" : "start"}
       textAlign={textAlign}
-      color={textColor}
+      color={themeColors.text}
     >
       <Typography fontFamily="Poppins" fontWeight="600" fontSize={fontSizeHeading}>
         {heading}
       </Typography>
 
       {!array || array.length === 0 ? (
-        <Typography fontFamily="Poppins" fontSize="14px" fontWeight="300" color={textColor} mt="0.5rem">
+        <Typography fontFamily="Poppins" fontSize="14px" fontWeight="300" color={themeColors.text} mt="0.5rem">
           
         </Typography>
       ) : (

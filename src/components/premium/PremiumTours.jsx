@@ -12,13 +12,10 @@ import { useTranslation } from "react-i18next";
 import useStore from "../../Store/store";
 import { useResponsive } from "../sizes/screen";
 
-const PremiumTours = ({ rootRef }) => {
-  const { light } = useStore();
+const PremiumTours = () => {
+  const { themeColors } = useStore();
   const { t } = useTranslation();
-  const { smScreen, mdScreen, lgScreen } = useResponsive();
-
-  const bgColor = light ? "#F97316" : "#1F2937";
-  const textColor = light ? "#FFFFFF" : "#F97316";
+  const { smScreen, mdScreen } = useResponsive();
 
   const sizeFont = useMemo(() => {
     return smScreen ? "20px" : mdScreen ? "28px" : "36px";
@@ -29,7 +26,7 @@ const PremiumTours = ({ rootRef }) => {
       id="excursions"
       width="100%"
       minHeight={smScreen ? "500px" : mdScreen ? "600px" : "720px"}
-      bgcolor={bgColor}
+      bgcolor={themeColors.bg}
       alignItems="center"
       justifyContent="center"
       sx={{ padding: smScreen ? "2rem 0" : "4rem 0" }}
@@ -47,7 +44,7 @@ const PremiumTours = ({ rootRef }) => {
           fontWeight="700"
           textAlign="center"
           width="90%"
-          color={textColor}
+          color={themeColors.text}
         >
           {t("AboutPremium")}
         </Typography>
@@ -68,7 +65,7 @@ const PremiumTours = ({ rootRef }) => {
         >
           {premiumToursServices?.map((tour, idx) => (
             <SwiperSlide key={idx}>
-              <PremiumItem tour={tour} idx={idx} rootRef={rootRef} />
+              <PremiumItem tour={tour} idx={idx} />
             </SwiperSlide>
           ))}
         </Swiper>

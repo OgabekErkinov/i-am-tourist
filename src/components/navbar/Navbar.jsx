@@ -11,9 +11,9 @@ import useStore from "../../Store/store";
 import throttle from 'lodash.throttle'
 
 
-const Navbar = ({ root }) => {
-  const light = useStore((state) => state.light);
-  const lgScreen = useResponsive().lgScreen;
+const Navbar = () => {
+  const {themeColors} = useStore()
+  const { lgScreen } = useResponsive();
   const [transparent, setTransparent] = useState(false);
 
   useEffect(() => {
@@ -25,8 +25,6 @@ const Navbar = ({ root }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const bgColor = transparent ? "transparent" : light ? "#F97316" : "#1F2937";
-
   return (
     <Box width="100%" height="10vh" position="fixed"
       top={0}
@@ -37,7 +35,7 @@ const Navbar = ({ root }) => {
         width="100%"
         height="100%"
         paddingX='12px'
-        bgcolor={bgColor}
+        bgcolor={themeColors.bg}
         sx={{
           backdropFilter: transparent ? "blur(5px)" : "none",
           transition: "backdrop-filter 0.4s ease-in-out, background-color 0.4s ease-in-out",
@@ -52,12 +50,12 @@ const Navbar = ({ root }) => {
         >
           <Logo />
           <Stack direction="row" alignItems="center" justifyContent="flex-end" gap="1rem">
-            <SectionsLinks root={root} />
+            <SectionsLinks />
             <SocialNetworks />
             <Stack direction="row" justifyContent="space-between" gap="0.2rem">
               <Languages />
               <LightDarkButton />
-              {lgScreen && <MenuButton root={root} />}
+              {lgScreen && <MenuButton />}
             </Stack>
           </Stack>
         </Box>

@@ -40,7 +40,7 @@ const HistoryCard = () => {
         alignItems="center"
         
       >
-        <Box height='120px' width='120px' borderRadius='50%' overflow='hidden'>
+        <Box height='180px' width='180px' borderRadius='50%' overflow='hidden'>
         <Box
           component="img"
           src="/logo.webp"
@@ -62,8 +62,8 @@ const HistoryCard = () => {
 
       {/* Matn qismi */}
       <Stack
-        height={mdScreen ? "50%" : "100%"}
-        width={mdScreen ? "100%" : "60%"}
+        height={mdScreen ? "60%" : "100%"}
+        width={mdScreen ? "100%" : "70%"}
         p="8px"
         justifyContent="center"
         gap="1rem"

@@ -3,12 +3,12 @@ import { useTranslation } from 'react-i18next';
 import { useResponsive } from '../sizes/screen';
 import useStore from '../../Store/store';
 import { memo } from 'react';
+import CompLoading from '../loadings/CompLoading';
 
 const OnePlace = ({ place }) => {
   const { smScreen, mdScreen } = useResponsive();
   const { t } = useTranslation();
-  const setSelectedPlace = useStore(state => state.setSelectedPlace);
-  const toggleInfoModal = useStore(state => state.toggleInfoModal);
+  const {toggleInfoModal, setSelectedPlace} = useStore();
 
   const handleClick = () => {
     setSelectedPlace(place);
@@ -16,7 +16,10 @@ const OnePlace = ({ place }) => {
   };
 
   return (
-    <Stack 
+    <>
+    {
+      !place?.image ? <CompLoading/> : (
+        <Stack 
       height="auto" 
       width="100%" 
       borderRadius="12px" 
@@ -80,6 +83,9 @@ const OnePlace = ({ place }) => {
         </Button>
       </Stack>
     </Stack>
+      )
+     }
+     </>
   );
 };
 
