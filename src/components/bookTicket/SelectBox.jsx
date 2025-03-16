@@ -33,8 +33,8 @@ const SelectBox = ({ label, error, helperText, ...props }) => {
             </MenuItem>
           ))}
         </Select>
-        {error && <FormHelperText sx={{ color: '#F87171' }}>{helperText}</FormHelperText>}
       </Box>
+      {error && <FormHelperText sx={{ color: '#F87171' }}>{helperText}</FormHelperText>}
     </Box>
   );
 };
