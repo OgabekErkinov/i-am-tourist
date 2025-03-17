@@ -5,10 +5,7 @@ import { useResponsive } from "../../sizes/screen";
 
 const InfoPlaceModal = () => {
   const { t } = useTranslation();
-  const selectedPlace = useStore((state) => state.selectedPlace);
-  const toggleInfoModal = useStore((state) => state.toggleInfoModal);
-  const toggleContactModal = useStore((state) => state.toggleContactModal);
-  const infoModal = useStore((state) => state.infoModal);
+  const { infoModal, toggleContactModal, toggleInfoModal, selectedPlace } = useStore();
 
   const { smScreen, mdScreen } = useResponsive();
   const widthContainer = smScreen ? "320px" : mdScreen ? "420px" : "560px";
@@ -19,6 +16,7 @@ const InfoPlaceModal = () => {
       height="100vh"
       bgcolor="rgba(0,0,0,0.6)"
       position="fixed"
+      top={0}
       zIndex={3}
       display={infoModal ? "flex" : "none"}
       alignItems="center"

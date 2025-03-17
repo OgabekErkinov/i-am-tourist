@@ -1,19 +1,22 @@
 import { Box, MenuItem, Select, Typography, FormHelperText } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import useStore from '../../Store/store';
+import { forwardRef } from 'react';
 
-const SelectBox = ({ label, error, helperText, ...props }) => {
+const SelectBox = forwardRef(({ label, error, helperText, ...props }, ref) => {
   const { t } = useTranslation();
-
   const Countries = t('countries', { returnObjects: true }) || [];
-  const { themeColors } = useStore()
+  const { themeColors } = useStore();
+
   return (
     <Box width='100%'>
       <Typography fontFamily='Poppins' fontSize='14px' fontWeight='600' color={themeColors.text}>
         {label}
       </Typography>
       <Box width='100%'>
-        <Select style={{backgroundColor:'white'}}
+        <Select
+          ref={ref} // ⬅️ ref qo‘shildi
+          style={{ backgroundColor: 'white' }}
           fullWidth
           displayEmpty
           error={!!error}
@@ -37,6 +40,6 @@ const SelectBox = ({ label, error, helperText, ...props }) => {
       {error && <FormHelperText sx={{ color: '#F87171' }}>{helperText}</FormHelperText>}
     </Box>
   );
-};
+});
 
 export default SelectBox;

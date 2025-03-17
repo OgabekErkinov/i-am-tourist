@@ -43,7 +43,7 @@ const Lists = ({ heading, array }) => {
                 fontFamily="Poppins"
                 fontSize={fontSizeItems}
                 fontWeight="400"
-                color={textColor}
+                color={themeColors.text}
                 my="0.2rem"
               >
                 {item.name}

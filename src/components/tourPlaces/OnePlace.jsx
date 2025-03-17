@@ -2,13 +2,13 @@ import { Box, Stack, Typography, Button } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { useResponsive } from '../sizes/screen';
 import useStore from '../../Store/store';
-import { memo } from 'react';
+import { memo, useEffect } from 'react';
 import CompLoading from '../loadings/CompLoading';
 
 const OnePlace = ({ place }) => {
   const { smScreen, mdScreen } = useResponsive();
   const { t } = useTranslation();
-  const {toggleInfoModal, setSelectedPlace} = useStore();
+  const { infoModal, toggleInfoModal, setSelectedPlace} = useStore();
 
   const handleClick = () => {
     setSelectedPlace(place);

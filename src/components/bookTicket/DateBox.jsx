@@ -1,7 +1,8 @@
 import { Box, Typography, TextField } from '@mui/material';
 import useStore from '../../Store/store';
+import { forwardRef } from 'react';
 
-const DateBox = ({ label, error, helperText, ...props }) => {
+const DateBox = forwardRef(({ label, error, helperText, ...props }, ref) => {
 
   const { themeColors } = useStore()
 
@@ -21,6 +22,6 @@ const DateBox = ({ label, error, helperText, ...props }) => {
       />
     </Box>
   );
-};
+});
 
 export default DateBox;
