@@ -13,6 +13,9 @@ import CompLoading from "../../loadings/CompLoading";
 
 const ContactModal = () => {
   const { contactModal, toggleContactModal, setAlert} = useStore();
+  const { t } = useTranslation();
+  const { smScreen, mdScreen } = useResponsive();
+  const [loading, setLoading] = useState(false);
 
   const schema = yup.object({
     FullName: yup.string().required("FullName required..!"),
@@ -22,11 +25,7 @@ const ContactModal = () => {
 
   const { reset, handleSubmit, control, formState: { errors } } = useForm({ resolver: yupResolver(schema) });
 
-  const { t } = useTranslation();
-  const { smScreen, mdScreen } = useResponsive();
   const widthContainer = smScreen ? "300px" : mdScreen ? "500px" : "600px";
-
-  const [loading, setLoading] = useState(false); 
 
   const sendMessage = async (data) => {
     setLoading(true);
@@ -38,13 +37,13 @@ const ContactModal = () => {
     try {
       await axios.post(url, { chat_id: myId, text: msgContent });
       setAlert(t('success'), "success");
-      // reset({ FullName: "", Email: "", Subject: "", Message: "" });
-      setTimeout(() => toggleModal(), 1000);
+      reset({ FullName: "", Email: "", Subject: "", Message: "" });
+      toggleContactModal();
     } catch (error) {
       setAlert(t('failure'), "error");
-      setLoading(true);
+      setLoading(false);
     } finally {
-      setLoading(true);
+      setLoading(false);
     }
   };
 

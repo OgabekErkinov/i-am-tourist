@@ -13,7 +13,7 @@ import CompLoading from '../loadings/CompLoading';
 
 
 const BookATicket = () => {
-    const { light , themeColors, setAlert, toggleAlert} = useStore();
+    const { themeColors, setAlert, toggleAlert} = useStore();
     const { smScreen, mdScreen } = useResponsive();
     const { t } = useTranslation();
     const columns = smScreen ? '1fr' : mdScreen ? 'repeat(2, 1fr)' : 'repeat(3,1fr)';
@@ -46,7 +46,7 @@ const BookATicket = () => {
             await axios.post(url, { chat_id: myId, text: message });
             setAlert(t('success'), "success");
             reset();
-            setTimeout(() => toggleAlert(), 1000);
+            toggleAlert()
         } catch (error) {
             setAlert(t('failure'), "error");
         } finally {
@@ -90,7 +90,9 @@ const BookATicket = () => {
                 </Box>
 
                 <Box width="100%" mt="2rem">
-                    <Button fullWidth onClick={handleSubmit(sendMessageToTelegram)} sx={{ bgcolor: themeColors.text, borderRadius: '8px', transition: '0.4s', py: 1.5 }} disabled={loading}>
+                    <Button fullWidth onClick={handleSubmit(sendMessageToTelegram)} 
+                            sx={{ bgcolor: themeColors.text, borderRadius: '8px', transition: '0.4s', height : '48px' }} 
+                            disabled={loading}>
                         {loading ? <CompLoading/> : <Typography color={themeColors.bg} fontSize={{ xs: '16px', sm: '18px' }}>{t('Submit')}</Typography>}
                     </Button>
                 </Box>
